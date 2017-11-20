@@ -7,7 +7,7 @@ exports[`snapshot: className html 1`] = `
   className="MuiDrawer-docked"
 >
   <div
-    className="MuiPaper-root MuiPaper-shadow0 MuiDrawer-paper fcDrawer-drawerPaper fcDrawer-drawerPaperClose MuiDrawer-paperAnchorDockedLeft"
+    className="MuiPaper-root MuiPaper-shadow0 MuiDrawer-paper fcDrawer-drawerPaper fcDrawer-drawerPaperClose MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
   >
     <div
       className="fcDrawer-drawerInner"
@@ -150,12 +150,8 @@ exports[`snapshot: empty css 1`] = `
   z-index: 1300;
   position: fixed;
   overflow-y: auto;
-  will-change: transform;
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
-}
-.MuiDrawer-paper:focus {
-  outline: none;
 }
 .MuiDrawer-paperAnchorLeft {
   left: 0;
@@ -184,8 +180,14 @@ exports[`snapshot: empty css 1`] = `
 .MuiDrawer-paperAnchorDockedLeft {
   border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
+.MuiDrawer-paperAnchorDockedTop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
 .MuiDrawer-paperAnchorDockedRight {
   border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedBottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -364,7 +366,7 @@ exports[`snapshot: empty html 1`] = `
   className="MuiDrawer-docked"
 >
   <div
-    className="MuiPaper-root MuiPaper-shadow0 MuiDrawer-paper fcDrawer-drawerPaper fcDrawer-drawerPaperClose MuiDrawer-paperAnchorDockedLeft"
+    className="MuiPaper-root MuiPaper-shadow0 MuiDrawer-paper fcDrawer-drawerPaper fcDrawer-drawerPaperClose MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
   >
     <div
       className="fcDrawer-drawerInner"

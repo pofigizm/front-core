@@ -449,8 +449,8 @@ label + .MuiInput-formControl {
 }
 .MuiInput-input {
   font: inherit;
-  color: currentColor;
   width: 100%;
+  color: currentColor;
   border: 0;
   margin: 0;
   padding: 7px 0 9px;
@@ -458,6 +458,7 @@ label + .MuiInput-formControl {
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .MuiInput-input::-webkit-input-placeholder {
   color: currentColor;
@@ -643,7 +644,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   position: relative;
 }
 .MuiSelect-select {
-  width: auto;
+  width: calc(100% - 32px);
   height: calc(1em + 14px);
   cursor: pointer;
   padding: 0 32px 2px 0;
@@ -665,6 +666,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   display: none;
 }
 .MuiSelect-selectMenu {
+  width: auto;
   overflow: hidden;
   white-space: nowrap;
   line-height: calc(1em + 14px);

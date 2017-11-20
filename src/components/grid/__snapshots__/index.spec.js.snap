@@ -32,6 +32,9 @@ exports[`snapshot: empty css 1`] = `
 .MuiGrid-wrap-xs-nowrap {
   flex-wrap: nowrap;
 }
+.MuiGrid-wrap-xs-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 .MuiGrid-align-items-xs-center {
   align-items: center;
 }

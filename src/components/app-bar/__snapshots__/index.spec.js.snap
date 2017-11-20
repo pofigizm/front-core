@@ -124,7 +124,7 @@ exports[`snapshot: basic usage css 1`] = `
   min-height: 56px;
   align-items: center;
 }
-@media (min-width:0px) and (orientation: landscape) {
+@media (min-width:1px) and (orientation: landscape) {
   .MuiToolbar-root {
     min-height: 48px;
   }
