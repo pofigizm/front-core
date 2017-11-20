@@ -59,10 +59,17 @@ export const init = config => (dispatch) => {
 }
 
 export const loginRequest = () => (dispatch, getState) => {
-  const { config } = getCore(getState())
+  const { user, config } = getCore(getState())
+
+  if (user.name) {
+    window.localStorage.setItem(tokenStorageKey, '')
+    dispatch(userData(''))
+    return true
+  }
+
   const { href } = window.location
   const redirect = encodeURIComponent(href)
-  const loginUrl = `${config.auth}${redirect}`
+  const loginUrl = `${config.auth}?redirect=${redirect}`
   window.location.href = loginUrl
   return true
 }

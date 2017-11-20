@@ -49,7 +49,7 @@ export default ({ store, reducers }) => {
       if (props.own) {
         return import(`src/pages/${props.modulePath}`)
       }
-      return import(`app-src/${props.modulePath}`)
+      return import(`app-src/pages/${props.modulePath}`)
     },
     { onLoad },
   )

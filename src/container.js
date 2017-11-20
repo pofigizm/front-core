@@ -15,7 +15,7 @@ const getMessageList = memoize(messages => Object.values(messages)
 const mapState = (state, { title, menu }) => {
   const { user, mainMenuOpen, messages } = selectors.getState(state)
   const messageList = getMessageList(messages)
-  const authRequired = selectors.getRoute(state).access && !user.name
+  const authRequired = selectors.getRoute(state).role && !user.name
 
   return {
     title,
