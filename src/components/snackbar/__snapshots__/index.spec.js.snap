@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `null`;
+
+exports[`snapshot: empty css 1`] = `
+".MuiSnackbar-root {
+  left: 0;
+  right: 0;
+  z-index: 2900;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+.MuiSnackbar-anchorTopCenter {
+  top: 0;
+}
+@media (min-width:960px) {
+  .MuiSnackbar-anchorTopCenter {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorBottomCenter {
+  bottom: 0;
+}
+@media (min-width:960px) {
+  .MuiSnackbar-anchorBottomCenter {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorTopRight {
+  top: 0;
+  justify-content: flex-end;
+}
+@media (min-width:960px) {
+  .MuiSnackbar-anchorTopRight {
+    top: 24px;
+    left: auto;
+    right: 24px;
+  }
+}
+.MuiSnackbar-anchorBottomRight {
+  bottom: 0;
+  justify-content: flex-end;
+}
+@media (min-width:960px) {
+  .MuiSnackbar-anchorBottomRight {
+    left: auto;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+.MuiSnackbar-anchorTopLeft {
+  top: 0;
+  justify-content: flex-start;
+}
+@media (min-width:960px) {
+  .MuiSnackbar-anchorTopLeft {
+    top: 24px;
+    left: 24px;
+    right: auto;
+  }
+}
+.MuiSnackbar-anchorBottomLeft {
+  bottom: 0;
+  justify-content: flex-start;
+}
+@media (min-width:960px) {
+  .MuiSnackbar-anchorBottomLeft {
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+  }
+}
+.fcSnackbar-close {
+  width: 32px;
+  height: 32px;
+}
+.fcSnackbar-content {
+  margin: 8px;
+}"
+`;
+
+exports[`snapshot: empty html 1`] = `null`;

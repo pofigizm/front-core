@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="m-root"
+>
+  Template of base component
+</div>
+`;
+
+exports[`snapshot: empty css 1`] = `""`;
+
+exports[`snapshot: empty html 1`] = `
+<div
+  className="m-root"
+>
+  Template of base component
+</div>
+`;

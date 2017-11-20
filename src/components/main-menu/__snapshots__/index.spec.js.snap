@@ -1,0 +1,429 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `
+<ul
+  className="MuiList-root MuiList-padding fcMenu-root"
+/>
+`;
+
+exports[`snapshot: without props css 1`] = `
+".MuiSvgIcon-root {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.MuiList-root {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+.MuiList-padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.MuiList-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.MuiList-subheader {
+  padding-top: 0;
+}
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-wrapper {
+  opacity: 1;
+}
+.MuiTouchRipple-wrapperLeaving {
+  opacity: 0;
+  animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-wrapperPulsating {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@keyframes mui-ripple-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes mui-ripple-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mui-ripple-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.MuiTouchRipple-ripple {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+  background: currentColor;
+  border-radius: 50%;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-rippleFast {
+  animation-duration: 200ms;
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  outline: none;
+  position: relative;
+  appearance: none;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.MuiListItem-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.MuiListItem-container {
+  position: relative;
+}
+.MuiListItem-keyboardFocused {
+  background: rgba(0, 0, 0, 0.12);
+}
+.MuiListItem-default {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.MuiListItem-dense {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.MuiListItem-disabled {
+  opacity: 0.5;
+}
+.MuiListItem-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+.MuiListItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.MuiListItem-button {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiListItem-button:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+.MuiListItem-button:hover.MuiListItem-disabled {
+  background-color: transparent;
+}
+.MuiListItem-secondaryAction {
+  padding-right: 32px;
+}
+.MuiTypography-root {
+  margin: 0;
+  display: block;
+}
+.MuiTypography-display4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.06em;
+  letter-spacing: -.04em;
+}
+.MuiTypography-display3 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.04em;
+  letter-spacing: -.02em;
+}
+.MuiTypography-display2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.04em;
+}
+.MuiTypography-display1 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.20588em;
+  margin-left: -.04em;
+}
+.MuiTypography-headline {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.35417em;
+}
+.MuiTypography-title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.16667em;
+}
+.MuiTypography-subheading {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.5em;
+}
+.MuiTypography-body2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.71429em;
+}
+.MuiTypography-body1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.46429em;
+}
+.MuiTypography-caption {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.375em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  text-transform: uppercase;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorAccent {
+  color: #f50057;
+}
+.MuiTypography-colorError {
+  color: #ff1744;
+}
+.MuiListItemText-root {
+  flex: 1 1 auto;
+  padding: 0 16px;
+}
+.MuiListItemText-root:first-child {
+  padding-left: 0;
+}
+.MuiListItemText-inset:first-child {
+  padding-left: 56px;
+}
+.MuiListItemText-dense {
+  font-size: 0.8125rem;
+}
+.MuiListItemText-textDense {
+  font-size: inherit;
+}
+.MuiListItemIcon-root {
+  width: 24px;
+  color: rgba(0, 0, 0, 0.54);
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.fcMenu-root {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+}
+.fcMenu-link {
+  color: #fff;
+  text-decoration: none;
+}"
+`;
+
+exports[`snapshot: without props html 1`] = `
+<ul
+  className="MuiList-root MuiList-padding fcMenu-root"
+>
+  <div>
+    <li
+      className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default"
+      disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiListItemIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"
+        />
+      </svg>
+      <div
+        className="MuiListItemText-root MuiListItemText-inset"
+      >
+        <h3
+          className="MuiTypography-root MuiTypography-subheading MuiListItemText-text"
+        >
+          Storages
+        </h3>
+      </div>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </li>
+  </div>
+  <div>
+    <li
+      className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default"
+      disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root MuiListItemIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+        />
+      </svg>
+      <div
+        className="MuiListItemText-root MuiListItemText-inset"
+      >
+        <h3
+          className="MuiTypography-root MuiTypography-subheading MuiListItemText-text"
+        >
+          Phones
+        </h3>
+      </div>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </li>
+  </div>
+</ul>
+`;

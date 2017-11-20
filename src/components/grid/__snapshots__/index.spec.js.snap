@@ -1,0 +1,382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="test-class fcGrid-root"
+/>
+`;
+
+exports[`snapshot: empty css 1`] = `
+".MuiGrid-typeContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.MuiGrid-typeItem {
+  flex: 0 0 auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+.MuiGrid-direction-xs-column {
+  flex-direction: column;
+}
+.MuiGrid-direction-xs-column-reverse {
+  flex-direction: column-reverse;
+}
+.MuiGrid-direction-xs-row-reverse {
+  flex-direction: row-reverse;
+}
+.MuiGrid-wrap-xs-nowrap {
+  flex-wrap: nowrap;
+}
+.MuiGrid-align-items-xs-center {
+  align-items: center;
+}
+.MuiGrid-align-items-xs-flex-start {
+  align-items: flex-start;
+}
+.MuiGrid-align-items-xs-flex-end {
+  align-items: flex-end;
+}
+.MuiGrid-align-items-xs-baseline {
+  align-items: baseline;
+}
+.MuiGrid-align-content-xs-center {
+  align-content: center;
+}
+.MuiGrid-align-content-xs-flex-start {
+  align-content: flex-start;
+}
+.MuiGrid-align-content-xs-flex-end {
+  align-content: flex-end;
+}
+.MuiGrid-align-content-xs-space-between {
+  align-content: space-between;
+}
+.MuiGrid-align-content-xs-space-around {
+  align-content: space-around;
+}
+.MuiGrid-justify-xs-center {
+  justify-content: center;
+}
+.MuiGrid-justify-xs-flex-end {
+  justify-content: flex-end;
+}
+.MuiGrid-justify-xs-space-between {
+  justify-content: space-between;
+}
+.MuiGrid-justify-xs-space-around {
+  justify-content: space-around;
+}
+.MuiGrid-spacing-xs-8 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.MuiGrid-spacing-xs-8 > .MuiGrid-typeItem {
+  padding: 4px;
+}
+.MuiGrid-spacing-xs-16 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.MuiGrid-spacing-xs-16 > .MuiGrid-typeItem {
+  padding: 8px;
+}
+.MuiGrid-spacing-xs-24 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.MuiGrid-spacing-xs-24 > .MuiGrid-typeItem {
+  padding: 12px;
+}
+.MuiGrid-spacing-xs-40 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.MuiGrid-spacing-xs-40 > .MuiGrid-typeItem {
+  padding: 20px;
+}
+.MuiGrid-grid-xs {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.MuiGrid-grid-xs-1 {
+  max-width: 8.3333%;
+  flex-basis: 8.3333%;
+}
+.MuiGrid-grid-xs-2 {
+  max-width: 16.6667%;
+  flex-basis: 16.6667%;
+}
+.MuiGrid-grid-xs-3 {
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.MuiGrid-grid-xs-4 {
+  max-width: 33.3333%;
+  flex-basis: 33.3333%;
+}
+.MuiGrid-grid-xs-5 {
+  max-width: 41.6667%;
+  flex-basis: 41.6667%;
+}
+.MuiGrid-grid-xs-6 {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.MuiGrid-grid-xs-7 {
+  max-width: 58.3333%;
+  flex-basis: 58.3333%;
+}
+.MuiGrid-grid-xs-8 {
+  max-width: 66.6667%;
+  flex-basis: 66.6667%;
+}
+.MuiGrid-grid-xs-9 {
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.MuiGrid-grid-xs-10 {
+  max-width: 83.3333%;
+  flex-basis: 83.3333%;
+}
+.MuiGrid-grid-xs-11 {
+  max-width: 91.6667%;
+  flex-basis: 91.6667%;
+}
+.MuiGrid-grid-xs-12 {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .MuiGrid-grid-sm {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    max-width: 8.3333%;
+    flex-basis: 8.3333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    max-width: 16.6667%;
+    flex-basis: 16.6667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    max-width: 41.6667%;
+    flex-basis: 41.6667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    max-width: 58.3333%;
+    flex-basis: 58.3333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    max-width: 66.6667%;
+    flex-basis: 66.6667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    max-width: 83.3333%;
+    flex-basis: 83.3333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    max-width: 91.6667%;
+    flex-basis: 91.6667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    max-width: 8.3333%;
+    flex-basis: 8.3333%;
+  }
+  .MuiGrid-grid-md-2 {
+    max-width: 16.6667%;
+    flex-basis: 16.6667%;
+  }
+  .MuiGrid-grid-md-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+  .MuiGrid-grid-md-5 {
+    max-width: 41.6667%;
+    flex-basis: 41.6667%;
+  }
+  .MuiGrid-grid-md-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    max-width: 58.3333%;
+    flex-basis: 58.3333%;
+  }
+  .MuiGrid-grid-md-8 {
+    max-width: 66.6667%;
+    flex-basis: 66.6667%;
+  }
+  .MuiGrid-grid-md-9 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    max-width: 83.3333%;
+    flex-basis: 83.3333%;
+  }
+  .MuiGrid-grid-md-11 {
+    max-width: 91.6667%;
+    flex-basis: 91.6667%;
+  }
+  .MuiGrid-grid-md-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    max-width: 8.3333%;
+    flex-basis: 8.3333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    max-width: 16.6667%;
+    flex-basis: 16.6667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    max-width: 41.6667%;
+    flex-basis: 41.6667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    max-width: 58.3333%;
+    flex-basis: 58.3333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    max-width: 66.6667%;
+    flex-basis: 66.6667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    max-width: 83.3333%;
+    flex-basis: 83.3333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    max-width: 91.6667%;
+    flex-basis: 91.6667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    max-width: 8.3333%;
+    flex-basis: 8.3333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    max-width: 16.6667%;
+    flex-basis: 16.6667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    max-width: 41.6667%;
+    flex-basis: 41.6667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    max-width: 58.3333%;
+    flex-basis: 58.3333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    max-width: 66.6667%;
+    flex-basis: 66.6667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    max-width: 83.3333%;
+    flex-basis: 83.3333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    max-width: 91.6667%;
+    flex-basis: 91.6667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+"
+`;
+
+exports[`snapshot: empty html 1`] = `
+<div
+  className="fcGrid-root"
+/>
+`;

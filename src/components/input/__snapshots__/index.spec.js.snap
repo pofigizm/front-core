@@ -1,0 +1,498 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth test-class fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot: only label css 1`] = `
+".MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1;
+}
+.MuiFormLabel-focused {
+  color: #304ffe;
+}
+.MuiFormLabel-error {
+  color: #ff1744;
+}
+.MuiFormLabel-disabled {
+  color: rgba(0, 0, 0, 0.42);
+}
+.MuiInputLabel-root {
+  transform-origin: top left;
+}
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 23px) scale(1);
+}
+.MuiInputLabel-labelDense {
+  transform: translate(0, 21px) scale(1);
+}
+.MuiInputLabel-shrink {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+.MuiInputLabel-animated {
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+.MuiInputLabel-disabled {
+  color: rgba(0, 0, 0, 0.42);
+}"
+`;
+
+exports[`snapshot: only label html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+    data-shrink={false}
+    htmlFor={undefined}
+  >
+    input
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot: read only css 1`] = `""`;
+
+exports[`snapshot: read only html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+    htmlFor={undefined}
+  >
+    input
+  </label>
+  <div
+    className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input fcInput-readOnly"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputDisabled MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={true}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value="Lorem ipsum"
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot: with handlers css 1`] = `""`;
+
+exports[`snapshot: with handlers html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+    htmlFor={undefined}
+  >
+    input
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value="Lorem ipsum"
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot: with long text css 1`] = `""`;
+
+exports[`snapshot: with long text html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+    htmlFor={undefined}
+  >
+    input
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value="\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\""
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot: with text css 1`] = `""`;
+
+exports[`snapshot: with text html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+    data-shrink={true}
+    htmlFor={undefined}
+  >
+    input
+  </label>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value="Lorem ipsum"
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshot: without props css 1`] = `
+".MuiInput-root {
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  align-items: baseline;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+}
+label + .MuiInput-formControl {
+  margin-top: 16px;
+}
+.MuiInput-inkbar:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  content: \\"\\";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  pointer-events: none;
+  background-color: #304ffe;
+}
+.MuiInput-inkbar.MuiInput-focused:after {
+  transform: scaleX(1);
+}
+.MuiInput-error:after {
+  transform: scaleX(1);
+  background-color: #ff1744;
+}
+.MuiInput-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 7px 0 9px;
+  display: block;
+  box-sizing: content-box;
+  background: none;
+  vertical-align: middle;
+}
+.MuiInput-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input:focus {
+  outline: 0;
+}
+.MuiInput-input:invalid {
+  box-shadow: none;
+}
+.MuiInput-input::-webkit-search-decoration {
+  appearance: none;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-moz-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:-ms-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-ms-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInput-inputDense {
+  padding-top: 4px;
+}
+.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  content: \\"\\";
+  position: absolute;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.MuiInput-underline:hover:not(.MuiInput-disabled):before {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.MuiInput-disabled:before {
+  background: transparent;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.MuiInput-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInput-inputDisabled {
+  opacity: 1;
+}
+.MuiInput-inputSingleline {
+  height: 1em;
+}
+.MuiInput-inputSearch {
+  appearance: textfield;
+}
+.MuiInput-inputMultiline {
+  resize: none;
+  padding: 0;
+}
+.MuiInput-fullWidth {
+  width: 100%;
+}
+.MuiFormControl-root {
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+.fcInput-input > input {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fcInput-readOnly > input {
+  color: rgba(0, 0, 0, 0.87);
+}"
+`;
+
+exports[`snapshot: without props html 1`] = `
+<div
+  className="MuiFormControl-root MuiFormControl-fullWidth fcInput-root"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  required={false}
+>
+  <div
+    className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      autoComplete={undefined}
+      autoFocus={undefined}
+      className="MuiInput-input MuiInput-inputSingleline"
+      defaultValue={undefined}
+      disabled={false}
+      id={undefined}
+      name={undefined}
+      onChange={[Function]}
+      onKeyDown={undefined}
+      onKeyUp={undefined}
+      placeholder={undefined}
+      readOnly={undefined}
+      required={undefined}
+      rows={undefined}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;

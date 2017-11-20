@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+/* eslint-disable no-console */
+/* eslint-disable function-paren-newline */
+
+const sync = require('child_process').spawnSync
+
+const args = process.argv.slice(2)
+
+const scriptIndex = args.findIndex(
+  x => x === 'build' || x === 'start' || x === 'test'
+)
+
+if (scriptIndex === -1) {
+  console.log(`Unknown script "${args[0]}".`)
+  process.exit(1)
+}
+
+const script = args[scriptIndex]
+const nodeArgs = scriptIndex > 0 ? args.slice(0, scriptIndex) : []
+
+const result = sync(
+  'node',
+  nodeArgs
+    .concat(require.resolve(`../scripts/${script}`))
+    .concat(args.slice(scriptIndex + 1)),
+  { stdio: 'inherit' }
+)
+process.exit(result.status)

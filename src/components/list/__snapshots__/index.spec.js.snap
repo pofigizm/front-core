@@ -1,0 +1,4538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: basic usage css 1`] = `
+".MuiTextarea-root {
+  width: 100%;
+  position: relative;
+}
+.MuiTextarea-textarea {
+  font: inherit;
+  width: 100%;
+  resize: none;
+  cursor: inherit;
+  border: none;
+  height: 100%;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  line-height: inherit;
+}
+.MuiTextarea-shadow {
+  resize: none;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  visibility: hidden;
+  white-space: pre-wrap;
+}
+.MuiInput-root {
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  align-items: baseline;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+}
+label + .MuiInput-formControl {
+  margin-top: 16px;
+}
+.MuiInput-inkbar:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  content: \\"\\";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  pointer-events: none;
+  background-color: #304ffe;
+}
+.MuiInput-inkbar.MuiInput-focused:after {
+  transform: scaleX(1);
+}
+.MuiInput-error:after {
+  transform: scaleX(1);
+  background-color: #ff1744;
+}
+.MuiInput-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 7px 0 9px;
+  display: block;
+  box-sizing: content-box;
+  background: none;
+  vertical-align: middle;
+}
+.MuiInput-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input:focus {
+  outline: 0;
+}
+.MuiInput-input:invalid {
+  box-shadow: none;
+}
+.MuiInput-input::-webkit-search-decoration {
+  appearance: none;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-moz-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:-ms-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-ms-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInput-inputDense {
+  padding-top: 4px;
+}
+.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  content: \\"\\";
+  position: absolute;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.MuiInput-underline:hover:not(.MuiInput-disabled):before {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.MuiInput-disabled:before {
+  background: transparent;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.MuiInput-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInput-inputDisabled {
+  opacity: 1;
+}
+.MuiInput-inputSingleline {
+  height: 1em;
+}
+.MuiInput-inputSearch {
+  appearance: textfield;
+}
+.MuiInput-inputMultiline {
+  resize: none;
+  padding: 0;
+}
+.MuiInput-fullWidth {
+  width: 100%;
+}
+.MuiFormControl-root {
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+.MuiTypography-root {
+  margin: 0;
+  display: block;
+}
+.MuiTypography-display4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.06em;
+  letter-spacing: -.04em;
+}
+.MuiTypography-display3 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.04em;
+  letter-spacing: -.02em;
+}
+.MuiTypography-display2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.04em;
+}
+.MuiTypography-display1 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.20588em;
+  margin-left: -.04em;
+}
+.MuiTypography-headline {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.35417em;
+}
+.MuiTypography-title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.16667em;
+}
+.MuiTypography-subheading {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.5em;
+}
+.MuiTypography-body2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.71429em;
+}
+.MuiTypography-body1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.46429em;
+}
+.MuiTypography-caption {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.375em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  text-transform: uppercase;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorAccent {
+  color: #f50057;
+}
+.MuiTypography-colorError {
+  color: #ff1744;
+}
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-wrapper {
+  opacity: 1;
+}
+.MuiTouchRipple-wrapperLeaving {
+  opacity: 0;
+  animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-wrapperPulsating {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@keyframes mui-ripple-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes mui-ripple-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mui-ripple-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.MuiTouchRipple-ripple {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+  background: currentColor;
+  border-radius: 50%;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-rippleFast {
+  animation-duration: 200ms;
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  outline: none;
+  position: relative;
+  appearance: none;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  width: 48px;
+  color: rgba(0, 0, 0, 0.54);
+  height: 48px;
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-colorAccent {
+  color: #ff4081;
+}
+.MuiIconButton-colorContrast {
+  color: rgba(255, 255, 255, 1);
+}
+.MuiIconButton-colorPrimary {
+  color: #3f51b5;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiIconButton-icon {
+  width: 1em;
+  height: 1em;
+}
+.MuiIconButton-keyboardFocused {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.fcTextArea-readOnly textarea {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTable-root {
+  width: 100%;
+  overflow: hidden;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.MuiTableBody-root {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+}
+.MuiTableCell-root {
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+.MuiTableCell-numeric {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.MuiTableCell-head {
+  position: relative;
+  font-weight: 500;
+}
+.MuiTableCell-paddingDefault {
+  padding: 4px 56px 4px 24px;
+}
+.MuiTableCell-paddingDefault:last-child {
+  padding-right: 24px;
+}
+.MuiTableCell-paddingDense {
+  padding-right: 24px;
+}
+.MuiTableCell-paddingCheckbox {
+  padding: 0 12px;
+}
+.MuiTableCell-footer {
+  border-bottom: 0;
+}
+.MuiTableHead-root {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.MuiTableRow-root {
+  color: inherit;
+  height: 48px;
+  display: table-row;
+  vertical-align: middle;
+}
+.MuiTableRow-root:focus {
+  outline: none;
+}
+.MuiTableRow-head {
+  height: 56px;
+}
+.MuiTableRow-footer {
+  height: 56px;
+}
+.MuiTableRow-hover:hover {
+  background: #eeeeee;
+}
+.MuiTableRow-selected {
+  background: #f5f5f5;
+}
+.fcList-root {
+  position: relative;
+}
+.fcList-label {
+  color: rgba(0, 0, 0, 0.54);
+  padding-left: 16px;
+}
+.fcList-shrink {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+.fcList-head {
+  height: 40px;
+}
+.fcList-cell {
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  vertical-align: bottom;
+}
+.fcList-cellTop {
+  vertical-align: top;
+}
+.fcList-removeBorder {
+  border-bottom: none;
+}
+.fcList-iconCell {
+  width: 24px;
+}
+.fcList-iconEmpty {
+  width: 8px;
+}
+.fcList-numberColl {
+  width: 24px;
+}
+.fcList-number {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 8px 0;
+  font-size: 10px;
+}
+.fcList-row {
+  height: 40px;
+}
+.fcList-action {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  margin-left: 4px;
+}
+.fcList-action:hover {
+  opacity: 1;
+}
+.fcList-addIcon {
+  color: #536dfe;
+}
+.fcList-deleteIcon {
+  width: 16px;
+  color: #ff4081;
+  height: 16px;
+}
+.fcList-empty {
+  padding-left: 16px;
+}"
+`;
+
+exports[`snapshot: basic usage html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label fcList-shrink"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Action
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Data
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="test-class fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label"
+  />
+  <table
+    className="MuiTable-root test-class fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    />
+  </table>
+</div>
+`;
+
+exports[`snapshot: empty css 1`] = `""`;
+
+exports[`snapshot: empty html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    />
+  </table>
+</div>
+`;
+
+exports[`snapshot: empty read only css 1`] = `""`;
+
+exports[`snapshot: empty read only html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconEmpty"
+        >
+          <span
+            className="fcList-empty"
+          >
+            Not filled
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    />
+  </table>
+</div>
+`;
+
+exports[`snapshot: read only css 1`] = `""`;
+
+exports[`snapshot: read only html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label fcList-shrink"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconEmpty"
+        />
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Action
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Data
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Checked
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        />
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={true}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={true}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <label
+              className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+            >
+              <span
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiSwitchBase-disabled MuiCheckbox-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role={undefined}
+                tabIndex={-1}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root MuiIconButton-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    checked={true}
+                    className="MuiSwitchBase-input"
+                    disabled={true}
+                    name={undefined}
+                    onChange={[Function]}
+                    tabIndex={undefined}
+                    type="checkbox"
+                    value={undefined}
+                  />
+                </span>
+              </span>
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                
+              </p>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        />
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={true}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={true}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <label
+              className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+            >
+              <span
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiSwitchBase-disabled MuiCheckbox-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role={undefined}
+                tabIndex={-1}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root MuiIconButton-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    checked={true}
+                    className="MuiSwitchBase-input"
+                    disabled={true}
+                    name={undefined}
+                    onChange={[Function]}
+                    tabIndex={undefined}
+                    type="checkbox"
+                    value={undefined}
+                  />
+                </span>
+              </span>
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                
+              </p>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        />
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={true}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={true}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <label
+              className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+            >
+              <span
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiSwitchBase-disabled MuiCheckbox-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role={undefined}
+                tabIndex={-1}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root MuiIconButton-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    checked={true}
+                    className="MuiSwitchBase-input"
+                    disabled={true}
+                    name={undefined}
+                    onChange={[Function]}
+                    tabIndex={undefined}
+                    type="checkbox"
+                    value={undefined}
+                  />
+                </span>
+              </span>
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                
+              </p>
+            </label>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`snapshot: with border & top css 1`] = `""`;
+
+exports[`snapshot: with border & top html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label fcList-shrink"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Action
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Data
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-cellTop"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`snapshot: with border css 1`] = `""`;
+
+exports[`snapshot: with border html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label fcList-shrink"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Action
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Data
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`snapshot: with component css 1`] = `
+".MuiFormControlLabel-root {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin-left: -14px;
+  margin-right: 16px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.MuiFormControlLabel-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiFormControlLabel-label {
+  user-select: none;
+}
+.MuiSwitchBase-root {
+  display: inline-flex;
+  transition: none;
+  align-items: center;
+}
+.MuiSwitchBase-input {
+  top: 0;
+  left: 0;
+  width: 100%;
+  cursor: inherit;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+}
+.MuiCheckbox-default {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiCheckbox-checked {
+  color: #3f51b5;
+}
+.MuiCheckbox-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+"
+`;
+
+exports[`snapshot: with component html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label fcList-shrink"
+  >
+    List
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Action
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Data
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Checked
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <label
+              className="MuiFormControlLabel-root"
+            >
+              <span
+                className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked"
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role={undefined}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root MuiIconButton-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    checked={true}
+                    className="MuiSwitchBase-input"
+                    disabled={false}
+                    name={undefined}
+                    onChange={[Function]}
+                    tabIndex={undefined}
+                    type="checkbox"
+                    value={undefined}
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </span>
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                
+              </p>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <label
+              className="MuiFormControlLabel-root"
+            >
+              <span
+                className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked"
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role={undefined}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root MuiIconButton-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    checked={true}
+                    className="MuiSwitchBase-input"
+                    disabled={false}
+                    name={undefined}
+                    onChange={[Function]}
+                    tabIndex={undefined}
+                    type="checkbox"
+                    value={undefined}
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </span>
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                
+              </p>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <label
+              className="MuiFormControlLabel-root"
+            >
+              <span
+                className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked"
+                disabled={false}
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role={undefined}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root MuiIconButton-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    checked={true}
+                    className="MuiSwitchBase-input"
+                    disabled={false}
+                    name={undefined}
+                    onChange={[Function]}
+                    tabIndex={undefined}
+                    type="checkbox"
+                    value={undefined}
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </span>
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+              >
+                
+              </p>
+            </label>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`snapshot: with numbers css 1`] = `""`;
+
+exports[`snapshot: with numbers html 1`] = `
+<div
+  className="fcList-root"
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1 fcList-label fcList-shrink"
+  >
+    Editable list
+  </p>
+  <table
+    className="MuiTable-root fcList-root"
+  >
+    <thead
+      className="MuiTableHead-root"
+    >
+      <tr
+        className="MuiTableRow-root MuiTableRow-head fcList-head"
+      >
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head fcList-numberColl"
+        />
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Action
+        </th>
+        <th
+          className="MuiTableCell-root MuiTableCell-head"
+        >
+          Data
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="MuiTableBody-root"
+    >
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="fcList-number"
+          >
+            1
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-1"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-1"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="fcList-number"
+          >
+            2
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-2"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-2"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="MuiTableRow-root fcList-row"
+      >
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <button
+            className="MuiButtonBase-root MuiIconButton-root fcList-action"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                />
+              </svg>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="fcList-number"
+          >
+            3
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="action-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="action-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+        <td
+          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+        >
+          <div
+            className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            required={false}
+          >
+            <div
+              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <div
+                className="MuiTextarea-root"
+                style={
+                  Object {
+                    "height": 24,
+                  }
+                }
+              >
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  readOnly={true}
+                  rows="1"
+                  tabIndex={-1}
+                  value=""
+                />
+                <textarea
+                  aria-hidden="true"
+                  className="MuiTextarea-shadow MuiTextarea-textarea"
+                  defaultValue={undefined}
+                  readOnly={true}
+                  rows={1}
+                  tabIndex={-1}
+                  value="data-3"
+                />
+                <textarea
+                  autoComplete={undefined}
+                  autoFocus={undefined}
+                  className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+                  defaultValue={undefined}
+                  disabled={false}
+                  id={undefined}
+                  name={undefined}
+                  onChange={[Function]}
+                  onKeyDown={undefined}
+                  onKeyUp={undefined}
+                  placeholder={undefined}
+                  readOnly={undefined}
+                  required={undefined}
+                  rows={1}
+                  type="text"
+                  value="data-3"
+                />
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

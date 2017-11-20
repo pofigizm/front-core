@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot: basic usage css 1`] = `
+".MuiTypography-root {
+  margin: 0;
+  display: block;
+}
+.MuiTypography-display4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.06em;
+  letter-spacing: -.04em;
+}
+.MuiTypography-display3 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.04em;
+  letter-spacing: -.02em;
+}
+.MuiTypography-display2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.04em;
+}
+.MuiTypography-display1 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.20588em;
+  margin-left: -.04em;
+}
+.MuiTypography-headline {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.35417em;
+}
+.MuiTypography-title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.16667em;
+}
+.MuiTypography-subheading {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.5em;
+}
+.MuiTypography-body2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.71429em;
+}
+.MuiTypography-body1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.46429em;
+}
+.MuiTypography-caption {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.375em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  text-transform: uppercase;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorAccent {
+  color: #f50057;
+}
+.MuiTypography-colorError {
+  color: #ff1744;
+}
+
+.fcBreadcrumbs-root > a {
+  color: #c51162;
+  text-decoration: none;
+}
+.fcBreadcrumbs-root > a:visited {
+  color: #c51162;
+}
+.fcBreadcrumbs-opacity {
+  opacity: 0.5;
+}
+.fcBreadcrumbs-opacity:hover {
+  opacity: 1;
+}
+.fcBreadcrumbs-separator {
+  padding: 0 8px;
+}
+.fcHeader-root {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.fcHeader-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fcHeader-title {
+  margin-top: 8px;
+}"
+`;
+
+exports[`snapshot: basic usage html 1`] = `
+<div
+  className="fcHeader-root"
+>
+  <div
+    className="fcHeader-main"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+    >
+      <span />
+      <span
+        className="fcBreadcrumbs-separator"
+      >
+        /
+      </span>
+      <span />
+    </p>
+    <h2
+      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
+    >
+      Lorem ipsum
+    </h2>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "coral",
+        "padding": 15,
+      }
+    }
+  >
+    children component
+  </div>
+</div>
+`;
+
+exports[`snapshot: className css 1`] = `""`;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="test-class fcHeader-root"
+>
+  <div
+    className="fcHeader-main"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+    />
+    <h2
+      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
+    />
+  </div>
+</div>
+`;
