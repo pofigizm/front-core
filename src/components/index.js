@@ -34,7 +34,8 @@ const styles = theme => ({
     textDecoration: 'none',
   },
   content: {
-    width: '100%',
+    width: 'calc(100% - 60px)',
+    boxSizing: 'border-box',
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,

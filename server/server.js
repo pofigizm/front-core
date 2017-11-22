@@ -24,11 +24,11 @@ const compiler = webpack(webpackConfig)
 // api example
 const apiMock = path.join(paths.appRoot, 'api-mock.json')
 if (fs.existsSync(apiMock)) {
-  app.post('/api-mock', (req, res, next) => {
+  app.post('/api-mock*', (req, res, next) => {
     req.method = 'GET'
     next()
   })
-  app.use('/api-mock', express.static(apiMock))
+  app.use('/api-mock*', express.static(apiMock))
 }
 
 // remote save

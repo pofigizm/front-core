@@ -8,7 +8,7 @@ import { getRoute } from 'src/selectors'
 
 export default ({ store, reducers }) => {
   const onLoad = (moduleObject, _, { modulePath }) => {
-    const route = (moduleObject.constants || {}).ROUTE
+    const route = (moduleObject.constants || {}).STORE_KEY
 
     if (moduleObject.middleware) {
       addMiddleware(moduleObject.middleware)

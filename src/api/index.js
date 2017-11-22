@@ -115,7 +115,7 @@ const createApiRequest = ({ key, url, noCache }, { check, fetch = window.fetch }
       }, 50)
     }
 
-    if (__LOC__ && isDevEnabled('api-cache') && isDevEnabled('api-save')) {
+    if (__LOC__ && (isDevEnabled('api-cache') || isDevEnabled('api-save'))) {
       return new Promise((resolve) => {
         const saver = ({ error, result }) => {
           if (error) {
@@ -126,7 +126,11 @@ const createApiRequest = ({ key, url, noCache }, { check, fetch = window.fetch }
           const req = urlEncode({ url, method, params })
           const prev = JSON.parse(localStorage.getItem('api-cache')) || {}
           prev[req] = { result }
-          localStorage.setItem('api-cache', stringify(prev))
+          try {
+            localStorage.setItem('api-cache', stringify(prev))
+          } catch (err) {
+            //
+          }
 
           if (isDevEnabled('api-save')) {
             // persist by remote-save
