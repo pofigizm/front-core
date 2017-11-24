@@ -46,7 +46,10 @@ const getHeders = () => {
   return headers
 }
 
-const createApiRequest = ({ key, url, noCache }, { check, fetch = window.fetch } = {}) => {
+const createApiRequest = (
+  { key, url, noCache },
+  { check, noKeyConvert, fetch = window.fetch } = {},
+) => {
   const coreData = {
     requests: [],
     timer: null,
@@ -62,8 +65,9 @@ const createApiRequest = ({ key, url, noCache }, { check, fetch = window.fetch }
     const resolves = {}
     const builder = ({ request, resolve }, id) => {
       resolves[id] = resolve
+      const props = noKeyConvert ? request : toSnakecase(request)
       return {
-        ...toSnakecase(request),
+        ...props,
         jsonrpc: '2.0',
         id,
       }
@@ -82,6 +86,7 @@ const createApiRequest = ({ key, url, noCache }, { check, fetch = window.fetch }
       .then(res => res.map(({ error, result, id }) => {
         const cb = resolves[id]
         if (error) return cb({ error })
+        if (noKeyConvert) return cb({ result })
         return cb(toCamelcase({ result }))
       }))
       .catch(error => Object.values(resolves).map(r => r({ error })))
