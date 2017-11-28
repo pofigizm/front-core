@@ -1,4 +1,2 @@
-import { createSelector, defaultMemoize } from 'reselect'
-
-export const create = createSelector
-export const memoize = defaultMemoize
+export { createSelector as create, defaultMemoize as memoize } from 'reselect'
+export { default as rafThrottle } from 'raf-throttle'

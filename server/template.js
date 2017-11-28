@@ -1,3 +1,4 @@
+const title = process.env.APP_TITLE || 'Front core'
 const template = ({
   css = '',
   html = '',
@@ -7,7 +8,7 @@ const template = ({
   <!doctype html>
   <html>
     <head>
-      <title>Front core</title>
+      <title>${title}</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
       <link rel="icon" href="data:;base64,=">

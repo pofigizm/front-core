@@ -33,18 +33,21 @@ const action = () => Function.prototype
 const previewRunner = (dir, fn) => {
   jest.mock('react-dom')
 
-  let previewData
+  let previewDataLoaded
   try {
-    previewData = require(`${dir}/index.preview.js`).default
+    previewDataLoaded = require(`${dir}/index.preview.js`).default
   } catch (_) {
-    previewData = [() => ({
+    previewDataLoaded = [() => ({
       _preview: 'empty',
     })]
   }
-  previewData.push(() => ({
-    _preview: 'className',
-    className: 'test-class',
-  }))
+  const previewData = [
+    () => ({
+      _preview: 'className',
+      className: 'test-class',
+    }),
+    ...previewDataLoaded,
+  ]
 
   let runner
   if (fn) {

@@ -1,4 +1,3 @@
-/* eslint-disable function-paren-newline */
 const webpack = require('webpack')
 const MinifyPlugin = require('babel-minify-webpack-plugin')
 const paths = require('./paths')
@@ -57,8 +56,8 @@ module.exports = {
       // for consistent lib
       react: require.resolve('react'),
       classnames: require.resolve('classnames'),
-      'react-redux': require.require('react-redux'),
-      'redux-first-router-link': require.require('redux-first-router-link'),
+      'react-redux': require.resolve('react-redux'),
+      'redux-first-router-link': require.resolve('redux-first-router-link'),
     },
   },
   plugins: [
