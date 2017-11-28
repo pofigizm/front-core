@@ -1,12 +1,13 @@
 import { connect } from 'react-redux'
+import { NavLink } from 'redux-first-router-link'
 
 import { compareByKey } from 'src/utils/helpers'
 import { memoize } from 'src/utils/functions'
+import { App } from 'src/components'
 
 import * as actions from './actions'
 import * as selectors from './selectors'
 
-import Index from './components'
 
 const getMessageList = memoize(messages => Object.values(messages)
   .filter(message => !message.hide)
@@ -24,7 +25,8 @@ const mapState = (state, { title, menu }) => {
     user,
     authRequired,
     messageList,
+    NavLink,
   }
 }
 
-export default connect(mapState, actions)(Index)
+export default connect(mapState, actions)(App)

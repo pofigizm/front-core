@@ -1,11 +1,8 @@
-/* eslint-disable prefer-template */
-/* eslint-disable jsx-quotes */
-/* eslint-disable no-underscore-dangle */
 import React from 'react'
 import { configure, storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { MuiThemeProvider, createMuiTheme } from 'src/styles'
+import { MuiThemeProvider, createMuiTheme } from 'src/components/origin'
 
 const theme = createMuiTheme({
   spacing: {
@@ -68,7 +65,7 @@ const loadStories = () => {
 
         if (preview.State) {
           st.add('State', () => (
-            <div className='storybook-all-wrapper'>
+            <div className="storybook-all-wrapper">
               <div>
                 <MuiThemeProvider theme={theme}>
                   <preview.State Target={Story} action={action} />
@@ -79,7 +76,7 @@ const loadStories = () => {
         }
 
         st.add('all', () => (
-          <div className='storybook-all-wrapper'>
+          <div className="storybook-all-wrapper">
             { data.filter(p => !p({ action })._skip).map(wrap) }
           </div>
         ))

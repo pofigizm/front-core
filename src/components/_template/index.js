@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
-import { withStyles } from 'material-ui/styles'
 import cn from 'classnames'
+import { withStyles } from 'src/components/origin'
 
 const styles = () => ({
   root: {

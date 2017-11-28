@@ -54,6 +54,11 @@ module.exports = {
     alias: {
       'app-src': paths.appSrc,
       src: paths.ownSrc,
+      // for consistent lib
+      react: require.resolve('react'),
+      classnames: require.resolve('classnames'),
+      'react-redux': require.require('react-redux'),
+      'redux-first-router-link': require.require('redux-first-router-link'),
     },
   },
   plugins: [
