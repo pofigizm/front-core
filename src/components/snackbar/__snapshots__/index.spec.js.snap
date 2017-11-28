@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `null`;
-
-exports[`snapshot: empty css 1`] = `
+exports[`snapshot: className css 1`] = `
 ".MuiSnackbar-root {
   left: 0;
   right: 0;
@@ -86,5 +82,9 @@ exports[`snapshot: empty css 1`] = `
   margin: 8px;
 }"
 `;
+
+exports[`snapshot: className html 1`] = `null`;
+
+exports[`snapshot: empty css 1`] = `""`;
 
 exports[`snapshot: empty html 1`] = `null`;

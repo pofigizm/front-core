@@ -1,56 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 test-class fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
-/>
-`;
-
-exports[`snapshot: default links and text css 1`] = `""`;
-
-exports[`snapshot: default links and text html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
->
-  <a
-    href="/first"
-  >
-    First
-  </a>
-  <span
-    className="fcBreadcrumbs-separator"
-  >
-    /
-  </span>
-  <span>
-    Second
-  </span>
-</p>
-`;
-
-exports[`snapshot: extended links css 1`] = `""`;
-
-exports[`snapshot: extended links html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
->
-  <b>
-    First
-  </b>
-  <span
-    className="fcBreadcrumbs-separator"
-  >
-    /
-  </span>
-  <b>
-    Second
-  </b>
-</p>
-`;
-
-exports[`snapshot: one text element css 1`] = `
+exports[`snapshot: className css 1`] = `
 ".MuiTypography-root {
   margin: 0;
   display: block;
@@ -193,6 +143,56 @@ exports[`snapshot: one text element css 1`] = `
   padding: 0 8px;
 }"
 `;
+
+exports[`snapshot: className html 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 test-class fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+/>
+`;
+
+exports[`snapshot: default links and text css 1`] = `""`;
+
+exports[`snapshot: default links and text html 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+>
+  <a
+    href="/first"
+  >
+    First
+  </a>
+  <span
+    className="fcBreadcrumbs-separator"
+  >
+    /
+  </span>
+  <span>
+    Second
+  </span>
+</p>
+`;
+
+exports[`snapshot: extended links css 1`] = `""`;
+
+exports[`snapshot: extended links html 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+>
+  <b>
+    First
+  </b>
+  <span
+    className="fcBreadcrumbs-separator"
+  >
+    /
+  </span>
+  <b>
+    Second
+  </b>
+</p>
+`;
+
+exports[`snapshot: one text element css 1`] = `""`;
 
 exports[`snapshot: one text element html 1`] = `
 <p

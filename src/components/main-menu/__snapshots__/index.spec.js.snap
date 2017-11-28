@@ -1,24 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `
-<ul
-  className="MuiList-root MuiList-padding fcMenu-root"
-/>
-`;
-
-exports[`snapshot: without props css 1`] = `
-".MuiSvgIcon-root {
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  user-select: none;
-  flex-shrink: 0;
-}
-.MuiList-root {
+exports[`snapshot: className css 1`] = `
+".MuiList-root {
   flex: 1 1 auto;
   margin: 0;
   padding: 0;
@@ -35,6 +18,33 @@ exports[`snapshot: without props css 1`] = `
 }
 .MuiList-subheader {
   padding-top: 0;
+}
+.fcMenu-root {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+}
+.fcMenu-link {
+  color: #fff;
+  text-decoration: none;
+}"
+`;
+
+exports[`snapshot: className html 1`] = `
+<ul
+  className="MuiList-root MuiList-padding fcMenu-root"
+/>
+`;
+
+exports[`snapshot: without props css 1`] = `
+".MuiSvgIcon-root {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -327,15 +337,6 @@ exports[`snapshot: without props css 1`] = `
   height: 24px;
   flex-shrink: 0;
   margin-right: 16px;
-}
-.fcMenu-root {
-  width: 100%;
-  max-width: 360px;
-  background: #fff;
-}
-.fcMenu-link {
-  color: #fff;
-  text-decoration: none;
 }"
 `;
 

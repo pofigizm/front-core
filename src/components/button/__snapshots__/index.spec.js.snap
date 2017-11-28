@@ -1,222 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root test-class"
-  disabled={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
-`;
-
-exports[`snapshot: label and raised css 1`] = `""`;
-
-exports[`snapshot: label and raised html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-flatPrimary fcButton-root"
-  disabled={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    button
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
-`;
-
-exports[`snapshot: only label css 1`] = `""`;
-
-exports[`snapshot: only label html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
-  disabled={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    button
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
-`;
-
-exports[`snapshot: read only css 1`] = `""`;
-
-exports[`snapshot: read only html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-raised MuiButton-raisedPrimary MuiButton-disabled fcButton-root"
-  disabled={true}
-  onBlur={[Function]}
-  onClick={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={-1}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    button
-  </span>
-</button>
-`;
-
-exports[`snapshot: with handlers css 1`] = `""`;
-
-exports[`snapshot: with handlers html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
-  disabled={false}
-  onBlur={[Function]}
-  onClick={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    button
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
-`;
-
-exports[`snapshot: with long text css 1`] = `""`;
-
-exports[`snapshot: with long text html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
-  disabled={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
-`;
-
-exports[`snapshot: with text css 1`] = `""`;
-
-exports[`snapshot: with text html 1`] = `
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedAccent fcButton-root"
-  disabled={false}
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  role="button"
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
-  >
-    button
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
-`;
-
-exports[`snapshot: without props css 1`] = `
+exports[`snapshot: className css 1`] = `
 ".MuiTouchRipple-root {
   top: 0;
   left: 0;
@@ -463,6 +247,222 @@ exports[`snapshot: without props css 1`] = `
   width: 100%;
 }"
 `;
+
+exports[`snapshot: className html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root test-class"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`snapshot: label and raised css 1`] = `""`;
+
+exports[`snapshot: label and raised html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-flatPrimary fcButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    button
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`snapshot: only label css 1`] = `""`;
+
+exports[`snapshot: only label html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    button
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`snapshot: read only css 1`] = `""`;
+
+exports[`snapshot: read only html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-raised MuiButton-raisedPrimary MuiButton-disabled fcButton-root"
+  disabled={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    button
+  </span>
+</button>
+`;
+
+exports[`snapshot: with handlers css 1`] = `""`;
+
+exports[`snapshot: with handlers html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    button
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`snapshot: with long text css 1`] = `""`;
+
+exports[`snapshot: with long text html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`snapshot: with text css 1`] = `""`;
+
+exports[`snapshot: with text html 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedAccent fcButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    button
+  </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
 <button

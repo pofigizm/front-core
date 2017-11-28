@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `
-<div
-  className="test-class fcGrid-root"
-/>
-`;
-
-exports[`snapshot: empty css 1`] = `
+exports[`snapshot: className css 1`] = `
 ".MuiGrid-typeContainer {
   width: 100%;
   display: flex;
@@ -377,6 +369,14 @@ exports[`snapshot: empty css 1`] = `
 }
 "
 `;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="test-class fcGrid-root"
+/>
+`;
+
+exports[`snapshot: empty css 1`] = `""`;
 
 exports[`snapshot: empty html 1`] = `
 <div

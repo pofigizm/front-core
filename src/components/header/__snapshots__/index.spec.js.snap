@@ -1,6 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: basic usage css 1`] = `
+exports[`snapshot: basic usage css 1`] = `""`;
+
+exports[`snapshot: basic usage html 1`] = `
+<div
+  className="fcHeader-root"
+>
+  <div
+    className="fcHeader-main"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+    >
+      <span />
+      <span
+        className="fcBreadcrumbs-separator"
+      >
+        /
+      </span>
+      <span />
+    </p>
+    <h2
+      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
+    >
+      Lorem ipsum
+    </h2>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "coral",
+        "padding": 15,
+      }
+    }
+  >
+    children component
+  </div>
+</div>
+`;
+
+exports[`snapshot: className css 1`] = `
 ".MuiTypography-root {
   margin: 0;
   display: block;
@@ -156,45 +195,6 @@ exports[`snapshot: basic usage css 1`] = `
   margin-top: 8px;
 }"
 `;
-
-exports[`snapshot: basic usage html 1`] = `
-<div
-  className="fcHeader-root"
->
-  <div
-    className="fcHeader-main"
-  >
-    <p
-      className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
-    >
-      <span />
-      <span
-        className="fcBreadcrumbs-separator"
-      >
-        /
-      </span>
-      <span />
-    </p>
-    <h2
-      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
-    >
-      Lorem ipsum
-    </h2>
-  </div>
-  <div
-    style={
-      Object {
-        "backgroundColor": "coral",
-        "padding": 15,
-      }
-    }
-  >
-    children component
-  </div>
-</div>
-`;
-
-exports[`snapshot: className css 1`] = `""`;
 
 exports[`snapshot: className html 1`] = `
 <div

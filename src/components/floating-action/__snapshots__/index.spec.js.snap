@@ -1,6 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: basic usage css 1`] = `
+exports[`snapshot: basic usage css 1`] = `""`;
+
+exports[`snapshot: basic usage html 1`] = `
+<div
+  className="fcFloatingAction-root"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="fcFloatingAction-item"
+    onClick={[Function]}
+  >
+    <div
+      className="MuiTooltip-root"
+    >
+      <button
+        aria-describedby={undefined}
+        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedAccent fcFloatingAction-button"
+        disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-plusIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-opened"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <div
+        className="MuiTooltip-popper MuiTooltip-popperClose"
+        data-placement={undefined}
+        data-x-out-of-boundaries={undefined}
+        style={
+          Object {
+            "opacity": 0,
+            "pointerEvents": "none",
+            "position": "absolute",
+          }
+        }
+      >
+        <div
+          aria-hidden={true}
+          className="MuiTooltip-tooltip MuiTooltip-tooltipLeft"
+          id={undefined}
+          role="tooltip"
+        >
+          Add
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot: className css 1`] = `
 ".MuiSvgIcon-root {
   fill: currentColor;
   width: 24px;
@@ -372,94 +460,6 @@ exports[`snapshot: basic usage css 1`] = `
   margin: 8px;
 }"
 `;
-
-exports[`snapshot: basic usage html 1`] = `
-<div
-  className="fcFloatingAction-root"
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
->
-  <div
-    className="fcFloatingAction-item"
-    onClick={[Function]}
-  >
-    <div
-      className="MuiTooltip-root"
-    >
-      <button
-        aria-describedby={undefined}
-        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedAccent fcFloatingAction-button"
-        disabled={false}
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        role="button"
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-plusIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-            />
-          </svg>
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-opened"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-            />
-          </svg>
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
-      <div
-        className="MuiTooltip-popper MuiTooltip-popperClose"
-        data-placement={undefined}
-        data-x-out-of-boundaries={undefined}
-        style={
-          Object {
-            "opacity": 0,
-            "pointerEvents": "none",
-            "position": "absolute",
-          }
-        }
-      >
-        <div
-          aria-hidden={true}
-          className="MuiTooltip-tooltip MuiTooltip-tooltipLeft"
-          id={undefined}
-          role="tooltip"
-        >
-          Add
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`snapshot: className css 1`] = `""`;
 
 exports[`snapshot: className html 1`] = `
 <div

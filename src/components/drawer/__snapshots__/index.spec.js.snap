@@ -1,63 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `
-<div
-  className="MuiDrawer-docked"
->
-  <div
-    className="MuiPaper-root MuiPaper-shadow0 MuiDrawer-paper fcDrawer-drawerPaper fcDrawer-drawerPaperClose MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
-  >
-    <div
-      className="fcDrawer-drawerInner"
-    >
-      <div
-        className="fcDrawer-drawerHeader"
-      >
-        <button
-          className="MuiButtonBase-root MuiIconButton-root"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={undefined}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex={0}
-          type="button"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              className="MuiSvgIcon-root MuiIconButton-icon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`snapshot: empty css 1`] = `
+exports[`snapshot: className css 1`] = `
 ".MuiPaper-root {
   background-color: #fff;
 }
@@ -360,6 +303,63 @@ exports[`snapshot: empty css 1`] = `
   }
 }"
 `;
+
+exports[`snapshot: className html 1`] = `
+<div
+  className="MuiDrawer-docked"
+>
+  <div
+    className="MuiPaper-root MuiPaper-shadow0 MuiDrawer-paper fcDrawer-drawerPaper fcDrawer-drawerPaperClose MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+  >
+    <div
+      className="fcDrawer-drawerInner"
+    >
+      <div
+        className="fcDrawer-drawerHeader"
+      >
+        <button
+          className="MuiButtonBase-root MuiIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={undefined}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiIconButton-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot: empty css 1`] = `""`;
 
 exports[`snapshot: empty html 1`] = `
 <div

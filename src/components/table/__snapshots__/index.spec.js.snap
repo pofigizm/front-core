@@ -1,6 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
+exports[`snapshot: className css 1`] = `
+".MuiTypography-root {
+  margin: 0;
+  display: block;
+}
+.MuiTypography-display4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.06em;
+  letter-spacing: -.04em;
+}
+.MuiTypography-display3 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.04em;
+  letter-spacing: -.02em;
+}
+.MuiTypography-display2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.04em;
+}
+.MuiTypography-display1 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.20588em;
+  margin-left: -.04em;
+}
+.MuiTypography-headline {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.35417em;
+}
+.MuiTypography-title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.16667em;
+}
+.MuiTypography-subheading {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.5em;
+}
+.MuiTypography-body2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.71429em;
+}
+.MuiTypography-body1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.46429em;
+}
+.MuiTypography-caption {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.375em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  text-transform: uppercase;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorAccent {
+  color: #f50057;
+}
+.MuiTypography-colorError {
+  color: #ff1744;
+}
+
+.fcTable-root a {
+  color: #c51162;
+  text-decoration: none;
+}
+.fcTable-root a:visited {
+  color: #c51162;
+}
+.fcTable-nothing {
+  margin-top: 48px;
+}
+.fcTable-cell {
+  white-space: normal;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.fcTable-highlight {
+  background-color: #e8eaf6;
+}
+.fcTable-pointer {
+  cursor: pointer;
+}"
+`;
 
 exports[`snapshot: className html 1`] = `
 <h3
@@ -504,154 +651,7 @@ exports[`snapshot: with text and type html 2`] = `
 </div>
 `;
 
-exports[`snapshot: without props css 1`] = `
-".MuiTypography-root {
-  margin: 0;
-  display: block;
-}
-.MuiTypography-display4 {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 7rem;
-  font-weight: 300;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.14286em;
-  margin-left: -.06em;
-  letter-spacing: -.04em;
-}
-.MuiTypography-display3 {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 3.5rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.30357em;
-  margin-left: -.04em;
-  letter-spacing: -.02em;
-}
-.MuiTypography-display2 {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 2.8125rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.06667em;
-  margin-left: -.04em;
-}
-.MuiTypography-display1 {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 2.125rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.20588em;
-  margin-left: -.04em;
-}
-.MuiTypography-headline {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.35417em;
-}
-.MuiTypography-title {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 1.3125rem;
-  font-weight: 500;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.16667em;
-}
-.MuiTypography-subheading {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.5em;
-}
-.MuiTypography-body2 {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 0.875rem;
-  font-weight: 500;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.71429em;
-}
-.MuiTypography-body1 {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 0.875rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.46429em;
-}
-.MuiTypography-caption {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 0.75rem;
-  font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1.375em;
-}
-.MuiTypography-button {
-  font-size: 0.875rem;
-  font-weight: 500;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  text-transform: uppercase;
-}
-.MuiTypography-alignLeft {
-  text-align: left;
-}
-.MuiTypography-alignCenter {
-  text-align: center;
-}
-.MuiTypography-alignRight {
-  text-align: right;
-}
-.MuiTypography-alignJustify {
-  text-align: justify;
-}
-.MuiTypography-noWrap {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.MuiTypography-gutterBottom {
-  margin-bottom: 0.35em;
-}
-.MuiTypography-paragraph {
-  margin-bottom: 16px;
-}
-.MuiTypography-colorInherit {
-  color: inherit;
-}
-.MuiTypography-colorPrimary {
-  color: #3f51b5;
-}
-.MuiTypography-colorSecondary {
-  color: rgba(0, 0, 0, 0.54);
-}
-.MuiTypography-colorAccent {
-  color: #f50057;
-}
-.MuiTypography-colorError {
-  color: #ff1744;
-}
-
-.fcTable-root a {
-  color: #c51162;
-  text-decoration: none;
-}
-.fcTable-root a:visited {
-  color: #c51162;
-}
-.fcTable-nothing {
-  margin-top: 48px;
-}
-.fcTable-cell {
-  white-space: normal;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.fcTable-highlight {
-  background-color: #e8eaf6;
-}
-.fcTable-pointer {
-  cursor: pointer;
-}"
-`;
+exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
 <h3

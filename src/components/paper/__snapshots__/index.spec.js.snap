@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: base level css 1`] = `
+exports[`snapshot: base level css 1`] = `""`;
+
+exports[`snapshot: base level html 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-shadow4 MuiPaper-rounded fcPaper-root"
+>
+  <div
+    style={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    Lorem ipsum
+  </div>
+</div>
+`;
+
+exports[`snapshot: className css 1`] = `
 ".MuiPaper-root {
   background-color: #fff;
 }
@@ -84,24 +102,6 @@ exports[`snapshot: base level css 1`] = `
 }
 "
 `;
-
-exports[`snapshot: base level html 1`] = `
-<div
-  className="MuiPaper-root MuiPaper-shadow4 MuiPaper-rounded fcPaper-root"
->
-  <div
-    style={
-      Object {
-        "padding": 20,
-      }
-    }
-  >
-    Lorem ipsum
-  </div>
-</div>
-`;
-
-exports[`snapshot: className css 1`] = `""`;
 
 exports[`snapshot: className html 1`] = `
 <div

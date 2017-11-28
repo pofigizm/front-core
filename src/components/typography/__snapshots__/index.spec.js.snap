@@ -1,44 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot: className css 1`] = `""`;
-
-exports[`snapshot: className html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 test-class fcTypography-root"
-/>
-`;
-
-exports[`snapshot: with conponent css 1`] = `""`;
-
-exports[`snapshot: with conponent html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 fcTypography-root"
->
-  <span
-    style={
-      Object {
-        "backgroundColor": "coral",
-        "display": "block",
-        "padding": 15,
-      }
-    }
-  >
-    children component
-  </span>
-</p>
-`;
-
-exports[`snapshot: with text and type css 1`] = `""`;
-
-exports[`snapshot: with text and type html 1`] = `
-<h2
-  className="MuiTypography-root MuiTypography-title fcTypography-root"
->
-  Lorem ipsum
-</h2>
-`;
-
-exports[`snapshot: with text css 1`] = `
+exports[`snapshot: className css 1`] = `
 ".MuiTypography-root {
   margin: 0;
   display: block;
@@ -165,6 +127,44 @@ exports[`snapshot: with text css 1`] = `
 }
 "
 `;
+
+exports[`snapshot: className html 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 test-class fcTypography-root"
+/>
+`;
+
+exports[`snapshot: with conponent css 1`] = `""`;
+
+exports[`snapshot: with conponent html 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 fcTypography-root"
+>
+  <span
+    style={
+      Object {
+        "backgroundColor": "coral",
+        "display": "block",
+        "padding": 15,
+      }
+    }
+  >
+    children component
+  </span>
+</p>
+`;
+
+exports[`snapshot: with text and type css 1`] = `""`;
+
+exports[`snapshot: with text and type html 1`] = `
+<h2
+  className="MuiTypography-root MuiTypography-title fcTypography-root"
+>
+  Lorem ipsum
+</h2>
+`;
+
+exports[`snapshot: with text css 1`] = `""`;
 
 exports[`snapshot: with text html 1`] = `
 <p
