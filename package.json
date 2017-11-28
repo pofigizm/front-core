@@ -45,6 +45,7 @@
     "husky": "0.14.3",
     "jest": "21.2.1",
     "json-stable-stringify": "1.0.1",
+    "lodash": "4.17.4",
     "map-obj": "2.0.0",
     "material-ui": "1.0.0-beta.21",
     "material-ui-icons": "1.0.0-beta.17",
