@@ -12,7 +12,7 @@ const env = {
   prod: NODE_ENV === 'production',
 }
 
-module.exports = {
+const generate = (buildFolder, publicPath = '/') => ({
   devtool: !env.prod ? 'eval' : false,
   entry: {
     core: !env.loc ?
@@ -28,10 +28,10 @@ module.exports = {
       ],
   },
   output: {
-    path: paths.appBuild,
+    path: buildFolder,
     filename: '[name].js?v=[hash]',
     chunkFilename: '[name].js?v=[hash]',
-    publicPath: '/',
+    publicPath,
   },
   module: {
     rules: [
@@ -95,4 +95,9 @@ module.exports = {
     __filename: true,
     __dirname: true,
   },
+})
+
+module.exports = {
+  default: generate(paths.appBuild),
+  generate,
 }

@@ -5,7 +5,7 @@ const getHeders = () => {
   return headers
 }
 
-const getOriginWorker = (config, url) => ({ method, params, id }) => {
+const getOriginWorker = (config, url = '') => ({ method, params, id }) => {
   // TODO: query string cleator
   const [type, path] = method.includes(':') ? method.split(':') : ['GET', method]
   const query = Object.entries(params || {})

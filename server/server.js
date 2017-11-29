@@ -19,7 +19,7 @@ const handler = (req, res) => {
 const app = express()
 const port = 3100
 
-const compiler = webpack(webpackConfig)
+const compiler = webpack(webpackConfig.default)
 
 // api example
 const apiMock = path.join(paths.appRoot, 'api-mock.json')
@@ -42,7 +42,7 @@ app.use(webpackDevMiddleware(compiler, {
   color: true,
   hot: true,
   noInfo: true,
-  publicPath: webpackConfig.output.publicPath,
+  publicPath: webpackConfig.default.output.publicPath,
 }))
 app.use(webpackHotMiddleware(compiler))
 app.use(handler)

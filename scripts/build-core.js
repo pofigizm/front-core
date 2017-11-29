@@ -15,13 +15,16 @@ require('babel-register')({
 global.__LOC__ = false
 const tmpl = require('../server/template').default
 
-const appBuild = process.env.APP_BUILD_FOLDER || paths.appBuild
-fs.emptyDirSync(appBuild)
+const envFolder = process.env.APP_BUILD_FOLDER
+const envPublicPath = process.env.APP_PUBLIC_PATH
 
-fs.outputFileSync(path.join(appBuild, 'index.html'), tmpl())
-fs.copySync(path.join(paths.appRoot, 'config.json'), path.join(appBuild, 'config.json'))
+const buildFolder = envFolder ? path.resolve(envFolder) : paths.appBuild
+fs.emptyDirSync(buildFolder)
 
-webpack(config, (err, stats) => {
+fs.outputFileSync(path.join(buildFolder, 'index.html'), tmpl())
+fs.copySync(path.join(paths.appRoot, 'config.json'), path.join(buildFolder, 'config.json'))
+
+webpack(config.generate(buildFolder, envPublicPath), (err, stats) => {
   if (err) {
     console.error(err)
     process.exit(1)
@@ -38,6 +41,6 @@ webpack(config, (err, stats) => {
     console.error(jsonStats.warnings)
   }
 
-  fs.writeJsonSync(path.join(appBuild, 'stats.json'), jsonStats)
+  fs.writeJsonSync(path.join(buildFolder, 'stats.json'), jsonStats)
   console.log('Success!')
 })

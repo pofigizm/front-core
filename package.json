@@ -1,6 +1,6 @@
 {
   "name": "front-core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
@@ -10,13 +10,7 @@
     "preview": "start-storybook -p 9002 -c preview",
     "precommit": "git diff --cached --name-only | grep -e '\\.js$' | xargs eslint",
     "clean": "rm -rf dist && mkdir dist",
-    "build-core": "npm run clean && webpack --profile --json > ./dist/stats.json",
-    "build-htmls": "node ./server/get-html.js > ./dist/index.html; cp ./server/config.json ./dist/",
-    "build": "npm run build-core && npm run build-htmls",
-    "build:prod": "NODE_ENV=production npm run build",
-    "build:dev": "NODE_ENV=development npm run build",
-    "lint-file": "eslint --fix",
-    "lint": "npm run lint-file -- src server",
+    "lint": "eslint --fix -- src server",
     "format": "prettier --single-quote --semi=false --write",
     "test": "BABEL_DISABLE_CACHE=1 jest",
     "test:watch": "npm run test -- --watch",

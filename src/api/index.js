@@ -45,7 +45,7 @@ const getHeders = () => {
 }
 
 const createApiRequest = (
-  { key, url, noCache },
+  { key, url = '', noCache },
   { check, noKeyConvert, fetch = window.fetch } = {},
 ) => {
   const coreData = {
