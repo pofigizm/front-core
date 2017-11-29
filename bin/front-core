@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
-/* eslint-disable function-paren-newline */
 
 const sync = require('child_process').spawnSync
 
 const args = process.argv.slice(2)
 
 const scriptIndex = args.findIndex(
-  x => x === 'build' || x === 'start' || x === 'test'
+  x => x === 'build' || x === 'build-dev' || x === 'start' || x === 'test'
 )
 
 if (scriptIndex === -1) {
