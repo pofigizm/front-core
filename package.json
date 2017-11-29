@@ -41,6 +41,7 @@
     "eslint": "4.12.0",
     "eslint-config-pofigizm": "0.2.2",
     "express": "4.16.2",
+    "fs-extra": "4.0.2",
     "history": "4.7.2",
     "husky": "0.14.3",
     "jest": "21.2.1",
@@ -53,12 +54,12 @@
     "query-string": "5.0.1",
     "quick-lru": "1.1.0",
     "raf-throttle": "2.0.3",
-    "react": "16.1.1",
+    "react": "16.2.0",
     "react-autosuggest": "9.3.2",
-    "react-dom": "16.1.1",
+    "react-dom": "16.2.0",
     "react-hot-loader": "next",
     "react-redux": "5.0.6",
-    "react-test-renderer": "16.1.1",
+    "react-test-renderer": "16.2.0",
     "react-universal-component": "2.7.0",
     "redux": "3.7.2",
     "redux-dynamic-middlewares": "0.2.1",
@@ -70,7 +71,8 @@
     "reselect": "3.0.1",
     "webpack": "3.8.1",
     "webpack-dev-middleware": "1.12.2",
-    "webpack-hot-middleware": "2.21.0"
+    "webpack-hot-middleware": "2.21.0",
+    "webpack-sources": "1.1.0"
   },
   "eslintConfig": {
     "extends": "pofigizm"
