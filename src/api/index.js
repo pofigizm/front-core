@@ -4,8 +4,6 @@ import { toSnakecase, toCamelcase } from 'src/utils/keyConvert'
 import { tokenStorageKey } from 'src/utils/constants'
 import { isDevEnabled } from 'src/flags'
 
-import legacyRequests from './legacy-requests'
-
 const getToken = () => window.localStorage.getItem(tokenStorageKey)
 const checkToken = refresh => () => {
   const token = getToken()
@@ -165,5 +163,5 @@ const createApiRequest = (
 export {
   createApiRequest,
   checkToken,
-  legacyRequests,
 }
+export { default as restRequests } from './rest-requests'

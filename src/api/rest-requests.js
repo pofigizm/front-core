@@ -7,14 +7,15 @@ const getHeders = () => {
 
 const getOriginWorker = (config, url) => ({ method, params, id }) => {
   // TODO: query string cleator
+  const [type, path] = method.includes(':') ? method.split(':') : ['GET', method]
   const query = Object.entries(params || {})
     .map(([key, value]) => `${key}=${value}`)
     .join('&')
-  const fullUrl = `${url}/${method}?${query}`
+  const fullUrl = `${url}/${path}?${query}`
   const headers = getHeders()
 
   return fetch(fullUrl, {
-    method: 'GET',
+    method: type,
     headers,
   })
     .then(res => res.json())
@@ -26,7 +27,7 @@ const getOriginWorker = (config, url) => ({ method, params, id }) => {
 }
 
 // substitute original fetch method
-const legacyRequests = config => (url, { body }) => {
+const restRequests = config => (url, { body }) => {
   const requests = JSON.parse(body)
   const worker = getOriginWorker(config, url)
 
@@ -37,4 +38,4 @@ const legacyRequests = config => (url, { body }) => {
     }))
 }
 
-export default legacyRequests
+export default restRequests
