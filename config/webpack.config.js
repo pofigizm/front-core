@@ -13,7 +13,7 @@ const env = {
 }
 
 module.exports = {
-  devtool: !env.prod ? 'eval' : 'source-map',
+  devtool: !env.prod ? 'eval' : false,
   entry: {
     core: !env.loc ?
       [
@@ -53,12 +53,12 @@ module.exports = {
     alias: {
       'app-src': paths.appSrc,
       src: paths.ownSrc,
-      // for consistent lib
-      react: require.resolve('react'),
-      classnames: require.resolve('classnames'),
-      'react-redux': require.resolve('react-redux'),
-      'redux-first-router-link': require.resolve('redux-first-router-link'),
     },
+    modules: [
+      // for consistent lib
+      paths.ownRoot,
+      'node_modules',
+    ],
   },
   plugins: [
     new webpack.IgnorePlugin(/\.(test.js|test|md)$/),

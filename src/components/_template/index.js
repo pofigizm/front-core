@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-import { withStyles } from 'src/components/origin'
+import { withStyles } from 'src/components/styles'
 
 const styles = () => ({
   root: {
