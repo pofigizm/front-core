@@ -6,13 +6,15 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
 const resolveOwn = relativePath => path.resolve(__dirname, '..', relativePath)
 
 module.exports = {
-  appRoot: resolveApp('./'),
+  appRoot: resolveApp('.'),
   appBuild: resolveApp('build'),
-  appIndexJs: resolveApp('src/index.js'),
+  appIndexJs: resolveApp('src/'), // index.js or index.ts
   appSrc: resolveApp('src'),
   appCache: resolveApp('.cache'),
+  appTsConfig: resolveApp('tsconfig.json'),
+  appTsLint: resolveApp('tslint.json'),
 
-  ownRoot: resolveOwn('./'),
+  ownRoot: resolveOwn('.'),
   ownSrc: resolveOwn('src'),
   ownPreview: resolveOwn('preview'),
 }

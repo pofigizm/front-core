@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const MinifyPlugin = require('babel-minify-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const paths = require('./paths')
 
 const project = 'front-core'
@@ -28,24 +29,58 @@ const generate = (buildFolder, publicPath = '/') => ({
       ],
   },
   output: {
+    pathinfo: true,
     path: buildFolder,
     filename: '[name].js?v=[hash]',
     chunkFilename: '[name].js?v=[hash]',
     publicPath,
   },
   module: {
+    strictExportPresence: true,
     rules: [
       {
         test: /\.js$/,
-        loader: require.resolve('babel-loader'),
-        options: {
-          babelrc: false,
-          cacheDirectory: paths.appCache,
-          presets: [
-            [require.resolve('babel-preset-pofigizm'), { targets: { chrome: 60 } }],
-          ],
-        },
         exclude: /node_modules(?!\/front-core)/,
+        loader: require.resolve('source-map-loader'),
+        enforce: 'pre',
+      },
+      {
+        oneOf: [
+          // TODO: is it needed?
+          {
+            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+            loader: require.resolve('url-loader'),
+            options: {
+              limit: 10000,
+              name: 'static/media/[name].[hash:8].[ext]',
+            },
+          },
+          {
+            test: /\.(ts|tsx)$/,
+            exclude: /node_modules(?!\/front-core)/,
+            use: [
+              {
+                loader: require.resolve('ts-loader'),
+                options: {
+                  transpileOnly: true,
+                },
+              },
+            ],
+          },
+          {
+            test: /\.(js|jsx|mjs)$/,
+            exclude: /node_modules(?!\/front-core)/,
+            loader: require.resolve('babel-loader'),
+            options: {
+              babelrc: false,
+              cacheDirectory: paths.appCache,
+              presets: [
+                [require.resolve('babel-preset-pofigizm'), { targets: { chrome: 60 } }],
+              ],
+              compact: true,
+            },
+          },
+        ],
       },
     ],
   },
@@ -54,6 +89,7 @@ const generate = (buildFolder, publicPath = '/') => ({
       'app-src': paths.appSrc,
       src: paths.ownSrc,
     },
+    extensions: ['.ts', '.tsx', '.mjs', '.js', '.jsx', '.json'],
     modules: [
       // for consistent lib
       paths.ownRoot,
@@ -70,6 +106,11 @@ const generate = (buildFolder, publicPath = '/') => ({
       __DEV__: str(!env.prod),
       __PROJECT__: str(project),
       __TEST__: 'false',
+    }),
+    new ForkTsCheckerWebpackPlugin({
+      async: false,
+      tsconfig: paths.appTsConfig,
+      tslint: paths.appTsLint,
     }),
   ]
     // for local
