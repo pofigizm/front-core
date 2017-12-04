@@ -11,6 +11,7 @@ const env = {
   loc: NODE_ENV === 'local',
   dev: NODE_ENV === 'development',
   prod: NODE_ENV === 'production',
+  ts: Boolean(process.env.BUILD_TS),
 }
 
 const generate = (buildFolder, publicPath = '/') => ({
@@ -55,7 +56,7 @@ const generate = (buildFolder, publicPath = '/') => ({
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
-          {
+          env.ts && {
             test: /\.(ts|tsx)$/,
             exclude: /node_modules(?!\/front-core)/,
             use: [
@@ -80,7 +81,7 @@ const generate = (buildFolder, publicPath = '/') => ({
               compact: true,
             },
           },
-        ],
+        ].filter(Boolean),
       },
     ],
   },
@@ -107,12 +108,12 @@ const generate = (buildFolder, publicPath = '/') => ({
       __PROJECT__: str(project),
       __TEST__: 'false',
     }),
-    new ForkTsCheckerWebpackPlugin({
+    env.ts && new ForkTsCheckerWebpackPlugin({
       async: false,
       tsconfig: paths.appTsConfig,
       tslint: paths.appTsLint,
     }),
-  ]
+  ].filter(Boolean)
     // for local
     .concat(
       env.loc ?
