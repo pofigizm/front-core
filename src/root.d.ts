@@ -1,4 +1,4 @@
-interface MenuItem {
+export interface MenuItem {
   name: string
   Icon?: any
   link: string
@@ -16,13 +16,13 @@ export interface Route {
   role?: boolean
 }
 
-export interface Routes<Route> {
+export interface Routes {
   [Key: string]: Route
 }
 
 export interface Root {
   title?: string
-  routes?: Routes<Route>
+  routes?: Routes
   menu?: Menu
   apiRequests?: any
   config?: any
