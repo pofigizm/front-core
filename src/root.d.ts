@@ -28,8 +28,4 @@ export interface Root {
   config?: any
 }
 
-declare const root: (props: Root) => void
-
-export {
-  root,
-}
+export const root: (props: Root) => void

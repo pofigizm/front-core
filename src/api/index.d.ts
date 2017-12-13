@@ -8,10 +8,6 @@ export interface Check {
   (): Promise<string>
 }
 
-export interface CheckToken {
-  (request: ApiRequest): Check
-}
-
 export interface ConfigItem {
   key: string
   url: string
@@ -28,20 +24,6 @@ export interface Option {
   fetch?: Fetch
 }
 
-export interface CreateApiRequest {
-  (config: ConfigItem, option?: Option): ApiRequest
-}
-
-export interface RestRequests {
-  (request: ConfigItem): Fetch
-}
-
-declare const createApiRequest: CreateApiRequest
-declare const checkToken: CheckToken
-declare const restRequests: RestRequests
-
-export {
-  createApiRequest,
-  checkToken,
-  restRequests,
-}
+export const createApiRequest: (config: ConfigItem, option?: Option) => ApiRequest
+export const checkToken: (request: ApiRequest) => Check
+export const restRequests: (request: ConfigItem) => Fetch
