@@ -24,8 +24,7 @@ const render = (Wrapper, Page, store, title, menu) => {
   )
 }
 
-// eslint-disable-next-line object-curly-newline
-export default ({ title, routes, menu, apiRequests, config }) => {
+export const root = ({ title, routes, menu, apiRequests, config }) => {
   const { store, reducers } = getStore({ ...ownRoutes, ...routes }, apiRequests)
   store.dispatch(init(config))
 

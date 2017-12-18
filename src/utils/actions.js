@@ -1,7 +1,7 @@
 import { deepAssign } from 'src/utils/lib-helpers'
 import { getLocation } from 'src/selectors'
 
-export default (actions, directory) => {
+export const prepareActions = (actions, directory) => {
   const prefix = directory
     .replace(/^node_modules\//, '')
     .replace(/\//g, '-')
@@ -36,3 +36,6 @@ export const onChangeQuery = (field, value) => (dispatch, getState) => {
 export const onChangeFilter = (field, value) => (dispatch) => {
   dispatch(onChangeQuery('filter', { [field]: value }))
 }
+
+// deprecated
+export default prepareActions

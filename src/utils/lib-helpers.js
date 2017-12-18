@@ -1,5 +1,5 @@
 export const isPlainObject = value =>
-  value && typeof value === 'object' && value.constructor === Object
+  Boolean(value) && typeof value === 'object' && value.constructor === Object
 
 export const deepAssign = (target, ...sources) => {
   if (target === undefined || target === null) {

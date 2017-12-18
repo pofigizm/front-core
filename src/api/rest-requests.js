@@ -38,4 +38,6 @@ const restRequests = config => (url, { body }) => {
     }))
 }
 
-export default restRequests
+export {
+  restRequests,
+}

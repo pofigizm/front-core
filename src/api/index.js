@@ -164,4 +164,4 @@ export {
   createApiRequest,
   checkToken,
 }
-export { default as restRequests } from './rest-requests'
+export { restRequests } from './rest-requests'
