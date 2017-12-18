@@ -1,3 +1,5 @@
+import { ApiRequest } from './api'
+
 export interface MenuItem {
   name: string
   Icon?: any
@@ -11,8 +13,8 @@ export interface Menu {
 export interface Route {
   path: string
   modulePath?: string
-  getText?: any
-  thunk?: any
+  getText?: Function
+  thunk?: Function
   role?: boolean
 }
 
@@ -24,8 +26,10 @@ export interface Root {
   title?: string
   routes?: Routes
   menu?: Menu
-  apiRequests?: any
-  config?: any
+  apiRequests?: {
+    [key: string]: ApiRequest
+  }
+  config?: Object
 }
 
 export const root: (props: Root) => void

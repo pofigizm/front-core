@@ -1,5 +1,5 @@
 interface Selector {
-  (state: any): any
+  (state: Object): Object
 }
 
 export const getState: Selector

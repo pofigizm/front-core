@@ -1,7 +1,7 @@
 type Fetch = typeof window.fetch
 
 export interface ApiRequest {
-  ( method: string, params: any, noUseCache?: boolean): Promise<any>
+  ( method: string, params: Object | null, noUseCache?: boolean): Promise<Object>
 }
 
 export interface Check {

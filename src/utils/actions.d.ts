@@ -4,7 +4,7 @@ export interface PreparedActions {
 
 // TODO add redux typings
 export interface Action {
-  (dispatch?: Function, getState?: Function, option?: any): void | Promise<any>
+  (dispatch?: Function, getState?: Function, option?: Object): void | Promise<any>
 }
 
 export const prepareActions: (actions: Array<string>, directory: string) => PreparedActions
