@@ -63,32 +63,34 @@ class Autocomplete extends PureComponent {
     debug('render', this.props)
 
     return (
-      <Autosuggest
-        theme={{
-          container: cn(classes.root, className),
-          suggestionsContainerOpen: classes.suggestionsContainerOpen,
-          suggestionsList: classes.suggestionsList,
-          suggestion: classes.suggestion,
-        }}
-        alwaysRenderSuggestions={open}
-        renderInputComponent={this.renderInput}
-        suggestions={list}
-        onSuggestionSelected={this.handleSuggestionSelected}
-        onSuggestionsFetchRequested={this.handleSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.handleSuggestionsClearRequested}
-        renderSuggestionsContainer={this.renderSuggestionsContainer}
-        getSuggestionValue={this.suggestionValue}
-        renderSuggestion={this.renderSuggestion}
-        shouldRenderSuggestions={this.shouldRenderSuggestions}
-        inputProps={{
-          autoFocus,
-          label,
-          classes,
-          value,
-          readOnly,
-          onChange: this.handleChange,
-        }}
-      />
+      <form onSubmit={this.handleSubmit}>
+        <Autosuggest
+          theme={{
+            container: cn(classes.root, className),
+            suggestionsContainerOpen: classes.suggestionsContainerOpen,
+            suggestionsList: classes.suggestionsList,
+            suggestion: classes.suggestion,
+          }}
+          alwaysRenderSuggestions={open}
+          renderInputComponent={this.renderInput}
+          suggestions={list}
+          onSuggestionSelected={this.handleSuggestionSelected}
+          onSuggestionsFetchRequested={this.handleSuggestionsFetchRequested}
+          onSuggestionsClearRequested={this.handleSuggestionsClearRequested}
+          renderSuggestionsContainer={this.renderSuggestionsContainer}
+          getSuggestionValue={this.suggestionValue}
+          renderSuggestion={this.renderSuggestion}
+          shouldRenderSuggestions={this.shouldRenderSuggestions}
+          inputProps={{
+            autoFocus,
+            label,
+            classes,
+            value,
+            readOnly,
+            onChange: this.handleChange,
+          }}
+        />
+      </form>
     )
   }
 
@@ -151,6 +153,12 @@ class Autocomplete extends PureComponent {
     this.props.onChange(newValue)
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault()
+    if (!this.props.onSubmit) return
+    this.props.onSubmit(event)
+  }
+
   handleSuggestionsFetchRequested = ({ value }) => {
     if (!this.props.onListFetch) return
     this.props.onListFetch(value)
@@ -186,6 +194,7 @@ WrappedAutocomplete.propTypes = {
   readOnly: PropTypes.bool,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  onEnter: PropTypes.func,
   onListClear: PropTypes.func,
   onListFetch: PropTypes.func,
   onSelect: PropTypes.func,

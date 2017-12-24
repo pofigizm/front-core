@@ -72,6 +72,7 @@ export class State extends PureComponent {
           label="state"
           {...this.state}
           onChange={this.handleChange}
+          onSubmit={this.handleSubmit}
           onSelect={this.handleSelect}
           onListFetch={this.handleListFetch}
           onListClear={this.handleListClear}
@@ -88,6 +89,10 @@ export class State extends PureComponent {
     this.setState({
       value,
     })
+  }
+
+  handleSubmit = () => {
+    this.props.action('onSubmit')()
   }
 
   handleSelect = (id) => {

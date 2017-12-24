@@ -287,53 +287,57 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 `;
 
 exports[`snapshot: className html 1`] = `
-<div
-  className="fcAutocomplete-root test-class"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root test-class"
   >
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={false}
-      aria-haspopup={false}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={false}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value=""
-      />
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2"
-    id="react-autowhatever-1"
-    style={Object {}}
-  />
-</div>
+</form>
 `;
 
 exports[`snapshot: only label css 1`] = `
@@ -378,119 +382,127 @@ exports[`snapshot: only label css 1`] = `
 `;
 
 exports[`snapshot: only label html 1`] = `
-<div
-  className="fcAutocomplete-root"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root"
   >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
-      data-shrink={false}
-      htmlFor={undefined}
-    >
-      autocomplete
-    </label>
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={false}
-      aria-haspopup={false}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={false}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value=""
-      />
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        htmlFor={undefined}
+      >
+        autocomplete
+      </label>
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2"
-    id="react-autowhatever-1"
-    style={Object {}}
-  />
-</div>
+</form>
 `;
 
 exports[`snapshot: read only css 1`] = `""`;
 
 exports[`snapshot: read only html 1`] = `
-<div
-  className="fcAutocomplete-root"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root"
   >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
-      data-shrink={true}
-      htmlFor={undefined}
-    >
-      autocomplete
-    </label>
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={false}
-      aria-haspopup={false}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input fcInput-readOnly"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputDisabled MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={true}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value="suggest"
-      />
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+        data-shrink={true}
+        htmlFor={undefined}
+      >
+        autocomplete
+      </label>
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input fcInput-readOnly"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputDisabled MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={true}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value="suggest"
+        />
+      </div>
     </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2"
-    id="react-autowhatever-1"
-    style={Object {}}
-  />
-</div>
+</form>
 `;
 
 exports[`snapshot: with handlers css 1`] = `""`;
@@ -666,396 +678,412 @@ exports[`snapshot: with handlers css 2`] = `
 `;
 
 exports[`snapshot: with handlers html 1`] = `
-<div
-  className="fcAutocomplete-root"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root"
   >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
-      data-shrink={false}
-      htmlFor={undefined}
-    >
-      autocomplete
-    </label>
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={false}
-      aria-haspopup={false}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={false}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value=""
-      />
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        htmlFor={undefined}
+      >
+        autocomplete
+      </label>
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2"
-    id="react-autowhatever-1"
-    style={Object {}}
-  />
-</div>
+</form>
 `;
 
 exports[`snapshot: with handlers html 2`] = `
-<div
-  className="fcAutocomplete-root"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root"
   >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
-      data-shrink={true}
-      htmlFor={undefined}
-    >
-      autocomplete
-    </label>
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={true}
-      aria-haspopup={true}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={false}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value="sup sug"
-      />
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+        data-shrink={true}
+        htmlFor={undefined}
+      >
+        autocomplete
+      </label>
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={true}
+        aria-haspopup={true}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value="sup sug"
+        />
+      </div>
+    </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2 fcAutocomplete-suggestionsContainerOpen"
+      id="react-autowhatever-1"
+    >
+      <ul
+        className="fcAutocomplete-suggestionsList"
+        role="listbox"
+      >
+        <li
+          className="fcAutocomplete-suggestion"
+          data-section-index={null}
+          data-suggestion-index={0}
+          id="react-autowhatever-1--item-0"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onTouchStart={[Function]}
+          role="option"
+        >
+          <div
+            className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="menuitem"
+            tabIndex={-1}
+          >
+            <div>
+              <span
+                className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
+              >
+                sup
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent"
+              >
+                er 
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
+              >
+                sug
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent"
+              >
+                gest1
+              </span>
+            </div>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </div>
+        </li>
+        <li
+          className="fcAutocomplete-suggestion"
+          data-section-index={null}
+          data-suggestion-index={1}
+          id="react-autowhatever-1--item-1"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onTouchStart={[Function]}
+          role="option"
+        >
+          <div
+            className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="menuitem"
+            tabIndex={-1}
+          >
+            <div>
+              <span
+                className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
+              >
+                sup
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent"
+              >
+                er 
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
+              >
+                sug
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent"
+              >
+                gest2
+              </span>
+            </div>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </div>
+        </li>
+        <li
+          className="fcAutocomplete-suggestion"
+          data-section-index={null}
+          data-suggestion-index={2}
+          id="react-autowhatever-1--item-2"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onTouchStart={[Function]}
+          role="option"
+        >
+          <div
+            className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="menuitem"
+            tabIndex={-1}
+          >
+            <div>
+              <span
+                className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
+              >
+                sup
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent"
+              >
+                er 
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
+              >
+                sug
+              </span>
+              <span
+                className="fcAutocomplete-suggestionContent"
+              >
+                gest3
+              </span>
+            </div>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2 fcAutocomplete-suggestionsContainerOpen"
-    id="react-autowhatever-1"
-  >
-    <ul
-      className="fcAutocomplete-suggestionsList"
-      role="listbox"
-    >
-      <li
-        className="fcAutocomplete-suggestion"
-        data-section-index={null}
-        data-suggestion-index={0}
-        id="react-autowhatever-1--item-0"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onTouchStart={[Function]}
-        role="option"
-      >
-        <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={-1}
-        >
-          <div>
-            <span
-              className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
-            >
-              sup
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent"
-            >
-              er 
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
-            >
-              sug
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent"
-            >
-              gest1
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </div>
-      </li>
-      <li
-        className="fcAutocomplete-suggestion"
-        data-section-index={null}
-        data-suggestion-index={1}
-        id="react-autowhatever-1--item-1"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onTouchStart={[Function]}
-        role="option"
-      >
-        <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={-1}
-        >
-          <div>
-            <span
-              className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
-            >
-              sup
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent"
-            >
-              er 
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
-            >
-              sug
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent"
-            >
-              gest2
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </div>
-      </li>
-      <li
-        className="fcAutocomplete-suggestion"
-        data-section-index={null}
-        data-suggestion-index={2}
-        id="react-autowhatever-1--item-2"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onTouchStart={[Function]}
-        role="option"
-      >
-        <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
-          disabled={false}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={-1}
-        >
-          <div>
-            <span
-              className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
-            >
-              sup
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent"
-            >
-              er 
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent fcAutocomplete-highlight"
-            >
-              sug
-            </span>
-            <span
-              className="fcAutocomplete-suggestionContent"
-            >
-              gest3
-            </span>
-          </div>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+</form>
 `;
 
 exports[`snapshot: with text css 1`] = `""`;
 
 exports[`snapshot: with text html 1`] = `
-<div
-  className="fcAutocomplete-root"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root"
   >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
-      data-shrink={true}
-      htmlFor={undefined}
-    >
-      autocomplete
-    </label>
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={false}
-      aria-haspopup={false}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={false}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value="suggest"
-      />
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+        data-shrink={true}
+        htmlFor={undefined}
+      >
+        autocomplete
+      </label>
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value="suggest"
+        />
+      </div>
     </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2"
-    id="react-autowhatever-1"
-    style={Object {}}
-  />
-</div>
+</form>
 `;
 
 exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
-<div
-  className="fcAutocomplete-root"
+<form
+  onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    required={false}
+    className="fcAutocomplete-root"
   >
     <div
-      aria-activedescendant={null}
-      aria-autocomplete="list"
-      aria-expanded={false}
-      aria-haspopup={false}
-      aria-owns="react-autowhatever-1"
-      className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      role="combobox"
-      style={Object {}}
+      required={false}
     >
-      <input
-        autoComplete="off"
-        autoFocus={undefined}
-        className="MuiInput-input MuiInput-inputSingleline"
-        defaultValue={undefined}
-        disabled={false}
-        id={undefined}
-        name={undefined}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
-        type="text"
-        value=""
-      />
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
     </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
   </div>
-  <div
-    className="MuiPaper-root MuiPaper-shadow2"
-    id="react-autowhatever-1"
-    style={Object {}}
-  />
-</div>
+</form>
 `;

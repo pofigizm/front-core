@@ -50,6 +50,7 @@ class Tags extends PureComponent {
       value = '',
 
       onChange,
+      onSubmit,
       onListClear,
       onListFetch,
       onSelect,
@@ -83,6 +84,7 @@ class Tags extends PureComponent {
             list={list}
             readOnly={readOnly}
             onChange={onChange}
+            onSubmit={onSubmit}
             onListClear={onListClear}
             onListFetch={onListFetch}
             onSelect={onSelect}
@@ -121,6 +123,7 @@ WrappedTags.propTypes = {
   value: PropTypes.string,
 
   onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
   onDelete: PropTypes.func,
   onListClear: PropTypes.func,
   onListFetch: PropTypes.func,
