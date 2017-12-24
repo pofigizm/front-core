@@ -1,9 +1,11 @@
+/* eslint-disable prefer-template */
+/* eslint-disable jsx-quotes */
 /* eslint-disable no-underscore-dangle */
 import React from 'react'
 import { configure, storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { MuiThemeProvider, createMuiTheme } from 'src/components/origin'
+import { MuiThemeProvider, createMuiTheme } from '../src/components/styles'
 
 const theme = createMuiTheme({
   spacing: {
@@ -22,6 +24,18 @@ const componentsPreview = require.context(
   true,
   /(.*)\/index\.preview\.js$/
 )
+
+// const coreComponents = require.context(
+//   '../node_modules/front-core/src/components',
+//   true,
+//   /(.*)\/index\.js$/
+// )
+
+// const coreComponentsPreview = require.context(
+//   '../node_modules/front-core/src/components',
+//   true,
+//   /(.*)\/index\.preview\.js$/
+// )
 
 const getData = (prefix, comps, pres) => {
   const list = comps.keys()
@@ -42,7 +56,8 @@ const getData = (prefix, comps, pres) => {
 }
 
 const datas = []
-  .concat(getData('core/', components, componentsPreview))
+//  .concat(getData('core/', coreComponents, coreComponentsPreview))
+  .concat(getData('app/', components, componentsPreview))
 
 const loadStories = () => {
   datas
@@ -66,7 +81,7 @@ const loadStories = () => {
 
         if (preview.State) {
           st.add('State', () => (
-            <div className="storybook-all-wrapper">
+            <div className='storybook-all-wrapper'>
               <div>
                 <MuiThemeProvider theme={theme}>
                   <preview.State Target={Story} action={action} />
@@ -77,7 +92,7 @@ const loadStories = () => {
         }
 
         st.add('all', () => (
-          <div className="storybook-all-wrapper">
+          <div className='storybook-all-wrapper'>
             { data.filter(p => !p({ action })._skip).map(wrap) }
           </div>
         ))

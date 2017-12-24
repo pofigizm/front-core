@@ -1,7 +1,12 @@
 /* eslint-disable no-param-reassign */
-const config = require('../config/webpack.config')
+/* eslint-disable no-console */
+const config = require('../config/webpack.config').default
 
 module.exports = (storybookBaseConfig) => {
+  console.log(JSON.stringify(storybookBaseConfig, null, 2))
+  console.log(JSON.stringify(config, null, 2))
+
+  storybookBaseConfig.module = config.module
   storybookBaseConfig.resolve.alias = Object.assign(
     {},
     storybookBaseConfig.resolve.alias,
