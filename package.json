@@ -1,6 +1,6 @@
 {
   "name": "front-core",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
@@ -18,8 +18,8 @@
     "test:coverage": "npm run test -- --coverage"
   },
   "dependencies": {
-    "@storybook/addon-actions": "3.2.19",
-    "@storybook/react": "3.2.19",
+    "@storybook/addon-actions": "3.3.3",
+    "@storybook/react": "3.3.3",
     "@types/react": "16.0.31",
     "@types/react-dom": "16.0.3",
     "@types/react-hot-loader": "3.0.5",
@@ -28,7 +28,7 @@
     "@types/webpack-env": "1.13.3",
     "autosuggest-highlight": "3.1.1",
     "babel-core": "6.26.0",
-    "babel-eslint": "8.0.3",
+    "babel-eslint": "8.1.2",
     "babel-jest": "22.0.4",
     "babel-loader": "7.1.2",
     "babel-minify-webpack-plugin": "0.2.0",
@@ -74,7 +74,7 @@
     "source-map-loader": "0.2.3",
     "ts-loader": "3.2.0",
     "tslint": "5.8.0",
-    "tslint-react": "3.2.0",
+    "tslint-react": "3.3.3",
     "typescript": "2.6.2",
     "url-loader": "0.6.2",
     "webpack": "3.10.0",
