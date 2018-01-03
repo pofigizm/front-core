@@ -15,7 +15,7 @@ module.exports = (storybookBaseConfig) => {
 
   const defs = config.plugins[1].definitions
   Object.keys(defs).forEach((key) => {
-    storybookBaseConfig.plugins[0].definitions[key] = defs[key]
+    storybookBaseConfig.plugins[2].definitions[key] = defs[key]
   })
 
   // eslint-disable-next-line no-console
