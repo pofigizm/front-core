@@ -8,15 +8,25 @@ const getHeders = () => {
 const getOriginWorker = (config, url = '') => ({ method, params, id }) => {
   // TODO: query string cleator
   const [type, path] = method.includes(':') ? method.split(':') : ['GET', method]
-  const query = Object.entries(params || {})
-    .map(([key, value]) => `${key}=${value}`)
-    .join('&')
-  const fullUrl = `${url}/${path}?${query}`
   const headers = getHeders()
+
+  let fullUrl
+  let body
+  if (type === 'GET') {
+    const query = Object.entries(params || {})
+      .map(([key, value]) => `${key}=${value}`)
+      .join('&')
+    fullUrl = `${url}/${path}?${query}`
+    body = null
+  } else {
+    fullUrl = `${url}/${path}`
+    body = JSON.stringify(params)
+  }
 
   return fetch(fullUrl, {
     method: type,
     headers,
+    body,
   })
     .then(res => res.json())
     .then(result => ({
