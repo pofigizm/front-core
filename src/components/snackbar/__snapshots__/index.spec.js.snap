@@ -4,7 +4,7 @@ exports[`snapshot: className css 1`] = `
 ".MuiSnackbar-root {
   left: 0;
   right: 0;
-  z-index: 2900;
+  z-index: 1400;
   display: flex;
   position: fixed;
   align-items: center;
