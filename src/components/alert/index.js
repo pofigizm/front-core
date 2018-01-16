@@ -40,7 +40,7 @@ class Alert extends PureComponent {
   render() {
     const {
       classes,
-      open,
+      open = false,
       title,
       text,
       actionLabel,

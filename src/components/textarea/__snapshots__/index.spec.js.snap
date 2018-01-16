@@ -45,16 +45,47 @@ label + .MuiInput-formControl {
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
-  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
   pointer-events: none;
-  background-color: #304ffe;
+  background-color: #303f9f;
 }
 .MuiInput-inkbar.MuiInput-focused:after {
   transform: scaleX(1);
 }
 .MuiInput-error:after {
   transform: scaleX(1);
-  background-color: #ff1744;
+  background-color: #f44336;
+}
+.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  content: \\"\\";
+  position: absolute;
+  transition: background-color 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.MuiInput-underline:hover:not(.MuiInput-disabled):before {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.MuiInput-disabled:before {
+  background: transparent;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.MuiInput-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInput-fullWidth {
+  width: 100%;
 }
 .MuiInput-input {
   font: inherit;
@@ -62,8 +93,9 @@ label + .MuiInput-formControl {
   color: currentColor;
   border: 0;
   margin: 0;
-  padding: 7px 0 9px;
+  padding: 6px 0 7px;
   display: block;
+  min-width: 0;
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
@@ -72,22 +104,22 @@ label + .MuiInput-formControl {
 .MuiInput-input::-webkit-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input::-moz-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input:-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input::-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input:focus {
   outline: 0;
@@ -123,51 +155,20 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   opacity: 0.42;
 }
 .MuiInput-inputDense {
-  padding-top: 4px;
-}
-.MuiInput-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-.MuiInput-underline:before {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  content: \\"\\";
-  position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.42);
-}
-.MuiInput-underline:hover:not(.MuiInput-disabled):before {
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.87);
-}
-.MuiInput-underline.MuiInput-disabled:before {
-  background: transparent;
-  background-size: 5px 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-  background-repeat: repeat-x;
-  background-position: left top;
-}
-.MuiInput-multiline {
-  padding: 6px 0 7px;
+  padding-top: 3px;
 }
 .MuiInput-inputDisabled {
   opacity: 1;
 }
 .MuiInput-inputSingleline {
-  height: 1em;
-}
-.MuiInput-inputSearch {
-  appearance: textfield;
+  height: 1.1875em;
 }
 .MuiInput-inputMultiline {
   resize: none;
   padding: 0;
 }
-.MuiInput-fullWidth {
-  width: 100%;
+.MuiInput-inputSearch {
+  appearance: textfield;
 }
 .MuiFormControl-root {
   margin: 0;
@@ -196,6 +197,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 
 exports[`snapshot: className html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -232,6 +234,8 @@ exports[`snapshot: className html 1`] = `
         value=""
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -263,10 +267,10 @@ exports[`snapshot: only label css 1`] = `
   line-height: 1;
 }
 .MuiFormLabel-focused {
-  color: #304ffe;
+  color: #303f9f;
 }
 .MuiFormLabel-error {
-  color: #ff1744;
+  color: #f44336;
 }
 .MuiFormLabel-disabled {
   color: rgba(0, 0, 0, 0.42);
@@ -278,7 +282,7 @@ exports[`snapshot: only label css 1`] = `
   top: 0;
   left: 0;
   position: absolute;
-  transform: translate(0, 23px) scale(1);
+  transform: translate(0, 24px) scale(1);
 }
 .MuiInputLabel-labelDense {
   transform: translate(0, 21px) scale(1);
@@ -288,7 +292,7 @@ exports[`snapshot: only label css 1`] = `
   transform-origin: top left;
 }
 .MuiInputLabel-animated {
-  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
 }
 .MuiInputLabel-disabled {
   color: rgba(0, 0, 0, 0.42);
@@ -297,6 +301,7 @@ exports[`snapshot: only label css 1`] = `
 
 exports[`snapshot: only label html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -340,6 +345,8 @@ exports[`snapshot: only label html 1`] = `
         value=""
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -366,6 +373,7 @@ exports[`snapshot: read only css 1`] = `""`;
 
 exports[`snapshot: read only html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -409,6 +417,8 @@ exports[`snapshot: read only html 1`] = `
         value="Lorem ipsum"
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -435,6 +445,7 @@ exports[`snapshot: with handlers css 1`] = `""`;
 
 exports[`snapshot: with handlers html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -478,6 +489,8 @@ exports[`snapshot: with handlers html 1`] = `
         value="Lorem ipsum"
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -504,6 +517,7 @@ exports[`snapshot: with long text and rows css 1`] = `""`;
 
 exports[`snapshot: with long text and rows html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -522,6 +536,8 @@ exports[`snapshot: with long text and rows html 1`] = `
     onFocus={[Function]}
   >
     <textarea
+      aria-invalid={false}
+      aria-required={false}
       autoComplete={undefined}
       autoFocus={undefined}
       className="MuiInput-input MuiInput-inputMultiline"
@@ -547,6 +563,7 @@ exports[`snapshot: with long text css 1`] = `""`;
 
 exports[`snapshot: with long text html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -590,6 +607,8 @@ exports[`snapshot: with long text html 1`] = `
         value="\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\""
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -616,6 +635,7 @@ exports[`snapshot: with text css 1`] = `""`;
 
 exports[`snapshot: with text html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -659,6 +679,8 @@ exports[`snapshot: with text html 1`] = `
         value="Lorem ipsum"
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -685,6 +707,7 @@ exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
 <div
+  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
@@ -721,6 +744,8 @@ exports[`snapshot: without props html 1`] = `
         value=""
       />
       <textarea
+        aria-invalid={false}
+        aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
         className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"

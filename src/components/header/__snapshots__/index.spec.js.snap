@@ -162,15 +162,11 @@ exports[`snapshot: className css 1`] = `
   color: #f50057;
 }
 .MuiTypography-colorError {
-  color: #ff1744;
+  color: #f44336;
 }
 
 .fcBreadcrumbs-root > a {
-  color: #c51162;
   text-decoration: none;
-}
-.fcBreadcrumbs-root > a:visited {
-  color: #c51162;
 }
 .fcBreadcrumbs-opacity {
   opacity: 0.5;
@@ -179,7 +175,7 @@ exports[`snapshot: className css 1`] = `
   opacity: 1;
 }
 .fcBreadcrumbs-separator {
-  padding: 0 8px;
+  padding: 0, 8px;
 }
 .fcHeader-root {
   height: 48px;

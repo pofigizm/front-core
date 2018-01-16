@@ -69,12 +69,12 @@ class Tags extends PureComponent {
           { label }
         </InputLabel>
         <div className={cn(classes.formControl)}>
-          { selected.map(({ id, label }) => (
+          { selected.map(({ id, label: lbl }) => (
             <Chip
               key={id}
               className={cn(classes.chip)}
-              label={label}
-              onRequestDelete={safeDelete(id)}
+              label={lbl}
+              onDelete={safeDelete(id)}
             />
           )) }
           <Autocomplete

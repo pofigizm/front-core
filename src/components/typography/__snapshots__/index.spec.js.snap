@@ -123,7 +123,7 @@ exports[`snapshot: className css 1`] = `
   color: #f50057;
 }
 .MuiTypography-colorError {
-  color: #ff1744;
+  color: #f44336;
 }
 "
 `;

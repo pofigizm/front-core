@@ -101,16 +101,47 @@ label + .MuiInput-formControl {
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
-  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
   pointer-events: none;
-  background-color: #304ffe;
+  background-color: #303f9f;
 }
 .MuiInput-inkbar.MuiInput-focused:after {
   transform: scaleX(1);
 }
 .MuiInput-error:after {
   transform: scaleX(1);
-  background-color: #ff1744;
+  background-color: #f44336;
+}
+.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  content: \\"\\";
+  position: absolute;
+  transition: background-color 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.MuiInput-underline:hover:not(.MuiInput-disabled):before {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.MuiInput-disabled:before {
+  background: transparent;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.MuiInput-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInput-fullWidth {
+  width: 100%;
 }
 .MuiInput-input {
   font: inherit;
@@ -118,8 +149,9 @@ label + .MuiInput-formControl {
   color: currentColor;
   border: 0;
   margin: 0;
-  padding: 7px 0 9px;
+  padding: 6px 0 7px;
   display: block;
+  min-width: 0;
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
@@ -128,22 +160,22 @@ label + .MuiInput-formControl {
 .MuiInput-input::-webkit-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input::-moz-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input:-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input::-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input:focus {
   outline: 0;
@@ -179,51 +211,20 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   opacity: 0.42;
 }
 .MuiInput-inputDense {
-  padding-top: 4px;
-}
-.MuiInput-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-.MuiInput-underline:before {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  content: \\"\\";
-  position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.42);
-}
-.MuiInput-underline:hover:not(.MuiInput-disabled):before {
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.87);
-}
-.MuiInput-underline.MuiInput-disabled:before {
-  background: transparent;
-  background-size: 5px 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-  background-repeat: repeat-x;
-  background-position: left top;
-}
-.MuiInput-multiline {
-  padding: 6px 0 7px;
+  padding-top: 3px;
 }
 .MuiInput-inputDisabled {
   opacity: 1;
 }
 .MuiInput-inputSingleline {
-  height: 1em;
-}
-.MuiInput-inputSearch {
-  appearance: textfield;
+  height: 1.1875em;
 }
 .MuiInput-inputMultiline {
   resize: none;
   padding: 0;
 }
-.MuiInput-fullWidth {
-  width: 100%;
+.MuiInput-inputSearch {
+  appearance: textfield;
 }
 .MuiFormControl-root {
   margin: 0;
@@ -260,7 +261,6 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .fcAutocomplete-suggestionsContainerOpen {
   left: 0;
   right: 0;
-  z-index: 2100;
   position: absolute;
   overflow: auto;
   margin-top: 8px;
@@ -294,6 +294,7 @@ exports[`snapshot: className html 1`] = `
     className="fcAutocomplete-root test-class"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -305,13 +306,15 @@ exports[`snapshot: className html 1`] = `
         aria-expanded={false}
         aria-haspopup={false}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputSingleline"
@@ -349,10 +352,10 @@ exports[`snapshot: only label css 1`] = `
   line-height: 1;
 }
 .MuiFormLabel-focused {
-  color: #304ffe;
+  color: #303f9f;
 }
 .MuiFormLabel-error {
-  color: #ff1744;
+  color: #f44336;
 }
 .MuiFormLabel-disabled {
   color: rgba(0, 0, 0, 0.42);
@@ -364,7 +367,7 @@ exports[`snapshot: only label css 1`] = `
   top: 0;
   left: 0;
   position: absolute;
-  transform: translate(0, 23px) scale(1);
+  transform: translate(0, 24px) scale(1);
 }
 .MuiInputLabel-labelDense {
   transform: translate(0, 21px) scale(1);
@@ -374,7 +377,7 @@ exports[`snapshot: only label css 1`] = `
   transform-origin: top left;
 }
 .MuiInputLabel-animated {
-  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
 }
 .MuiInputLabel-disabled {
   color: rgba(0, 0, 0, 0.42);
@@ -389,6 +392,7 @@ exports[`snapshot: only label html 1`] = `
     className="fcAutocomplete-root"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -407,13 +411,15 @@ exports[`snapshot: only label html 1`] = `
         aria-expanded={false}
         aria-haspopup={false}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputSingleline"
@@ -452,6 +458,7 @@ exports[`snapshot: read only html 1`] = `
     className="fcAutocomplete-root"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -470,13 +477,15 @@ exports[`snapshot: read only html 1`] = `
         aria-expanded={false}
         aria-haspopup={false}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input fcInput-readOnly"
+        className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputDisabled MuiInput-inputSingleline"
@@ -535,6 +544,7 @@ exports[`snapshot: with handlers css 2`] = `
   display: block;
   position: absolute;
   animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+  ripple-visible: [object Object];
 }
 @keyframes mui-ripple-enter {
   0% {
@@ -583,8 +593,9 @@ exports[`snapshot: with handlers css 2`] = `
 }
 .MuiButtonBase-root {
   color: inherit;
-  border: 0;
   cursor: pointer;
+  border: 0;
+  padding: 0;
   display: inline-flex;
   outline: none;
   position: relative;
@@ -592,6 +603,7 @@ exports[`snapshot: with handlers css 2`] = `
   align-items: center;
   user-select: none;
   border-radius: 0;
+  vertical-align: middle;
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
@@ -615,7 +627,7 @@ exports[`snapshot: with handlers css 2`] = `
   position: relative;
 }
 .MuiListItem-keyboardFocused {
-  background: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.12);
 }
 .MuiListItem-default {
   padding-top: 12px;
@@ -636,7 +648,7 @@ exports[`snapshot: with handlers css 2`] = `
   padding-right: 16px;
 }
 .MuiListItem-button {
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiListItem-button:hover {
   text-decoration: none;
@@ -659,20 +671,16 @@ exports[`snapshot: with handlers css 2`] = `
   overflow: hidden;
   font-size: 1rem;
   box-sizing: content-box;
-  background: none;
-  line-height: 1.5em;
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.5em;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.MuiMenuItem-root:focus {
-  background: rgba(0, 0, 0, 0.12);
-}
 .MuiMenuItem-root:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.075);
 }
-.MuiMenuItem-selected {
+.MuiMenuItem-root.MuiMenuItem-selected {
   background-color: rgba(0, 0, 0, 0.12);
 }"
 `;
@@ -685,6 +693,7 @@ exports[`snapshot: with handlers html 1`] = `
     className="fcAutocomplete-root"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -703,13 +712,15 @@ exports[`snapshot: with handlers html 1`] = `
         aria-expanded={false}
         aria-haspopup={false}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputSingleline"
@@ -746,6 +757,7 @@ exports[`snapshot: with handlers html 2`] = `
     className="fcAutocomplete-root"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -764,13 +776,15 @@ exports[`snapshot: with handlers html 2`] = `
         aria-expanded={true}
         aria-haspopup={true}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputSingleline"
@@ -979,6 +993,7 @@ exports[`snapshot: with text html 1`] = `
     className="fcAutocomplete-root"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -997,13 +1012,15 @@ exports[`snapshot: with text html 1`] = `
         aria-expanded={false}
         aria-haspopup={false}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputSingleline"
@@ -1042,6 +1059,7 @@ exports[`snapshot: without props html 1`] = `
     className="fcAutocomplete-root"
   >
     <div
+      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -1053,13 +1071,15 @@ exports[`snapshot: without props html 1`] = `
         aria-expanded={false}
         aria-haspopup={false}
         aria-owns="react-autowhatever-1"
-        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
+        className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-underline"
         onBlur={[Function]}
         onFocus={[Function]}
         role="combobox"
         style={Object {}}
       >
         <input
+          aria-invalid={false}
+          aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
           className="MuiInput-input MuiInput-inputSingleline"

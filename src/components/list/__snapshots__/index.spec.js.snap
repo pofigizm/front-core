@@ -45,16 +45,47 @@ label + .MuiInput-formControl {
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
-  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
   pointer-events: none;
-  background-color: #304ffe;
+  background-color: #303f9f;
 }
 .MuiInput-inkbar.MuiInput-focused:after {
   transform: scaleX(1);
 }
 .MuiInput-error:after {
   transform: scaleX(1);
-  background-color: #ff1744;
+  background-color: #f44336;
+}
+.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  content: \\"\\";
+  position: absolute;
+  transition: background-color 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.MuiInput-underline:hover:not(.MuiInput-disabled):before {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.MuiInput-disabled:before {
+  background: transparent;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.MuiInput-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInput-fullWidth {
+  width: 100%;
 }
 .MuiInput-input {
   font: inherit;
@@ -62,8 +93,9 @@ label + .MuiInput-formControl {
   color: currentColor;
   border: 0;
   margin: 0;
-  padding: 7px 0 9px;
+  padding: 6px 0 7px;
   display: block;
+  min-width: 0;
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
@@ -72,22 +104,22 @@ label + .MuiInput-formControl {
 .MuiInput-input::-webkit-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input::-moz-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input:-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input::-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
 }
 .MuiInput-input:focus {
   outline: 0;
@@ -123,51 +155,20 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   opacity: 0.42;
 }
 .MuiInput-inputDense {
-  padding-top: 4px;
-}
-.MuiInput-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-.MuiInput-underline:before {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  content: \\"\\";
-  position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.42);
-}
-.MuiInput-underline:hover:not(.MuiInput-disabled):before {
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.87);
-}
-.MuiInput-underline.MuiInput-disabled:before {
-  background: transparent;
-  background-size: 5px 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-  background-repeat: repeat-x;
-  background-position: left top;
-}
-.MuiInput-multiline {
-  padding: 6px 0 7px;
+  padding-top: 3px;
 }
 .MuiInput-inputDisabled {
   opacity: 1;
 }
 .MuiInput-inputSingleline {
-  height: 1em;
-}
-.MuiInput-inputSearch {
-  appearance: textfield;
+  height: 1.1875em;
 }
 .MuiInput-inputMultiline {
   resize: none;
   padding: 0;
 }
-.MuiInput-fullWidth {
-  width: 100%;
+.MuiInput-inputSearch {
+  appearance: textfield;
 }
 .MuiFormControl-root {
   margin: 0;
@@ -206,14 +207,13 @@ exports[`snapshot: basic usage html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -239,6 +239,7 @@ exports[`snapshot: basic usage html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -253,25 +254,26 @@ exports[`snapshot: basic usage html 1`] = `
           </button>
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Action
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Data
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    >
+    <tbody>
       <tr
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -297,6 +299,7 @@ exports[`snapshot: basic usage html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -311,9 +314,11 @@ exports[`snapshot: basic usage html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -350,6 +355,8 @@ exports[`snapshot: basic usage html 1`] = `
                   value="action-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -372,9 +379,11 @@ exports[`snapshot: basic usage html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -411,6 +420,8 @@ exports[`snapshot: basic usage html 1`] = `
                   value="data-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -437,7 +448,8 @@ exports[`snapshot: basic usage html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -463,6 +475,7 @@ exports[`snapshot: basic usage html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -477,9 +490,11 @@ exports[`snapshot: basic usage html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -516,6 +531,8 @@ exports[`snapshot: basic usage html 1`] = `
                   value="action-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -538,9 +555,11 @@ exports[`snapshot: basic usage html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -577,6 +596,8 @@ exports[`snapshot: basic usage html 1`] = `
                   value="data-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -603,7 +624,8 @@ exports[`snapshot: basic usage html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -629,6 +651,7 @@ exports[`snapshot: basic usage html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -643,9 +666,11 @@ exports[`snapshot: basic usage html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -682,6 +707,8 @@ exports[`snapshot: basic usage html 1`] = `
                   value="action-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -704,9 +731,11 @@ exports[`snapshot: basic usage html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -743,6 +772,8 @@ exports[`snapshot: basic usage html 1`] = `
                   value="data-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -893,7 +924,34 @@ exports[`snapshot: className css 1`] = `
   color: #f50057;
 }
 .MuiTypography-colorError {
-  color: #ff1744;
+  color: #f44336;
+}
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.MuiSvgIcon-colorAccent {
+  color: #ff4081;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorContrast {
+  color: rgba(255, 255, 255, 1);
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -922,6 +980,7 @@ exports[`snapshot: className css 1`] = `
   display: block;
   position: absolute;
   animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+  ripple-visible: [object Object];
 }
 @keyframes mui-ripple-enter {
   0% {
@@ -970,8 +1029,9 @@ exports[`snapshot: className css 1`] = `
 }
 .MuiButtonBase-root {
   color: inherit;
-  border: 0;
   cursor: pointer;
+  border: 0;
+  padding: 0;
   display: inline-flex;
   outline: none;
   position: relative;
@@ -979,6 +1039,7 @@ exports[`snapshot: className css 1`] = `
   align-items: center;
   user-select: none;
   border-radius: 0;
+  vertical-align: middle;
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
@@ -991,15 +1052,6 @@ exports[`snapshot: className css 1`] = `
   cursor: default;
   pointer-events: none;
 }
-.MuiSvgIcon-root {
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  user-select: none;
-  flex-shrink: 0;
-}
 .MuiIconButton-root {
   flex: 0 0 auto;
   width: 48px;
@@ -1008,7 +1060,7 @@ exports[`snapshot: className css 1`] = `
   padding: 0;
   font-size: 1.5rem;
   text-align: center;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, false, false.2, false) 0ms;
   border-radius: 50%;
 }
 .MuiIconButton-colorAccent {
@@ -1046,21 +1098,29 @@ exports[`snapshot: className css 1`] = `
   border-spacing: 0;
   border-collapse: collapse;
 }
-.MuiTableBody-root {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 0.8125rem;
-}
 .MuiTableCell-root {
   text-align: left;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  border-bottom: 1px solid
+    rgba(235, 235, 235, 1);
 }
 .MuiTableCell-numeric {
   text-align: right;
   flex-direction: row-reverse;
 }
-.MuiTableCell-head {
+.MuiTableCell-typeHead {
+  color: rgba(0, 0, 0, 0.54);
   position: relative;
+  font-size: 0.75rem;
   font-weight: 500;
+}
+.MuiTableCell-typeBody {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+}
+.MuiTableCell-typeFooter {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  border-bottom: 0;
 }
 .MuiTableCell-paddingDefault {
   padding: 4px 56px 4px 24px;
@@ -1073,14 +1133,6 @@ exports[`snapshot: className css 1`] = `
 }
 .MuiTableCell-paddingCheckbox {
   padding: 0 12px;
-}
-.MuiTableCell-footer {
-  border-bottom: 0;
-}
-.MuiTableHead-root {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 0.75rem;
-  font-weight: 500;
 }
 .MuiTableRow-root {
   color: inherit;
@@ -1098,10 +1150,10 @@ exports[`snapshot: className css 1`] = `
   height: 56px;
 }
 .MuiTableRow-hover:hover {
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 .MuiTableRow-selected {
-  background: #f5f5f5;
+  background-color: #f5f5f5;
 }
 .fcList-root {
   position: relative;
@@ -1140,7 +1192,7 @@ exports[`snapshot: className css 1`] = `
 }
 .fcList-number {
   color: rgba(0, 0, 0, 0.54);
-  padding: 8px 0;
+  padding: 8px, 0;
   font-size: 10px;
 }
 .fcList-row {
@@ -1155,12 +1207,8 @@ exports[`snapshot: className css 1`] = `
 .fcList-action:hover {
   opacity: 1;
 }
-.fcList-addIcon {
-  color: #536dfe;
-}
 .fcList-deleteIcon {
   width: 16px;
-  color: #ff4081;
   height: 16px;
 }
 .fcList-empty {
@@ -1178,14 +1226,13 @@ exports[`snapshot: className html 1`] = `
   <table
     className="MuiTable-root test-class fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -1211,6 +1258,7 @@ exports[`snapshot: className html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -1226,9 +1274,7 @@ exports[`snapshot: className html 1`] = `
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    />
+    <tbody />
   </table>
 </div>
 `;
@@ -1247,14 +1293,13 @@ exports[`snapshot: empty html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -1280,6 +1325,7 @@ exports[`snapshot: empty html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -1295,9 +1341,7 @@ exports[`snapshot: empty html 1`] = `
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    />
+    <tbody />
   </table>
 </div>
 `;
@@ -1316,14 +1360,13 @@ exports[`snapshot: empty read only html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconEmpty"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconEmpty"
         >
           <span
             className="fcList-empty"
@@ -1333,9 +1376,7 @@ exports[`snapshot: empty read only html 1`] = `
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    />
+    <tbody />
   </table>
 </div>
 `;
@@ -1354,45 +1395,48 @@ exports[`snapshot: read only html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconEmpty"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconEmpty"
         />
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Action
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Data
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Checked
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    >
+    <tbody>
       <tr
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         />
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1429,6 +1473,8 @@ exports[`snapshot: read only html 1`] = `
                   value="action-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -1451,9 +1497,11 @@ exports[`snapshot: read only html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1490,6 +1538,8 @@ exports[`snapshot: read only html 1`] = `
                   value="data-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -1512,7 +1562,8 @@ exports[`snapshot: read only html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
@@ -1545,6 +1596,7 @@ exports[`snapshot: read only html 1`] = `
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root MuiIconButton-icon"
+                    color={undefined}
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -1564,11 +1616,11 @@ exports[`snapshot: read only html 1`] = `
                   />
                 </span>
               </span>
-              <p
+              <span
                 className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 
-              </p>
+              </span>
             </label>
           </div>
         </td>
@@ -1577,12 +1629,15 @@ exports[`snapshot: read only html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         />
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1619,6 +1674,8 @@ exports[`snapshot: read only html 1`] = `
                   value="action-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -1641,9 +1698,11 @@ exports[`snapshot: read only html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1680,6 +1739,8 @@ exports[`snapshot: read only html 1`] = `
                   value="data-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -1702,7 +1763,8 @@ exports[`snapshot: read only html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
@@ -1735,6 +1797,7 @@ exports[`snapshot: read only html 1`] = `
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root MuiIconButton-icon"
+                    color={undefined}
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -1754,11 +1817,11 @@ exports[`snapshot: read only html 1`] = `
                   />
                 </span>
               </span>
-              <p
+              <span
                 className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 
-              </p>
+              </span>
             </label>
           </div>
         </td>
@@ -1767,12 +1830,15 @@ exports[`snapshot: read only html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         />
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1809,6 +1875,8 @@ exports[`snapshot: read only html 1`] = `
                   value="action-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -1831,9 +1899,11 @@ exports[`snapshot: read only html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1870,6 +1940,8 @@ exports[`snapshot: read only html 1`] = `
                   value="data-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
@@ -1892,7 +1964,8 @@ exports[`snapshot: read only html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
@@ -1925,6 +1998,7 @@ exports[`snapshot: read only html 1`] = `
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root MuiIconButton-icon"
+                    color={undefined}
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -1944,11 +2018,11 @@ exports[`snapshot: read only html 1`] = `
                   />
                 </span>
               </span>
-              <p
+              <span
                 className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 
-              </p>
+              </span>
             </label>
           </div>
         </td>
@@ -1972,14 +2046,13 @@ exports[`snapshot: with border & top html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2005,6 +2078,7 @@ exports[`snapshot: with border & top html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2019,25 +2093,26 @@ exports[`snapshot: with border & top html 1`] = `
           </button>
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Action
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Data
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    >
+    <tbody>
       <tr
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2063,6 +2138,7 @@ exports[`snapshot: with border & top html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2077,9 +2153,11 @@ exports[`snapshot: with border & top html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2116,6 +2194,8 @@ exports[`snapshot: with border & top html 1`] = `
                   value="action-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2138,9 +2218,11 @@ exports[`snapshot: with border & top html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2177,6 +2259,8 @@ exports[`snapshot: with border & top html 1`] = `
                   value="data-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2203,7 +2287,8 @@ exports[`snapshot: with border & top html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2229,6 +2314,7 @@ exports[`snapshot: with border & top html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2243,9 +2329,11 @@ exports[`snapshot: with border & top html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2282,6 +2370,8 @@ exports[`snapshot: with border & top html 1`] = `
                   value="action-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2304,9 +2394,11 @@ exports[`snapshot: with border & top html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2343,6 +2435,8 @@ exports[`snapshot: with border & top html 1`] = `
                   value="data-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2369,7 +2463,8 @@ exports[`snapshot: with border & top html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2395,6 +2490,7 @@ exports[`snapshot: with border & top html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2409,9 +2505,11 @@ exports[`snapshot: with border & top html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2448,6 +2546,8 @@ exports[`snapshot: with border & top html 1`] = `
                   value="action-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2470,9 +2570,11 @@ exports[`snapshot: with border & top html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-cellTop"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-cellTop"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2509,6 +2611,8 @@ exports[`snapshot: with border & top html 1`] = `
                   value="data-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2550,14 +2654,13 @@ exports[`snapshot: with border html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2583,6 +2686,7 @@ exports[`snapshot: with border html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2597,25 +2701,26 @@ exports[`snapshot: with border html 1`] = `
           </button>
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Action
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Data
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    >
+    <tbody>
       <tr
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2641,6 +2746,7 @@ exports[`snapshot: with border html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2655,9 +2761,11 @@ exports[`snapshot: with border html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2694,6 +2802,8 @@ exports[`snapshot: with border html 1`] = `
                   value="action-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2716,9 +2826,11 @@ exports[`snapshot: with border html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2755,6 +2867,8 @@ exports[`snapshot: with border html 1`] = `
                   value="data-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2781,7 +2895,8 @@ exports[`snapshot: with border html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2807,6 +2922,7 @@ exports[`snapshot: with border html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2821,9 +2937,11 @@ exports[`snapshot: with border html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2860,6 +2978,8 @@ exports[`snapshot: with border html 1`] = `
                   value="action-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2882,9 +3002,11 @@ exports[`snapshot: with border html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -2921,6 +3043,8 @@ exports[`snapshot: with border html 1`] = `
                   value="data-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -2947,7 +3071,8 @@ exports[`snapshot: with border html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -2973,6 +3098,7 @@ exports[`snapshot: with border html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2987,9 +3113,11 @@ exports[`snapshot: with border html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3026,6 +3154,8 @@ exports[`snapshot: with border html 1`] = `
                   value="action-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3048,9 +3178,11 @@ exports[`snapshot: with border html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3087,6 +3219,8 @@ exports[`snapshot: with border html 1`] = `
                   value="data-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3121,18 +3255,16 @@ exports[`snapshot: with component css 1`] = `
   align-items: center;
   margin-left: -14px;
   margin-right: 16px;
+  vertical-align: middle;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .MuiFormControlLabel-disabled {
   color: rgba(0, 0, 0, 0.38);
   cursor: default;
 }
-.MuiFormControlLabel-label {
-  user-select: none;
-}
 .MuiSwitchBase-root {
   display: inline-flex;
-  transition: none;
+  transition: false;
   align-items: center;
 }
 .MuiSwitchBase-input {
@@ -3170,14 +3302,13 @@ exports[`snapshot: with component html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -3203,6 +3334,7 @@ exports[`snapshot: with component html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3217,30 +3349,32 @@ exports[`snapshot: with component html 1`] = `
           </button>
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Action
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Data
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Checked
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    >
+    <tbody>
       <tr
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -3266,6 +3400,7 @@ exports[`snapshot: with component html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3280,9 +3415,11 @@ exports[`snapshot: with component html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3319,6 +3456,8 @@ exports[`snapshot: with component html 1`] = `
                   value="action-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3341,9 +3480,11 @@ exports[`snapshot: with component html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3380,6 +3521,8 @@ exports[`snapshot: with component html 1`] = `
                   value="data-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3402,7 +3545,8 @@ exports[`snapshot: with component html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
@@ -3435,6 +3579,7 @@ exports[`snapshot: with component html 1`] = `
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root MuiIconButton-icon"
+                    color={undefined}
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -3457,11 +3602,11 @@ exports[`snapshot: with component html 1`] = `
                   className="MuiTouchRipple-root"
                 />
               </span>
-              <p
+              <span
                 className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 
-              </p>
+              </span>
             </label>
           </div>
         </td>
@@ -3470,7 +3615,8 @@ exports[`snapshot: with component html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -3496,6 +3642,7 @@ exports[`snapshot: with component html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3510,9 +3657,11 @@ exports[`snapshot: with component html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3549,6 +3698,8 @@ exports[`snapshot: with component html 1`] = `
                   value="action-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3571,9 +3722,11 @@ exports[`snapshot: with component html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3610,6 +3763,8 @@ exports[`snapshot: with component html 1`] = `
                   value="data-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3632,7 +3787,8 @@ exports[`snapshot: with component html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
@@ -3665,6 +3821,7 @@ exports[`snapshot: with component html 1`] = `
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root MuiIconButton-icon"
+                    color={undefined}
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -3687,11 +3844,11 @@ exports[`snapshot: with component html 1`] = `
                   className="MuiTouchRipple-root"
                 />
               </span>
-              <p
+              <span
                 className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 
-              </p>
+              </span>
             </label>
           </div>
         </td>
@@ -3700,7 +3857,8 @@ exports[`snapshot: with component html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -3726,6 +3884,7 @@ exports[`snapshot: with component html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3740,9 +3899,11 @@ exports[`snapshot: with component html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3779,6 +3940,8 @@ exports[`snapshot: with component html 1`] = `
                   value="action-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3801,9 +3964,11 @@ exports[`snapshot: with component html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -3840,6 +4005,8 @@ exports[`snapshot: with component html 1`] = `
                   value="data-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -3862,7 +4029,8 @@ exports[`snapshot: with component html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
@@ -3895,6 +4063,7 @@ exports[`snapshot: with component html 1`] = `
                   <svg
                     aria-hidden="true"
                     className="MuiSvgIcon-root MuiIconButton-icon"
+                    color={undefined}
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -3917,11 +4086,11 @@ exports[`snapshot: with component html 1`] = `
                   className="MuiTouchRipple-root"
                 />
               </span>
-              <p
+              <span
                 className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 
-              </p>
+              </span>
             </label>
           </div>
         </td>
@@ -3945,14 +4114,13 @@ exports[`snapshot: with numbers html 1`] = `
   <table
     className="MuiTable-root fcList-root"
   >
-    <thead
-      className="MuiTableHead-root"
-    >
+    <thead>
       <tr
         className="MuiTableRow-root MuiTableRow-head fcList-head"
       >
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-iconCell"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-iconCell"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -3978,6 +4146,7 @@ exports[`snapshot: with numbers html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-addIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3992,28 +4161,30 @@ exports[`snapshot: with numbers html 1`] = `
           </button>
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head fcList-numberColl"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead fcList-numberColl"
         />
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Action
         </th>
         <th
-          className="MuiTableCell-root MuiTableCell-head"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeHead"
         >
           Data
         </th>
       </tr>
     </thead>
-    <tbody
-      className="MuiTableBody-root"
-    >
+    <tbody>
       <tr
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -4039,6 +4210,7 @@ exports[`snapshot: with numbers html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -4053,7 +4225,8 @@ exports[`snapshot: with numbers html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="fcList-number"
@@ -4062,9 +4235,11 @@ exports[`snapshot: with numbers html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -4101,6 +4276,8 @@ exports[`snapshot: with numbers html 1`] = `
                   value="action-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -4123,9 +4300,11 @@ exports[`snapshot: with numbers html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -4162,6 +4341,8 @@ exports[`snapshot: with numbers html 1`] = `
                   value="data-1"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -4188,7 +4369,8 @@ exports[`snapshot: with numbers html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -4214,6 +4396,7 @@ exports[`snapshot: with numbers html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -4228,7 +4411,8 @@ exports[`snapshot: with numbers html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="fcList-number"
@@ -4237,9 +4421,11 @@ exports[`snapshot: with numbers html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -4276,6 +4462,8 @@ exports[`snapshot: with numbers html 1`] = `
                   value="action-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -4298,9 +4486,11 @@ exports[`snapshot: with numbers html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -4337,6 +4527,8 @@ exports[`snapshot: with numbers html 1`] = `
                   value="data-2"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -4363,7 +4555,8 @@ exports[`snapshot: with numbers html 1`] = `
         className="MuiTableRow-root fcList-row"
       >
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <button
             className="MuiButtonBase-root MuiIconButton-root fcList-action"
@@ -4389,6 +4582,7 @@ exports[`snapshot: with numbers html 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root MuiIconButton-icon fcList-deleteIcon"
+                color={undefined}
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -4403,7 +4597,8 @@ exports[`snapshot: with numbers html 1`] = `
           </button>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
             className="fcList-number"
@@ -4412,9 +4607,11 @@ exports[`snapshot: with numbers html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -4451,6 +4648,8 @@ exports[`snapshot: with numbers html 1`] = `
                   value="action-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
@@ -4473,9 +4672,11 @@ exports[`snapshot: with numbers html 1`] = `
           </div>
         </td>
         <td
-          className="MuiTableCell-root fcList-cell fcList-removeBorder"
+          aria-sort={null}
+          className="MuiTableCell-root MuiTableCell-typeBody fcList-cell fcList-removeBorder"
         >
           <div
+            aria-describedby={undefined}
             className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -4512,6 +4713,8 @@ exports[`snapshot: with numbers html 1`] = `
                   value="data-3"
                 />
                 <textarea
+                  aria-invalid={false}
+                  aria-required={false}
                   autoComplete={undefined}
                   autoFocus={undefined}
                   className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
