@@ -40,7 +40,9 @@ class Input extends PureComponent {
     return (
       <TextField
         className={cn(className, classes.root)}
-        InputClassName={cn(classes.input, readOnly && classes.readOnly)}
+        InputProps={{
+          className: cn(classes.input, readOnly && classes.readOnly),
+        }}
         {...props}
         value={value}
         fullWidth

@@ -33,7 +33,9 @@ class TextArea extends PureComponent {
     return (
       <TextField
         className={cn(className, classes.root)}
-        InputClassName={cn(readOnly && classes.readOnly)}
+        InputProps={{
+          className: cn(readOnly && classes.readOnly),
+        }}
         {...props}
         value={value}
         multiline
