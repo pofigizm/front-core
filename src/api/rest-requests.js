@@ -12,8 +12,8 @@ const getOriginWorker = (config, url = '') => ({ method, params, id }) => {
 
   let fullUrl
   let body
-  if (type === 'GET') {
-    const query = Object.entries(params || {})
+  if (type === 'GET' && params) {
+    const query = Object.entries(params)
       .map(([key, value]) => `${key}=${value}`)
       .join('&')
     fullUrl = `${url}/${path}?${query}`
