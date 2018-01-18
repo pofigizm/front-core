@@ -1,7 +1,8 @@
 const getHeders = () => {
   const headers = new Headers()
   headers.append('Accept', 'application/json')
-  headers.append('Content-Type', 'application/json')
+  // remove when add cors to api
+  // headers.append('Content-Type', 'application/json')
   return headers
 }
 
@@ -25,7 +26,6 @@ const getOriginWorker = (config, url = '') => ({ method, params, id }) => {
 
   return fetch(fullUrl, {
     method: type,
-    mode: 'cors',
     headers,
     body,
   })
