@@ -77,6 +77,7 @@ const createApiRequest = (
 
     fetch(url, {
       method: 'POST',
+      mode: 'cors',
       headers,
       body,
     })

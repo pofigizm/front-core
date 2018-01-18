@@ -25,6 +25,7 @@ const getOriginWorker = (config, url = '') => ({ method, params, id }) => {
 
   return fetch(fullUrl, {
     method: type,
+    mode: 'cors',
     headers,
     body,
   })
