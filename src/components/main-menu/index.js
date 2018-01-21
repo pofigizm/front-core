@@ -26,16 +26,33 @@ class MainMenu extends PureComponent {
 
     return (
       <List className={cn(classes.root, classNames)}>
-        { list.map((element, id) => (
-          <Link key={id} to={element.link} className={cn(classes.link)}>
-            <ListItem button>
-              <ListItemIcon>
-                <element.Icon />
-              </ListItemIcon>
-              <ListItemText inset primary={element.name} />
-            </ListItem>
-          </Link>
-        )) }
+        { list.map((element, id) => {
+          // TODO remove it when redux-first-router has been updated
+          // https://github.com/faceyspacey/redux-first-router-link/issues/75
+          if (element.link.startsWith('http')) {
+            return (
+              <a key={id} href={element.link} className={cn(classes.link)}>
+                <ListItem button>
+                  <ListItemIcon>
+                    <element.Icon />
+                  </ListItemIcon>
+                  <ListItemText inset primary={element.name} />
+                </ListItem>
+              </a>
+            )
+          }
+
+          return (
+            <Link key={id} to={element.link} className={cn(classes.link)}>
+              <ListItem button>
+                <ListItemIcon>
+                  <element.Icon />
+                </ListItemIcon>
+                <ListItemText inset primary={element.name} />
+              </ListItem>
+            </Link>
+          )
+        }) }
       </List>
     )
   }
