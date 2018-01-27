@@ -1,6 +1,6 @@
-import { parseToken } from 'src/utils/helpers'
-import { omit } from 'src/utils/lib-helpers'
-import { tokenStorageKey } from 'src/utils/constants'
+import { parseToken } from './utils/helpers'
+import { omit } from './utils/lib-helpers'
+import { tokenStorageKey } from './utils/constants'
 
 import { ACTIONS } from './constants'
 import { getState as getCore, getLocation } from './selectors'

@@ -1,10 +1,10 @@
-import { create } from 'src/utils/functions'
+import { create } from './utils/functions'
 
 const emptyObj = {}
 
 export const getState = state => state.core
 
-export const getLocation = state => state.location
+export const getLocation = state => state.location || { routesMap: {} }
 
 export const getRoute = create(
   getLocation,

@@ -10,7 +10,7 @@ import Dialog, {
   DialogTitle,
 } from 'material-ui/Dialog'
 
-import Button from 'src/components/button'
+import Button from '../button'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

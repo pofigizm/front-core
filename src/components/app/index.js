@@ -1,8 +1,12 @@
 import React, { PureComponent } from 'react'
 import { withStyles } from 'material-ui/styles'
 
-import { memoize } from 'src/utils/functions'
-import { AppBar, Drawer, MainMenu, Snackbar, Alert } from 'src/components'
+import { memoize } from '../../utils/functions'
+import AppBar from '../app-bar'
+import Drawer from '../drawer'
+import MainMenu from '../main-menu'
+import Snackbar from '../snackbar'
+import Alert from '../alert'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

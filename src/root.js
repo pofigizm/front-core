@@ -19,8 +19,10 @@ const jss = create(preset())
 
 const render = (Wrapper, Page, store, title, menu) => {
   const root = document.getElementById('app')
+  const sCss = document.getElementById('server-side-styles')
+  const sJs = document.getElementById('server-side-state')
 
-  ReactDOM.render(
+  ReactDOM.hydrate(
     <AppContainer>
       <Provider store={store}>
         <JssProvider jss={jss} generateClassName={generateClassName}>
@@ -33,6 +35,10 @@ const render = (Wrapper, Page, store, title, menu) => {
       </Provider>
     </AppContainer>,
     root,
+    () => {
+      sCss.remove()
+      sJs.remove()
+    }
   )
 }
 

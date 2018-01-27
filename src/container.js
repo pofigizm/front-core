@@ -1,13 +1,12 @@
 import { connect } from 'react-redux'
 import { NavLink } from 'redux-first-router-link'
 
-import { compareByKey } from 'src/utils/helpers'
-import { memoize } from 'src/utils/functions'
-import { App } from 'src/components'
+import { compareByKey } from './utils/helpers'
+import { memoize } from './utils/functions'
+import App from './components/app'
 
 import * as actions from './actions'
 import * as selectors from './selectors'
-
 
 const getMessageList = memoize(messages => Object.values(messages)
   .filter(message => !message.hide)

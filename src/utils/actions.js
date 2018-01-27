@@ -1,5 +1,5 @@
-import { deepAssign } from 'src/utils/lib-helpers'
-import { getLocation } from 'src/selectors'
+import { deepAssign } from './lib-helpers'
+import { getLocation } from '../selectors'
 
 export const prepareActions = (actions, directory) => {
   const prefix = directory

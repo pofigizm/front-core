@@ -5,6 +5,7 @@ import { addMiddleware } from 'redux-dynamic-middlewares'
 
 import { createRouteHandler } from 'src/utils/middlewares'
 import { getRoute } from 'src/selectors'
+import loading from 'src/components/loading'
 
 export default ({ store, reducers }) => {
   const onLoad = (moduleObject, _, { modulePath }) => {
@@ -51,7 +52,7 @@ export default ({ store, reducers }) => {
       }
       return import(`app-src/pages/${props.modulePath}`)
     },
-    { onLoad },
+    { onLoad, loading },
   )
 
   const mapState = (state) => {

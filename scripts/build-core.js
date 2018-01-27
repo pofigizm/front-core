@@ -12,8 +12,11 @@ require('babel-register')({
   ignore: /node_modules(?!\/front-core)/,
 })
 
+global.__BROWSER__ = false
+global.__DEV__ = false
 global.__LOC__ = false
-const tmpl = require('../server/template').default
+global.__PROJECT__ = 'front-core'
+const { render } = require('../server/render')
 
 const envFolder = process.env.APP_BUILD_FOLDER
 const envPublicPath = process.env.APP_PUBLIC_PATH
@@ -21,7 +24,7 @@ const envPublicPath = process.env.APP_PUBLIC_PATH
 const buildFolder = envFolder ? path.resolve(envFolder) : paths.appBuild
 fs.emptyDirSync(buildFolder)
 
-fs.outputFileSync(path.join(buildFolder, 'index.html'), tmpl())
+fs.outputFileSync(path.join(buildFolder, 'index.html'), render(paths.appRoutesJs))
 fs.copySync(path.join(paths.appRoot, 'config.json'), path.join(buildFolder, 'config.json'))
 
 webpack(config.generate(buildFolder, envPublicPath), (err, stats) => {

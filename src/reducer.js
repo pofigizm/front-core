@@ -1,4 +1,4 @@
-import { deepAssign } from 'src/utils/lib-helpers'
+import { deepAssign } from './utils/lib-helpers'
 import { ACTIONS } from './constants'
 
 const {
