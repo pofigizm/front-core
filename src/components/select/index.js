@@ -13,7 +13,7 @@ const styles = theme => ({
   root: {
   },
   readOnly: {
-    color: theme.palette.input.inputText,
+    color: theme.palette.text.primary,
   },
 })
 

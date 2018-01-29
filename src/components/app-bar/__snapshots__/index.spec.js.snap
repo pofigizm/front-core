@@ -11,7 +11,7 @@ exports[`snapshot: basic usage html 1`] = `
   >
     <button
       aria-label="open drawer"
-      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorContrast fcAppBar-menuButton"
+      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit fcAppBar-menuButton"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -24,7 +24,7 @@ exports[`snapshot: basic usage html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role="button"
+      role={undefined}
       tabIndex={0}
       type="button"
     >
@@ -60,7 +60,7 @@ exports[`snapshot: basic usage html 1`] = `
       Ivanov Ivan
     </p>
     <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-flatContrast fcAppBar-loginButton"
+      className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit fcAppBar-loginButton"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -73,7 +73,7 @@ exports[`snapshot: basic usage html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role="button"
+      role={undefined}
       tabIndex={0}
       type="button"
     >
@@ -204,9 +204,9 @@ exports[`snapshot: className css 1`] = `
   color: rgba(255, 255, 255, 1);
   background-color: #3f51b5;
 }
-.MuiAppBar-colorAccent {
+.MuiAppBar-colorSecondary {
   color: rgba(255, 255, 255, 1);
-  background-color: #ff4081;
+  background-color: #f50057;
 }
 .MuiToolbar-root {
   display: flex;
@@ -350,10 +350,10 @@ exports[`snapshot: className css 1`] = `
   color: #3f51b5;
 }
 .MuiTypography-colorSecondary {
-  color: rgba(0, 0, 0, 0.54);
-}
-.MuiTypography-colorAccent {
   color: #f50057;
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
 }
 .MuiTypography-colorError {
   color: #f44336;
@@ -384,8 +384,7 @@ exports[`snapshot: className css 1`] = `
   height: 100%;
   display: block;
   position: absolute;
-  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
-  ripple-visible: [object Object];
+  animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
 }
 @keyframes mui-ripple-enter {
   0% {
@@ -408,7 +407,7 @@ exports[`snapshot: className css 1`] = `
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(0.92);
   }
   100% {
     transform: scale(1);
@@ -448,7 +447,7 @@ exports[`snapshot: className css 1`] = `
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
@@ -464,7 +463,7 @@ exports[`snapshot: className css 1`] = `
   font-size: 0.875rem;
   box-sizing: border-box;
   min-height: 36px;
-  transition: background-color 250ms cubic-bezier(0.4, false, false.2, false) 0ms,box-shadow 250ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   line-height: 1.4em;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   font-weight: 500;
@@ -506,25 +505,14 @@ exports[`snapshot: className css 1`] = `
     background-color: transparent;
   }
 }
-.MuiButton-flatAccent {
-  color: #ff4081;
+.MuiButton-flatSecondary {
+  color: #f50057;
 }
-.MuiButton-flatAccent:hover {
-  background-color: rgba(255, 64, 129, 0.12);
-}
-@media (hover: none) {
-  .MuiButton-flatAccent:hover {
-    background-color: transparent;
-  }
-}
-.MuiButton-flatContrast {
-  color: rgba(255, 255, 255, 1);
-}
-.MuiButton-flatContrast:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+.MuiButton-flatSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.12);
 }
 @media (hover: none) {
-  .MuiButton-flatContrast:hover {
+  .MuiButton-flatSecondary:hover {
     background-color: transparent;
   }
 }
@@ -557,11 +545,6 @@ exports[`snapshot: className css 1`] = `
 .MuiButton-raised:hover.MuiButton-disabled {
   background-color: rgba(0, 0, 0, 0.12);
 }
-@media (hover: none) {
-  .MuiButton-raised:hover.MuiButton-disabled {
-    background-color: #e0e0e0;
-  }
-}
 .MuiButton-raisedPrimary {
   color: rgba(255, 255, 255, 1);
   background-color: #3f51b5;
@@ -574,20 +557,17 @@ exports[`snapshot: className css 1`] = `
     background-color: #3f51b5;
   }
 }
-.MuiButton-raisedAccent {
+.MuiButton-raisedSecondary {
   color: rgba(255, 255, 255, 1);
-  background-color: #ff4081;
-}
-.MuiButton-raisedAccent:hover {
   background-color: #f50057;
 }
-@media (hover: none) {
-  .MuiButton-raisedAccent:hover {
-    background-color: #ff4081;
-  }
+.MuiButton-raisedSecondary:hover {
+  background-color: #c51162;
 }
-.MuiButton-raisedContrast {
-  color: rgba(255, 255, 255, 1);
+@media (hover: none) {
+  .MuiButton-raisedSecondary:hover {
+    background-color: #f50057;
+  }
 }
 .MuiButton-disabled {
   color: rgba(0, 0, 0, 0.26);
@@ -615,27 +595,24 @@ exports[`snapshot: className css 1`] = `
   width: 24px;
   height: 24px;
   display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
 }
-.MuiSvgIcon-colorAccent {
-  color: #ff4081;
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
 }
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorContrast {
-  color: rgba(255, 255, 255, 1);
 }
 .MuiSvgIcon-colorDisabled {
   color: rgba(0, 0, 0, 0.26);
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
 }
 .MuiIconButton-root {
   flex: 0 0 auto;
@@ -645,20 +622,17 @@ exports[`snapshot: className css 1`] = `
   padding: 0;
   font-size: 1.5rem;
   text-align: center;
-  transition: background-color 150ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 50%;
 }
-.MuiIconButton-colorAccent {
-  color: #ff4081;
-}
-.MuiIconButton-colorContrast {
-  color: rgba(255, 255, 255, 1);
+.MuiIconButton-colorInherit {
+  color: inherit;
 }
 .MuiIconButton-colorPrimary {
   color: #3f51b5;
 }
-.MuiIconButton-colorInherit {
-  color: inherit;
+.MuiIconButton-colorSecondary {
+  color: #f50057;
 }
 .MuiIconButton-disabled {
   color: rgba(0, 0, 0, 0.26);
@@ -673,17 +647,14 @@ exports[`snapshot: className css 1`] = `
   width: 1em;
   height: 1em;
 }
-.MuiIconButton-keyboardFocused {
-  background-color: rgba(0, 0, 0, 0.12);
-}
 .fcAppBar-root {
-  z-index: NaN;
+  z-index: 1201;
   position: absolute;
-  transition: width 195ms cubic-bezier(0.4, false, false.6, false) 0ms,margin 195ms cubic-bezier(0.4, false, false.6, false) 0ms;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
 }
 .fcAppBar-shift {
   width: calc(100% - 240px);
-  transition: width 225ms cubic-bezier(0.4, false, false.6, false) 0ms,margin 225ms cubic-bezier(0.4, false, false.6, false) 0ms;
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,margin 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
   margin-left: 240px;
 }
 .fcAppBar-main {
@@ -713,7 +684,7 @@ exports[`snapshot: className html 1`] = `
   >
     <button
       aria-label="open drawer"
-      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorContrast fcAppBar-menuButton"
+      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit fcAppBar-menuButton"
       disabled={false}
       onBlur={[Function]}
       onClick={undefined}
@@ -726,7 +697,7 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role="button"
+      role={undefined}
       tabIndex={0}
       type="button"
     >
@@ -758,7 +729,7 @@ exports[`snapshot: className html 1`] = `
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     />
     <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-flatContrast fcAppBar-loginButton"
+      className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit fcAppBar-loginButton"
       disabled={false}
       onBlur={[Function]}
       onClick={undefined}
@@ -771,7 +742,7 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role="button"
+      role={undefined}
       tabIndex={0}
       type="button"
     >

@@ -161,8 +161,7 @@ exports[`snapshot: className css 1`] = `
   height: 100%;
   display: block;
   position: absolute;
-  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
-  ripple-visible: [object Object];
+  animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
 }
 @keyframes mui-ripple-enter {
   0% {
@@ -185,7 +184,7 @@ exports[`snapshot: className css 1`] = `
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(0.92);
   }
   100% {
     transform: scale(1);
@@ -225,7 +224,7 @@ exports[`snapshot: className css 1`] = `
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
@@ -239,27 +238,24 @@ exports[`snapshot: className css 1`] = `
   width: 24px;
   height: 24px;
   display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
 }
-.MuiSvgIcon-colorAccent {
-  color: #ff4081;
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
 }
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorContrast {
-  color: rgba(255, 255, 255, 1);
 }
 .MuiSvgIcon-colorDisabled {
   color: rgba(0, 0, 0, 0.26);
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
 }
 .MuiIconButton-root {
   flex: 0 0 auto;
@@ -269,20 +265,17 @@ exports[`snapshot: className css 1`] = `
   padding: 0;
   font-size: 1.5rem;
   text-align: center;
-  transition: background-color 150ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 50%;
 }
-.MuiIconButton-colorAccent {
-  color: #ff4081;
-}
-.MuiIconButton-colorContrast {
-  color: rgba(255, 255, 255, 1);
+.MuiIconButton-colorInherit {
+  color: inherit;
 }
 .MuiIconButton-colorPrimary {
   color: #3f51b5;
 }
-.MuiIconButton-colorInherit {
-  color: inherit;
+.MuiIconButton-colorSecondary {
+  color: #f50057;
 }
 .MuiIconButton-disabled {
   color: rgba(0, 0, 0, 0.26);
@@ -297,19 +290,16 @@ exports[`snapshot: className css 1`] = `
   width: 1em;
   height: 1em;
 }
-.MuiIconButton-keyboardFocused {
-  background-color: rgba(0, 0, 0, 0.12);
-}
 .fcDrawer-drawerPaper {
   width: 240px;
   height: 100%;
   position: relative;
-  transition: width 225ms cubic-bezier(0.4, false, false.6, false) 0ms;
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
 }
 .fcDrawer-drawerPaperClose {
   width: 60px;
   overflow-x: hidden;
-  transition: width 195ms cubic-bezier(0.4, false, false.6, false) 0ms;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
 }
 .fcDrawer-drawerInner {
   width: 240px;
@@ -355,7 +345,7 @@ exports[`snapshot: className html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          role="button"
+          role={undefined}
           tabIndex={0}
           type="button"
         >
@@ -413,7 +403,7 @@ exports[`snapshot: empty html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          role="button"
+          role={undefined}
           tabIndex={0}
           type="button"
         >

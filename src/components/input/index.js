@@ -18,7 +18,7 @@ const styles = theme => ({
   },
   readOnly: {
     '& > input': {
-      color: theme.palette.input.inputText,
+      color: theme.palette.text.primary,
     },
   },
 })

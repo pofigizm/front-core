@@ -117,10 +117,10 @@ exports[`snapshot: className css 1`] = `
   color: #3f51b5;
 }
 .MuiTypography-colorSecondary {
-  color: rgba(0, 0, 0, 0.54);
-}
-.MuiTypography-colorAccent {
   color: #f50057;
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
 }
 .MuiTypography-colorError {
   color: #f44336;
@@ -161,7 +161,7 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiTableCell-root {
   text-align: left;
   border-bottom: 1px solid
-    rgba(235, 235, 235, 1);
+    rgba(224, 224, 224, 1);
 }
 .MuiTableCell-numeric {
   text-align: right;
@@ -291,7 +291,7 @@ exports[`snapshot: with text and type css 1`] = `
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
@@ -305,27 +305,24 @@ exports[`snapshot: with text and type css 1`] = `
   width: 24px;
   height: 24px;
   display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
 }
-.MuiSvgIcon-colorAccent {
-  color: #ff4081;
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
 }
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorContrast {
-  color: rgba(255, 255, 255, 1);
 }
 .MuiSvgIcon-colorDisabled {
   color: rgba(0, 0, 0, 0.26);
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
 }
 .MuiTableRow-root {
   color: inherit;
@@ -336,17 +333,17 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiTableRow-root:focus {
   outline: none;
 }
-.MuiTableRow-head {
+.MuiTableRow-typeHead {
   height: 56px;
 }
-.MuiTableRow-footer {
+.MuiTableRow-typeFooter {
   height: 56px;
-}
-.MuiTableRow-hover:hover {
-  background-color: #eeeeee;
 }
 .MuiTableRow-selected {
-  background-color: #f5f5f5;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTableRow-hover:hover {
+  background-color: rgba(0, 0, 0, 0.07);
 }
 .MuiTableSortLabel-root {
   cursor: pointer;
@@ -371,7 +368,7 @@ exports[`snapshot: with text and type css 1`] = `
   width: 16px;
   height: 16px;
   opacity: 0;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms,transform 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   margin-left: 4px;
   user-select: none;
   margin-right: 4px;
@@ -401,7 +398,7 @@ exports[`snapshot: with text and type html 1`] = `
       className="fcTableHead-root"
     >
       <tr
-        className="MuiTableRow-root MuiTableRow-head"
+        className="MuiTableRow-root MuiTableRow-typeHead"
       >
         <th
           aria-sort={null}
@@ -546,7 +543,7 @@ exports[`snapshot: with text and type html 2`] = `
       className="fcTableHead-root"
     >
       <tr
-        className="MuiTableRow-root MuiTableRow-head"
+        className="MuiTableRow-root MuiTableRow-typeHead"
       >
         <th
           aria-sort={null}

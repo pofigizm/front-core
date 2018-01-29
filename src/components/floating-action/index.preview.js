@@ -19,7 +19,7 @@ export default [
       label: 'done',
       Icon: Done,
       onClick: action('onClick-done'),
-      color: 'accent',
+      color: 'secondary',
     }, {
       id: 2,
       label: 'refresh',
@@ -43,7 +43,7 @@ export default [
       id: 1,
       label: 'done',
       Icon: Done,
-      color: 'accent',
+      color: 'secondary',
     }, {
       id: 2,
       label: 'refresh',

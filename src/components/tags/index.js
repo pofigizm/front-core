@@ -29,7 +29,7 @@ const styles = theme => ({
     marginTop: theme.spacing.unit,
   },
   readOnly: {
-    color: theme.palette.input.inputText,
+    color: theme.palette.text.primary,
   },
 })
 

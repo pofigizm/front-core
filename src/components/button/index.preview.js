@@ -18,7 +18,7 @@ export default [
   () => ({
     _preview: 'with text',
     label: 'button',
-    color: 'accent',
+    color: 'secondary',
   }),
 
   () => ({

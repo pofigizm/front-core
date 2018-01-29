@@ -45,7 +45,7 @@ label + .MuiInput-formControl {
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
-  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
   pointer-events: none;
   background-color: #303f9f;
 }
@@ -66,7 +66,7 @@ label + .MuiInput-formControl {
   height: 1px;
   content: \\"\\";
   position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.42);
 }
@@ -99,27 +99,27 @@ label + .MuiInput-formControl {
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiInput-input::-webkit-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input::-moz-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input:-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input::-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input:focus {
   outline: 0;
@@ -209,7 +209,7 @@ exports[`snapshot: basic usage html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -229,7 +229,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -289,7 +289,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -325,7 +325,7 @@ exports[`snapshot: basic usage html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -390,7 +390,7 @@ exports[`snapshot: basic usage html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -465,7 +465,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -501,7 +501,7 @@ exports[`snapshot: basic usage html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -566,7 +566,7 @@ exports[`snapshot: basic usage html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -641,7 +641,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -677,7 +677,7 @@ exports[`snapshot: basic usage html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -742,7 +742,7 @@ exports[`snapshot: basic usage html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -918,10 +918,10 @@ exports[`snapshot: className css 1`] = `
   color: #3f51b5;
 }
 .MuiTypography-colorSecondary {
-  color: rgba(0, 0, 0, 0.54);
-}
-.MuiTypography-colorAccent {
   color: #f50057;
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
 }
 .MuiTypography-colorError {
   color: #f44336;
@@ -931,27 +931,24 @@ exports[`snapshot: className css 1`] = `
   width: 24px;
   height: 24px;
   display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
 }
-.MuiSvgIcon-colorAccent {
-  color: #ff4081;
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
 }
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorContrast {
-  color: rgba(255, 255, 255, 1);
 }
 .MuiSvgIcon-colorDisabled {
   color: rgba(0, 0, 0, 0.26);
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -979,8 +976,7 @@ exports[`snapshot: className css 1`] = `
   height: 100%;
   display: block;
   position: absolute;
-  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
-  ripple-visible: [object Object];
+  animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
 }
 @keyframes mui-ripple-enter {
   0% {
@@ -1003,7 +999,7 @@ exports[`snapshot: className css 1`] = `
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(0.92);
   }
   100% {
     transform: scale(1);
@@ -1043,7 +1039,7 @@ exports[`snapshot: className css 1`] = `
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
@@ -1060,20 +1056,17 @@ exports[`snapshot: className css 1`] = `
   padding: 0;
   font-size: 1.5rem;
   text-align: center;
-  transition: background-color 150ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 50%;
 }
-.MuiIconButton-colorAccent {
-  color: #ff4081;
-}
-.MuiIconButton-colorContrast {
-  color: rgba(255, 255, 255, 1);
+.MuiIconButton-colorInherit {
+  color: inherit;
 }
 .MuiIconButton-colorPrimary {
   color: #3f51b5;
 }
-.MuiIconButton-colorInherit {
-  color: inherit;
+.MuiIconButton-colorSecondary {
+  color: #f50057;
 }
 .MuiIconButton-disabled {
   color: rgba(0, 0, 0, 0.26);
@@ -1088,9 +1081,6 @@ exports[`snapshot: className css 1`] = `
   width: 1em;
   height: 1em;
 }
-.MuiIconButton-keyboardFocused {
-  background-color: rgba(0, 0, 0, 0.12);
-}
 .MuiTable-root {
   width: 100%;
   overflow: hidden;
@@ -1101,7 +1091,7 @@ exports[`snapshot: className css 1`] = `
 .MuiTableCell-root {
   text-align: left;
   border-bottom: 1px solid
-    rgba(235, 235, 235, 1);
+    rgba(224, 224, 224, 1);
 }
 .MuiTableCell-numeric {
   text-align: right;
@@ -1143,17 +1133,17 @@ exports[`snapshot: className css 1`] = `
 .MuiTableRow-root:focus {
   outline: none;
 }
-.MuiTableRow-head {
+.MuiTableRow-typeHead {
   height: 56px;
 }
-.MuiTableRow-footer {
+.MuiTableRow-typeFooter {
   height: 56px;
-}
-.MuiTableRow-hover:hover {
-  background-color: #eeeeee;
 }
 .MuiTableRow-selected {
-  background-color: #f5f5f5;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTableRow-hover:hover {
+  background-color: rgba(0, 0, 0, 0.07);
 }
 .fcList-root {
   position: relative;
@@ -1228,7 +1218,7 @@ exports[`snapshot: className html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -1248,7 +1238,7 @@ exports[`snapshot: className html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -1295,7 +1285,7 @@ exports[`snapshot: empty html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -1315,7 +1305,7 @@ exports[`snapshot: empty html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -1362,7 +1352,7 @@ exports[`snapshot: empty read only html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -1397,7 +1387,7 @@ exports[`snapshot: read only html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -1443,7 +1433,7 @@ exports[`snapshot: read only html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -1508,7 +1498,7 @@ exports[`snapshot: read only html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -1644,7 +1634,7 @@ exports[`snapshot: read only html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -1709,7 +1699,7 @@ exports[`snapshot: read only html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -1845,7 +1835,7 @@ exports[`snapshot: read only html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -1910,7 +1900,7 @@ exports[`snapshot: read only html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-disabled MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
+              className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2048,7 +2038,7 @@ exports[`snapshot: with border & top html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -2068,7 +2058,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2128,7 +2118,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2164,7 +2154,7 @@ exports[`snapshot: with border & top html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2229,7 +2219,7 @@ exports[`snapshot: with border & top html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2304,7 +2294,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2340,7 +2330,7 @@ exports[`snapshot: with border & top html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2405,7 +2395,7 @@ exports[`snapshot: with border & top html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2480,7 +2470,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2516,7 +2506,7 @@ exports[`snapshot: with border & top html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2581,7 +2571,7 @@ exports[`snapshot: with border & top html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2656,7 +2646,7 @@ exports[`snapshot: with border html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -2676,7 +2666,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2736,7 +2726,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2772,7 +2762,7 @@ exports[`snapshot: with border html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2837,7 +2827,7 @@ exports[`snapshot: with border html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -2912,7 +2902,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -2948,7 +2938,7 @@ exports[`snapshot: with border html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3013,7 +3003,7 @@ exports[`snapshot: with border html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3088,7 +3078,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -3124,7 +3114,7 @@ exports[`snapshot: with border html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3189,7 +3179,7 @@ exports[`snapshot: with border html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3256,7 +3246,7 @@ exports[`snapshot: with component css 1`] = `
   margin-left: -14px;
   margin-right: 16px;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiFormControlLabel-disabled {
   color: rgba(0, 0, 0, 0.38);
@@ -3264,7 +3254,7 @@ exports[`snapshot: with component css 1`] = `
 }
 .MuiSwitchBase-root {
   display: inline-flex;
-  transition: false;
+  transition: none;
   align-items: center;
 }
 .MuiSwitchBase-input {
@@ -3304,7 +3294,7 @@ exports[`snapshot: with component html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -3324,7 +3314,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -3390,7 +3380,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -3426,7 +3416,7 @@ exports[`snapshot: with component html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3491,7 +3481,7 @@ exports[`snapshot: with component html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3632,7 +3622,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -3668,7 +3658,7 @@ exports[`snapshot: with component html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3733,7 +3723,7 @@ exports[`snapshot: with component html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3874,7 +3864,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -3910,7 +3900,7 @@ exports[`snapshot: with component html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -3975,7 +3965,7 @@ exports[`snapshot: with component html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -4116,7 +4106,7 @@ exports[`snapshot: with numbers html 1`] = `
   >
     <thead>
       <tr
-        className="MuiTableRow-root MuiTableRow-head fcList-head"
+        className="MuiTableRow-root MuiTableRow-typeHead fcList-head"
       >
         <th
           aria-sort={null}
@@ -4136,7 +4126,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -4200,7 +4190,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -4246,7 +4236,7 @@ exports[`snapshot: with numbers html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -4311,7 +4301,7 @@ exports[`snapshot: with numbers html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -4386,7 +4376,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -4432,7 +4422,7 @@ exports[`snapshot: with numbers html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -4497,7 +4487,7 @@ exports[`snapshot: with numbers html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -4572,7 +4562,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            role="button"
+            role={undefined}
             tabIndex={0}
             type="button"
           >
@@ -4618,7 +4608,7 @@ exports[`snapshot: with numbers html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >
@@ -4683,7 +4673,7 @@ exports[`snapshot: with numbers html 1`] = `
             required={false}
           >
             <div
-              className="MuiInput-root MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
+              className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
               onBlur={[Function]}
               onFocus={[Function]}
             >

@@ -11,7 +11,7 @@ const styles = theme => ({
   },
   readOnly: {
     '& textarea': {
-      color: theme.palette.input.inputText,
+      color: theme.palette.text.primary,
     },
   },
 })

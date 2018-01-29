@@ -110,7 +110,7 @@ class FloatingAction extends PureComponent {
           onClick={this.handleClick(onClick)}
         >
           <Tooltip title={label} open={showTooltips} placement="left">
-            <Button fab color="accent" className={cn(classes.button)} >
+            <Button fab color="secondary" className={cn(classes.button)} >
               <Add className={cn(classes.icon, classes.plusIcon)} />
               <Icon className={cn(classes.icon, classes.opened)} />
             </Button>

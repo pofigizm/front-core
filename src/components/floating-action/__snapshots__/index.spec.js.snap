@@ -17,7 +17,7 @@ exports[`snapshot: basic usage html 1`] = `
     >
       <button
         aria-describedby={undefined}
-        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedAccent fcFloatingAction-button"
+        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-button"
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -30,7 +30,7 @@ exports[`snapshot: basic usage html 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        role="button"
+        role={undefined}
         tabIndex={0}
         type="button"
       >
@@ -98,27 +98,24 @@ exports[`snapshot: className css 1`] = `
   width: 24px;
   height: 24px;
   display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
 }
-.MuiSvgIcon-colorAccent {
-  color: #ff4081;
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
 }
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorContrast {
-  color: rgba(255, 255, 255, 1);
 }
 .MuiSvgIcon-colorDisabled {
   color: rgba(0, 0, 0, 0.26);
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -146,8 +143,7 @@ exports[`snapshot: className css 1`] = `
   height: 100%;
   display: block;
   position: absolute;
-  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
-  ripple-visible: [object Object];
+  animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
 }
 @keyframes mui-ripple-enter {
   0% {
@@ -170,7 +166,7 @@ exports[`snapshot: className css 1`] = `
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(0.92);
   }
   100% {
     transform: scale(1);
@@ -210,7 +206,7 @@ exports[`snapshot: className css 1`] = `
   justify-content: center;
   text-decoration: none;
   background-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
@@ -226,7 +222,7 @@ exports[`snapshot: className css 1`] = `
   font-size: 0.875rem;
   box-sizing: border-box;
   min-height: 36px;
-  transition: background-color 250ms cubic-bezier(0.4, false, false.2, false) 0ms,box-shadow 250ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   line-height: 1.4em;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   font-weight: 500;
@@ -268,25 +264,14 @@ exports[`snapshot: className css 1`] = `
     background-color: transparent;
   }
 }
-.MuiButton-flatAccent {
-  color: #ff4081;
+.MuiButton-flatSecondary {
+  color: #f50057;
 }
-.MuiButton-flatAccent:hover {
-  background-color: rgba(255, 64, 129, 0.12);
-}
-@media (hover: none) {
-  .MuiButton-flatAccent:hover {
-    background-color: transparent;
-  }
-}
-.MuiButton-flatContrast {
-  color: rgba(255, 255, 255, 1);
-}
-.MuiButton-flatContrast:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+.MuiButton-flatSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.12);
 }
 @media (hover: none) {
-  .MuiButton-flatContrast:hover {
+  .MuiButton-flatSecondary:hover {
     background-color: transparent;
   }
 }
@@ -319,11 +304,6 @@ exports[`snapshot: className css 1`] = `
 .MuiButton-raised:hover.MuiButton-disabled {
   background-color: rgba(0, 0, 0, 0.12);
 }
-@media (hover: none) {
-  .MuiButton-raised:hover.MuiButton-disabled {
-    background-color: #e0e0e0;
-  }
-}
 .MuiButton-raisedPrimary {
   color: rgba(255, 255, 255, 1);
   background-color: #3f51b5;
@@ -336,20 +316,17 @@ exports[`snapshot: className css 1`] = `
     background-color: #3f51b5;
   }
 }
-.MuiButton-raisedAccent {
+.MuiButton-raisedSecondary {
   color: rgba(255, 255, 255, 1);
-  background-color: #ff4081;
-}
-.MuiButton-raisedAccent:hover {
   background-color: #f50057;
 }
-@media (hover: none) {
-  .MuiButton-raisedAccent:hover {
-    background-color: #ff4081;
-  }
+.MuiButton-raisedSecondary:hover {
+  background-color: #c51162;
 }
-.MuiButton-raisedContrast {
-  color: rgba(255, 255, 255, 1);
+@media (hover: none) {
+  .MuiButton-raisedSecondary:hover {
+    background-color: #f50057;
+  }
 }
 .MuiButton-disabled {
   color: rgba(0, 0, 0, 0.26);
@@ -388,7 +365,7 @@ exports[`snapshot: className css 1`] = `
   padding: 8px;
   transform: scale(0);
   font-size: 0.875rem;
-  transition: opacity 150ms cubic-bezier(0.4, false, false.2, false) 0ms,transform 150ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   min-height: 0;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.14286em;
@@ -476,7 +453,7 @@ exports[`snapshot: className css 1`] = `
   width: 24px;
   height: 24px;
   position: absolute;
-  transition: all 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .fcFloatingAction-smallIcon {
   top: 8px;
@@ -509,7 +486,7 @@ exports[`snapshot: className html 1`] = `
     >
       <button
         aria-describedby={undefined}
-        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedAccent fcFloatingAction-button"
+        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-button"
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -522,7 +499,7 @@ exports[`snapshot: className html 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        role="button"
+        role={undefined}
         tabIndex={0}
         type="button"
       >
@@ -614,7 +591,7 @@ exports[`snapshot: opened html 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        role="button"
+        role={undefined}
         tabIndex={0}
         type="button"
       >
@@ -671,7 +648,7 @@ exports[`snapshot: opened html 1`] = `
     >
       <button
         aria-describedby={undefined}
-        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedAccent fcFloatingAction-smallButton"
+        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-smallButton"
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -684,7 +661,7 @@ exports[`snapshot: opened html 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        role="button"
+        role={undefined}
         tabIndex={0}
         type="button"
       >
@@ -754,7 +731,7 @@ exports[`snapshot: opened html 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        role="button"
+        role={undefined}
         tabIndex={0}
         type="button"
       >
@@ -811,7 +788,7 @@ exports[`snapshot: opened html 1`] = `
     >
       <button
         aria-describedby={undefined}
-        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedAccent fcFloatingAction-button"
+        className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-button"
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -824,7 +801,7 @@ exports[`snapshot: opened html 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        role="button"
+        role={undefined}
         tabIndex={0}
         type="button"
       >

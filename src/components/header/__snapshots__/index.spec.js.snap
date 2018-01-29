@@ -156,10 +156,10 @@ exports[`snapshot: className css 1`] = `
   color: #3f51b5;
 }
 .MuiTypography-colorSecondary {
-  color: rgba(0, 0, 0, 0.54);
-}
-.MuiTypography-colorAccent {
   color: #f50057;
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
 }
 .MuiTypography-colorError {
   color: #f44336;

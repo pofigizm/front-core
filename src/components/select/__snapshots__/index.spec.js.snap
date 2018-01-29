@@ -15,7 +15,7 @@ exports[`snapshot: className css 1`] = `
   color: #f44336;
 }
 .MuiFormLabel-disabled {
-  color: rgba(0, 0, 0, 0.42);
+  color: rgba(0, 0, 0, 0.38);
 }
 .MuiInput-root {
   color: rgba(0, 0, 0, 0.87);
@@ -36,7 +36,7 @@ label + .MuiInput-formControl {
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
-  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
   pointer-events: none;
   background-color: #303f9f;
 }
@@ -57,7 +57,7 @@ label + .MuiInput-formControl {
   height: 1px;
   content: \\"\\";
   position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.42);
 }
@@ -90,27 +90,27 @@ label + .MuiInput-formControl {
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .MuiInput-input::-webkit-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input::-moz-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input:-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input::-ms-input-placeholder {
   color: currentColor;
   opacity: 0.42;
-  transition: opacity 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiInput-input:focus {
   outline: 0;
@@ -226,37 +226,34 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   transform-origin: top left;
 }
 .MuiInputLabel-animated {
-  transition: transform 200ms cubic-bezier(0.0, false, false.2, false) 0ms;
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
 }
 .MuiInputLabel-disabled {
-  color: rgba(0, 0, 0, 0.42);
+  color: rgba(0, 0, 0, 0.38);
 }
 .MuiSvgIcon-root {
   fill: currentColor;
   width: 24px;
   height: 24px;
   display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, false, false.2, false) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
 }
-.MuiSvgIcon-colorAccent {
-  color: #ff4081;
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
 }
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorContrast {
-  color: rgba(255, 255, 255, 1);
 }
 .MuiSvgIcon-colorDisabled {
   color: rgba(0, 0, 0, 0.26);
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
 }
 .MuiSelect-root {
   width: 100%;
@@ -287,6 +284,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   width: auto;
   overflow: hidden;
   white-space: nowrap;
+  line-height: 1.1875em;
   text-overflow: ellipsis;
 }
 .MuiSelect-disabled {

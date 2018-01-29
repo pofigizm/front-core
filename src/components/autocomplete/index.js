@@ -63,10 +63,9 @@ class Autocomplete extends PureComponent {
     debug('render', this.props)
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className={cn(classes.root, className)}>
         <Autosuggest
           theme={{
-            container: cn(classes.root, className),
             suggestionsContainerOpen: classes.suggestionsContainerOpen,
             suggestionsList: classes.suggestionsList,
             suggestion: classes.suggestion,
