@@ -2,6 +2,6 @@ import createHistory from 'history/createBrowserHistory'
 import configureStore from './configureStore'
 
 const history = createHistory()
-const preloadedState = window.REDUX_STATE
+const preloadedState = window.__PRELOADED_STATE__
 
 export default (routes, apiRequests) => configureStore(routes, apiRequests, history, preloadedState)

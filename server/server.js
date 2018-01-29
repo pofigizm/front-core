@@ -6,14 +6,15 @@ import webpackDevMiddleware from 'webpack-dev-middleware'
 import webpackHotMiddleware from 'webpack-hot-middleware'
 import remoteSave from 'remote-save/lib/server'
 
-import tmpl from './template'
 import paths from '../config/paths'
 import webpackConfig from '../config/webpack.config'
+import { render } from './render'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 
+const html = render(paths.appRoutesJs)
 const handler = (req, res) => {
-  res.send(tmpl())
+  res.send(html)
 }
 
 const app = express()

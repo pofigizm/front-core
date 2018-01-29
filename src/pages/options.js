@@ -1,4 +1,4 @@
-import { querySerializer } from 'src/utils/helpers'
+import { querySerializer } from '../utils/helpers'
 
 export default {
   querySerializer,

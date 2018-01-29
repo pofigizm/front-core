@@ -103,8 +103,9 @@ const generate = (buildFolder, publicPath = '/') => ({
       'process.env': {
         NODE_ENV: str(NODE_ENV),
       },
-      __LOC__: str(env.loc),
+      __BROWSER__: 'true',
       __DEV__: str(!env.prod),
+      __LOC__: str(env.loc),
       __PROJECT__: str(project),
       __TEST__: 'false',
     }),

@@ -1,5 +1,5 @@
-import { read } from 'src/utils/storage'
-import { memoize } from 'src/utils/functions'
+import { read } from './utils/storage'
+import { memoize } from './utils/functions'
 
 const storageKey = 'front-core-flags'
 const emptyObj = {}
@@ -31,6 +31,7 @@ const getFeatures = memoize(merge)
 const getDevelop = memoize(merge)
 
 const isEnabled = (flag) => {
+  if (!__BROWSER__) return false
   const flags = getFeatures(state.features, localExtend.features || emptyObj)
   if (flag in flags) return Boolean(flags[flag])
   return true

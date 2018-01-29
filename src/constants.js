@@ -1,4 +1,4 @@
-import { prepareActions } from 'src/utils/actions'
+import { prepareActions } from './utils/actions'
 
 export const ACTIONS = prepareActions([
   'TOGGLE_MENU',

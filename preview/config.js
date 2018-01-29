@@ -5,13 +5,24 @@ import React from 'react'
 import { configure, storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { MuiThemeProvider, createMuiTheme } from '../src/components/styles'
+import { create } from 'jss'
+import preset from 'jss-preset-default'
+import JssProvider from 'react-jss/lib/JssProvider'
+import { createGenerateClassName } from 'material-ui/styles'
+import Reboot from 'material-ui/Reboot'
 
-const theme = createMuiTheme({
-  spacing: {
-    unit: 8,
-  },
-})
+const generateClassName = createGenerateClassName()
+const jss = create(preset())
+
+const Render = ({ children }) => (
+  <div>
+    <JssProvider jss={jss} generateClassName={generateClassName}>
+      <Reboot>
+        { children }
+      </Reboot>
+    </JssProvider>
+  </div>
+)
 
 const components = require.context(
   '../src/components',
@@ -68,11 +79,9 @@ const loadStories = () => {
         // eslint-disable-next-line
         const { _preview, ...props } = getProps({ action })
         return (
-          <div key={ix}>
-            <MuiThemeProvider theme={theme}>
-              <Story {...props} />
-            </MuiThemeProvider>
-          </div>
+          <Render key={ix}>
+            <Story {...props} />
+          </Render>
         )
       }
 
@@ -82,11 +91,9 @@ const loadStories = () => {
         if (preview.State) {
           st.add('State', () => (
             <div className='storybook-all-wrapper'>
-              <div>
-                <MuiThemeProvider theme={theme}>
-                  <preview.State Target={Story} action={action} />
-                </MuiThemeProvider>
-              </div>
+              <Render>
+                <preview.State Target={Story} action={action} />
+              </Render>
             </div>
           ))
         }
@@ -101,7 +108,7 @@ const loadStories = () => {
           st.add(`${ix}: ${getProps({ action })._preview}`, () => wrap(getProps, ix))
         })
       } else {
-        st.add('empty', () => (<div> <Story /> </div>))
+        st.add('empty', () => (<Render> <Story /> </Render>))
       }
     })
 }

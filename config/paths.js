@@ -9,6 +9,7 @@ module.exports = {
   appRoot: resolveApp('.'),
   appBuild: resolveApp('build'),
   appIndexJs: resolveApp('src/'), // index.js or index.ts
+  appRoutesJs: resolveApp('src/routes'), // routes.js or routes.ts
   appSrc: resolveApp('src'),
   appCache: resolveApp('.cache'),
   appTsConfig: resolveApp('tsconfig.json'),

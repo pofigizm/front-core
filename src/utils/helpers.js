@@ -1,7 +1,7 @@
 import stringify from 'json-stable-stringify'
 import queryString from 'query-string'
 import match from 'autosuggest-highlight/match'
-import { deepAssign } from 'src/utils/lib-helpers'
+import { deepAssign } from './lib-helpers'
 
 export const parseToken = (token) => {
   if (!token) return { error: 'token does not exist' }

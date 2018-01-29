@@ -66,7 +66,7 @@ class AppBar extends PureComponent {
       <OriginAppBar className={cn(className, classes.root, open && classes.shift)}>
         <Toolbar disableGutters={!open}>
           <IconButton
-            color="contrast"
+            color="inherit"
             aria-label="open drawer"
             onClick={onClickDrawerButton}
             className={cn(classes.menuButton, open && classes.hide)}
@@ -80,7 +80,7 @@ class AppBar extends PureComponent {
             { userName }
           </Typography>
           <Button
-            color="contrast"
+            color="inherit"
             className={cn(classes.loginButton)}
             onClick={onClickLoginButton}
           >

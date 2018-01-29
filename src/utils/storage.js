@@ -1,5 +1,5 @@
 import stringify from 'json-stable-stringify'
-import { deepAssign } from 'src/utils/lib-helpers'
+import { deepAssign } from './lib-helpers'
 
 export const read = (key) => {
   let content = {}
