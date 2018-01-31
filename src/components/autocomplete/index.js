@@ -25,7 +25,7 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 3,
     left: 0,
     right: 0,
-    zIndex: theme.zIndex.popover,
+    zIndex: theme.zIndex.tooltip,
     maxHeight: theme.spacing.unit * 30,
     overflow: 'auto',
   },

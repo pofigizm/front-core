@@ -51,6 +51,11 @@ export default [
     open: true,
   }),
 
+  () => ({
+    _preview: 'should be under previous',
+    label: 'should be under previous',
+    value: 'should be under previous',
+  }),
 ]
 
 export class State extends PureComponent {

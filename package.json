@@ -1,6 +1,6 @@
 {
   "name": "front-core",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
