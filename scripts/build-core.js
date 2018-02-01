@@ -27,7 +27,13 @@ fs.emptyDirSync(buildFolder)
 fs.outputFileSync(path.join(buildFolder, 'index.html'), render(paths.appRoutesJs))
 fs.copySync(path.join(paths.appRoot, 'config.json'), path.join(buildFolder, 'config.json'))
 
-webpack(config.generate(buildFolder, envPublicPath), (err, stats) => {
+let webpackConfig = config.generate(buildFolder, envPublicPath)
+const appConfig = path.join(paths.appRoot, 'webpack.config.js')
+if (fs.existsSync(appConfig)) {
+  webpackConfig = require(appConfig)(webpackConfig, webpack)
+}
+
+webpack(webpackConfig, (err, stats) => {
   if (err) {
     console.error(err)
     process.exit(1)

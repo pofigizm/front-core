@@ -517,6 +517,73 @@ exports[`snapshot: read only html 1`] = `
 </form>
 `;
 
+exports[`snapshot: should be under previous css 1`] = `""`;
+
+exports[`snapshot: should be under previous html 1`] = `
+<form
+  className="fcAutocomplete-root"
+  onSubmit={[Function]}
+>
+  <div
+    style={Object {}}
+  >
+    <div
+      aria-describedby={undefined}
+      className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      required={false}
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+        data-shrink={true}
+        htmlFor={undefined}
+      >
+        should be under previous
+      </label>
+      <div
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-expanded={false}
+        aria-haspopup={false}
+        aria-owns="react-autowhatever-1"
+        className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        role="combobox"
+        style={Object {}}
+      >
+        <input
+          aria-invalid={false}
+          aria-required={false}
+          autoComplete="off"
+          autoFocus={undefined}
+          className="MuiInput-input MuiInput-inputSingleline"
+          defaultValue={undefined}
+          disabled={false}
+          id={undefined}
+          name={undefined}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={undefined}
+          rows={undefined}
+          type="text"
+          value="should be under previous"
+        />
+      </div>
+    </div>
+    <div
+      className="MuiPaper-root MuiPaper-shadow2"
+      id="react-autowhatever-1"
+      style={Object {}}
+    />
+  </div>
+</form>
+`;
+
 exports[`snapshot: with handlers css 1`] = `""`;
 
 exports[`snapshot: with handlers css 2`] = `

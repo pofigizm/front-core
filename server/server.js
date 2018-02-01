@@ -20,7 +20,12 @@ const handler = (req, res) => {
 const app = express()
 const port = 3100
 
-const compiler = webpack(webpackConfig.default)
+let resultConfig = webpackConfig.default
+const appConfig = path.join(paths.appRoot, 'webpack.config.js')
+if (fs.existsSync(appConfig)) {
+  resultConfig = require(appConfig)(resultConfig)
+}
+const compiler = webpack(resultConfig)
 
 // api example
 const apiMock = path.join(paths.appRoot, 'api-mock.json')
