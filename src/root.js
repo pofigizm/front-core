@@ -36,8 +36,8 @@ const render = (Wrapper, Page, store, title, menu) => {
     </AppContainer>,
     root,
     () => {
-      sCss.remove()
-      sJs.remove()
+      if (sCss) sCss.remove()
+      if (sJs) sJs.remove()
     }
   )
 }
