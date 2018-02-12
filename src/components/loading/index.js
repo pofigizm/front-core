@@ -14,6 +14,7 @@ const styles = theme => ({
   },
   loader: {
     marginTop: theme.spacing.unit * 6,
+    marginBottom: theme.spacing.unit * 6,
   },
 })
 
