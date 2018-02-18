@@ -11,10 +11,10 @@ const styles = theme => ({
   root: {
     '& > a': {
       textDecoration: 'none',
-      color: theme.palette.secondary.A700,
+      color: theme.palette.secondary.light,
     },
     '& > a:visited': {
-      color: theme.palette.secondary.A700,
+      color: theme.palette.secondary.light,
     },
   },
   opacity: {

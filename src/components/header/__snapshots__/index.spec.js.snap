@@ -11,6 +11,7 @@ exports[`snapshot: basic usage html 1`] = `
   >
     <p
       className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+      type="body1"
     >
       <span />
       <span
@@ -20,11 +21,12 @@ exports[`snapshot: basic usage html 1`] = `
       </span>
       <span />
     </p>
-    <h2
-      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
+    <p
+      className="MuiTypography-root MuiTypography-body1 fcHeader-title fcTypography-root"
+      type="title"
     >
       Lorem ipsum
-    </h2>
+    </p>
   </div>
   <div
     style={
@@ -166,7 +168,11 @@ exports[`snapshot: className css 1`] = `
 }
 
 .fcBreadcrumbs-root > a {
+  color: #ff4081;
   text-decoration: none;
+}
+.fcBreadcrumbs-root > a:visited {
+  color: #ff4081;
 }
 .fcBreadcrumbs-opacity {
   opacity: 0.5;
@@ -201,9 +207,11 @@ exports[`snapshot: className html 1`] = `
   >
     <p
       className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+      type="body1"
     />
-    <h2
-      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
+    <p
+      className="MuiTypography-root MuiTypography-body1 fcHeader-title fcTypography-root"
+      type="title"
     />
   </div>
 </div>

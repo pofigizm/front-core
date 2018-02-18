@@ -24,7 +24,6 @@ exports[`snapshot: basic usage html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={0}
       type="button"
     >
@@ -33,7 +32,7 @@ exports[`snapshot: basic usage html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiIconButton-icon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -47,13 +46,14 @@ exports[`snapshot: basic usage html 1`] = `
         className="MuiTouchRipple-root"
       />
     </button>
-    <h2
-      className="MuiTypography-root MuiTypography-title MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
+    <p
+      className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
+      type="title"
     >
       <span>
         Logo
       </span>
-    </h2>
+    </p>
     <p
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     >
@@ -73,7 +73,6 @@ exports[`snapshot: basic usage html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={0}
       type="button"
     >
@@ -192,20 +191,25 @@ exports[`snapshot: className css 1`] = `
   right: 0;
   position: absolute;
 }
+.MuiAppBar-positionSticky {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
 .MuiAppBar-positionStatic {
   position: static;
-  flex-shrink: 0;
 }
 .MuiAppBar-colorDefault {
   color: rgba(0, 0, 0, 0.87);
   background-color: #f5f5f5;
 }
 .MuiAppBar-colorPrimary {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   background-color: #3f51b5;
 }
 .MuiAppBar-colorSecondary {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   background-color: #f50057;
 }
 .MuiToolbar-root {
@@ -434,19 +438,21 @@ exports[`snapshot: className css 1`] = `
 .MuiButtonBase-root {
   color: inherit;
   cursor: pointer;
+  margin: 0;
   border: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
   outline: none;
   position: relative;
-  appearance: none;
-  align-items: center;
   user-select: none;
+  align-items: center;
   border-radius: 0;
   vertical-align: middle;
   justify-content: center;
+  -moz-appearance: none;
   text-decoration: none;
   background-color: transparent;
+  -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
@@ -481,12 +487,6 @@ exports[`snapshot: className css 1`] = `
 }
 .MuiButton-root:hover.MuiButton-disabled {
   background-color: transparent;
-}
-.MuiButton-dense {
-  padding: 7px 8px;
-  min-width: 64px;
-  font-size: 0.8125rem;
-  min-height: 32px;
 }
 .MuiButton-label {
   width: 100%;
@@ -546,7 +546,7 @@ exports[`snapshot: className css 1`] = `
   background-color: rgba(0, 0, 0, 0.12);
 }
 .MuiButton-raisedPrimary {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   background-color: #3f51b5;
 }
 .MuiButton-raisedPrimary:hover {
@@ -558,7 +558,7 @@ exports[`snapshot: className css 1`] = `
   }
 }
 .MuiButton-raisedSecondary {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   background-color: #f50057;
 }
 .MuiButton-raisedSecondary:hover {
@@ -577,6 +577,7 @@ exports[`snapshot: className css 1`] = `
   height: 56px;
   padding: 0;
   min-width: 0;
+  font-size: 24px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
   border-radius: 50%;
 }
@@ -586,6 +587,18 @@ exports[`snapshot: className css 1`] = `
 .MuiButton-mini {
   width: 40px;
   height: 40px;
+}
+.MuiButton-sizeSmall {
+  padding: 7px 8px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+  min-height: 32px;
+}
+.MuiButton-sizeLarge {
+  padding: 8px 24px;
+  min-width: 112px;
+  font-size: 0.9375rem;
+  min-height: 40px;
 }
 .MuiButton-fullWidth {
   width: 100%;
@@ -613,6 +626,10 @@ exports[`snapshot: className css 1`] = `
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-fontSize {
+  width: 1em;
+  height: 1em;
 }
 .MuiIconButton-root {
   flex: 0 0 auto;
@@ -642,10 +659,6 @@ exports[`snapshot: className css 1`] = `
   display: flex;
   align-items: inherit;
   justify-content: inherit;
-}
-.MuiIconButton-icon {
-  width: 1em;
-  height: 1em;
 }
 .fcAppBar-root {
   z-index: 1201;
@@ -697,7 +710,6 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={0}
       type="button"
     >
@@ -706,7 +718,7 @@ exports[`snapshot: className html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiIconButton-icon"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -720,11 +732,12 @@ exports[`snapshot: className html 1`] = `
         className="MuiTouchRipple-root"
       />
     </button>
-    <h2
-      className="MuiTypography-root MuiTypography-title MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
+    <p
+      className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
+      type="title"
     >
       <span />
-    </h2>
+    </p>
     <p
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     />
@@ -742,7 +755,6 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={0}
       type="button"
     >

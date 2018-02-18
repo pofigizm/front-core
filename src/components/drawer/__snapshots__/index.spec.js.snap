@@ -211,19 +211,21 @@ exports[`snapshot: className css 1`] = `
 .MuiButtonBase-root {
   color: inherit;
   cursor: pointer;
+  margin: 0;
   border: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
   outline: none;
   position: relative;
-  appearance: none;
-  align-items: center;
   user-select: none;
+  align-items: center;
   border-radius: 0;
   vertical-align: middle;
   justify-content: center;
+  -moz-appearance: none;
   text-decoration: none;
   background-color: transparent;
+  -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
@@ -257,6 +259,10 @@ exports[`snapshot: className css 1`] = `
 .MuiSvgIcon-colorError {
   color: #f44336;
 }
+.MuiSvgIcon-fontSize {
+  width: 1em;
+  height: 1em;
+}
 .MuiIconButton-root {
   flex: 0 0 auto;
   width: 48px;
@@ -285,10 +291,6 @@ exports[`snapshot: className css 1`] = `
   display: flex;
   align-items: inherit;
   justify-content: inherit;
-}
-.MuiIconButton-icon {
-  width: 1em;
-  height: 1em;
 }
 .fcDrawer-drawerPaper {
   width: 240px;
@@ -345,7 +347,6 @@ exports[`snapshot: className html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          role={undefined}
           tabIndex={0}
           type="button"
         >
@@ -354,7 +355,7 @@ exports[`snapshot: className html 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root MuiIconButton-icon"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSize"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -403,7 +404,6 @@ exports[`snapshot: empty html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          role={undefined}
           tabIndex={0}
           type="button"
         >
@@ -412,7 +412,7 @@ exports[`snapshot: empty html 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root MuiIconButton-icon"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSize"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"

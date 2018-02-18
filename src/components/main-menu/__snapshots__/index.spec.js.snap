@@ -61,6 +61,10 @@ exports[`snapshot: without props css 1`] = `
 .MuiSvgIcon-colorError {
   color: #f44336;
 }
+.MuiSvgIcon-fontSize {
+  width: 1em;
+  height: 1em;
+}
 .MuiTouchRipple-root {
   top: 0;
   left: 0;
@@ -137,19 +141,21 @@ exports[`snapshot: without props css 1`] = `
 .MuiButtonBase-root {
   color: inherit;
   cursor: pointer;
+  margin: 0;
   border: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
   outline: none;
   position: relative;
-  appearance: none;
-  align-items: center;
   user-select: none;
+  align-items: center;
   border-radius: 0;
   vertical-align: middle;
   justify-content: center;
+  -moz-appearance: none;
   text-decoration: none;
   background-color: transparent;
+  -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
@@ -160,8 +166,11 @@ exports[`snapshot: without props css 1`] = `
   pointer-events: none;
 }
 .MuiListItem-root {
+  width: 100%;
   display: flex;
   position: relative;
+  box-sizing: border-box;
+  text-align: left;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
@@ -170,7 +179,7 @@ exports[`snapshot: without props css 1`] = `
   position: relative;
 }
 .MuiListItem-keyboardFocused {
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 .MuiListItem-default {
   padding-top: 12px;
@@ -185,6 +194,7 @@ exports[`snapshot: without props css 1`] = `
 }
 .MuiListItem-divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-clip: padding-box;
 }
 .MuiListItem-gutters {
   padding-left: 16px;
@@ -195,15 +205,12 @@ exports[`snapshot: without props css 1`] = `
 }
 .MuiListItem-button:hover {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 @media (hover: none) {
   .MuiListItem-button:hover {
     background-color: transparent;
   }
-}
-.MuiListItem-button:hover.MuiListItem-disabled {
-  background-color: transparent;
 }
 .MuiListItem-secondaryAction {
   padding-right: 32px;
@@ -366,9 +373,8 @@ exports[`snapshot: without props html 1`] = `
   className="MuiList-root MuiList-padding fcMenu-root"
 >
   <div>
-    <li
-      className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default"
-      disabled={false}
+    <div
+      className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -405,12 +411,11 @@ exports[`snapshot: without props html 1`] = `
       <span
         className="MuiTouchRipple-root"
       />
-    </li>
+    </div>
   </div>
   <div>
-    <li
-      className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default"
-      disabled={false}
+    <div
+      className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -447,7 +452,7 @@ exports[`snapshot: without props html 1`] = `
       <span
         className="MuiTouchRipple-root"
       />
-    </li>
+    </div>
   </div>
 </ul>
 `;

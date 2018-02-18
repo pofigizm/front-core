@@ -22,7 +22,6 @@ exports[`snapshot: className css 1`] = `
   display: inline-flex;
   position: relative;
   font-size: 1rem;
-  align-items: baseline;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
 }
 label + .MuiInput-formControl {
@@ -119,7 +118,7 @@ label + .MuiInput-formControl {
   box-shadow: none;
 }
 .MuiInput-input::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
 }
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
   opacity: 0;
@@ -151,7 +150,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiInput-inputDisabled {
   opacity: 1;
 }
-.MuiInput-inputSingleline {
+.MuiInput-inputType {
   height: 1.1875em;
 }
 .MuiInput-inputMultiline {
@@ -159,7 +158,8 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   padding: 0;
 }
 .MuiInput-inputSearch {
-  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
 }
 .MuiFormControl-root {
   margin: 0;
@@ -255,6 +255,10 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiSvgIcon-colorError {
   color: #f44336;
 }
+.MuiSvgIcon-fontSize {
+  width: 1em;
+  height: 1em;
+}
 .MuiSelect-root {
   width: 100%;
   position: relative;
@@ -263,7 +267,6 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   width: calc(100% - 32px);
   cursor: pointer;
   min-width: 16px;
-  appearance: none;
   user-select: none;
   padding-right: 32px;
   -moz-appearance: none;
@@ -283,6 +286,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiSelect-selectMenu {
   width: auto;
   overflow: hidden;
+  min-height: 1.1875em;
   white-space: nowrap;
   line-height: 1.1875em;
   text-overflow: ellipsis;
@@ -291,7 +295,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   cursor: default;
 }
 .MuiSelect-icon {
-  top: 4px;
+  top: calc(50% - 12px);
   right: 0;
   color: rgba(0, 0, 0, 0.54);
   position: absolute;
@@ -307,7 +311,6 @@ exports[`snapshot: className html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -326,7 +329,7 @@ exports[`snapshot: className html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={undefined}
@@ -374,7 +377,6 @@ exports[`snapshot: only label html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -395,7 +397,7 @@ exports[`snapshot: only label html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={undefined}
@@ -443,7 +445,6 @@ exports[`snapshot: read only html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -464,7 +465,7 @@ exports[`snapshot: read only html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiSelect-disabled MuiInput-input MuiInput-inputDisabled MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiSelect-disabled MuiInput-input MuiInput-inputDisabled"
         onBlur={[Function]}
         onClick={null}
         onFocus={undefined}
@@ -514,7 +515,6 @@ exports[`snapshot: with handlers html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -535,7 +535,7 @@ exports[`snapshot: with handlers html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={undefined}
@@ -585,7 +585,6 @@ exports[`snapshot: with options html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -606,7 +605,7 @@ exports[`snapshot: with options html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={undefined}
@@ -654,7 +653,6 @@ exports[`snapshot: with value html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -675,7 +673,7 @@ exports[`snapshot: with value html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={undefined}
@@ -725,7 +723,6 @@ exports[`snapshot: without props html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -744,7 +741,7 @@ exports[`snapshot: without props html 1`] = `
         aria-haspopup="true"
         aria-owns={null}
         aria-pressed="false"
-        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input MuiInput-inputSingleline"
+        className="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={undefined}

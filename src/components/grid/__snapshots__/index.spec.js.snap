@@ -103,48 +103,48 @@ exports[`snapshot: className css 1`] = `
   flex-basis: 0;
 }
 .MuiGrid-grid-xs-1 {
-  max-width: 8.3333%;
-  flex-basis: 8.3333%;
+  max-width: 8.33333%;
+  flex-basis: 8.33333%;
 }
 .MuiGrid-grid-xs-2 {
-  max-width: 16.6667%;
-  flex-basis: 16.6667%;
+  max-width: 16.66667%;
+  flex-basis: 16.66667%;
 }
 .MuiGrid-grid-xs-3 {
   max-width: 25%;
   flex-basis: 25%;
 }
 .MuiGrid-grid-xs-4 {
-  max-width: 33.3333%;
-  flex-basis: 33.3333%;
+  max-width: 33.33333%;
+  flex-basis: 33.33333%;
 }
 .MuiGrid-grid-xs-5 {
-  max-width: 41.6667%;
-  flex-basis: 41.6667%;
+  max-width: 41.66667%;
+  flex-basis: 41.66667%;
 }
 .MuiGrid-grid-xs-6 {
   max-width: 50%;
   flex-basis: 50%;
 }
 .MuiGrid-grid-xs-7 {
-  max-width: 58.3333%;
-  flex-basis: 58.3333%;
+  max-width: 58.33333%;
+  flex-basis: 58.33333%;
 }
 .MuiGrid-grid-xs-8 {
-  max-width: 66.6667%;
-  flex-basis: 66.6667%;
+  max-width: 66.66667%;
+  flex-basis: 66.66667%;
 }
 .MuiGrid-grid-xs-9 {
   max-width: 75%;
   flex-basis: 75%;
 }
 .MuiGrid-grid-xs-10 {
-  max-width: 83.3333%;
-  flex-basis: 83.3333%;
+  max-width: 83.33333%;
+  flex-basis: 83.33333%;
 }
 .MuiGrid-grid-xs-11 {
-  max-width: 91.6667%;
-  flex-basis: 91.6667%;
+  max-width: 91.66667%;
+  flex-basis: 91.66667%;
 }
 .MuiGrid-grid-xs-12 {
   max-width: 100%;
@@ -157,48 +157,48 @@ exports[`snapshot: className css 1`] = `
     flex-basis: 0;
   }
   .MuiGrid-grid-sm-1 {
-    max-width: 8.3333%;
-    flex-basis: 8.3333%;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
   }
   .MuiGrid-grid-sm-2 {
-    max-width: 16.6667%;
-    flex-basis: 16.6667%;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
   }
   .MuiGrid-grid-sm-3 {
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-sm-4 {
-    max-width: 33.3333%;
-    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
   }
   .MuiGrid-grid-sm-5 {
-    max-width: 41.6667%;
-    flex-basis: 41.6667%;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
   }
   .MuiGrid-grid-sm-6 {
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-sm-7 {
-    max-width: 58.3333%;
-    flex-basis: 58.3333%;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
   }
   .MuiGrid-grid-sm-8 {
-    max-width: 66.6667%;
-    flex-basis: 66.6667%;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
   }
   .MuiGrid-grid-sm-9 {
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-sm-10 {
-    max-width: 83.3333%;
-    flex-basis: 83.3333%;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
   }
   .MuiGrid-grid-sm-11 {
-    max-width: 91.6667%;
-    flex-basis: 91.6667%;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
   }
   .MuiGrid-grid-sm-12 {
     max-width: 100%;
@@ -212,48 +212,48 @@ exports[`snapshot: className css 1`] = `
     flex-basis: 0;
   }
   .MuiGrid-grid-md-1 {
-    max-width: 8.3333%;
-    flex-basis: 8.3333%;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
   }
   .MuiGrid-grid-md-2 {
-    max-width: 16.6667%;
-    flex-basis: 16.6667%;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
   }
   .MuiGrid-grid-md-3 {
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-md-4 {
-    max-width: 33.3333%;
-    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
   }
   .MuiGrid-grid-md-5 {
-    max-width: 41.6667%;
-    flex-basis: 41.6667%;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
   }
   .MuiGrid-grid-md-6 {
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-md-7 {
-    max-width: 58.3333%;
-    flex-basis: 58.3333%;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
   }
   .MuiGrid-grid-md-8 {
-    max-width: 66.6667%;
-    flex-basis: 66.6667%;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
   }
   .MuiGrid-grid-md-9 {
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-md-10 {
-    max-width: 83.3333%;
-    flex-basis: 83.3333%;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
   }
   .MuiGrid-grid-md-11 {
-    max-width: 91.6667%;
-    flex-basis: 91.6667%;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
   }
   .MuiGrid-grid-md-12 {
     max-width: 100%;
@@ -267,48 +267,48 @@ exports[`snapshot: className css 1`] = `
     flex-basis: 0;
   }
   .MuiGrid-grid-lg-1 {
-    max-width: 8.3333%;
-    flex-basis: 8.3333%;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
   }
   .MuiGrid-grid-lg-2 {
-    max-width: 16.6667%;
-    flex-basis: 16.6667%;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
   }
   .MuiGrid-grid-lg-3 {
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-lg-4 {
-    max-width: 33.3333%;
-    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
   }
   .MuiGrid-grid-lg-5 {
-    max-width: 41.6667%;
-    flex-basis: 41.6667%;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
   }
   .MuiGrid-grid-lg-6 {
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-lg-7 {
-    max-width: 58.3333%;
-    flex-basis: 58.3333%;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
   }
   .MuiGrid-grid-lg-8 {
-    max-width: 66.6667%;
-    flex-basis: 66.6667%;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
   }
   .MuiGrid-grid-lg-9 {
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-lg-10 {
-    max-width: 83.3333%;
-    flex-basis: 83.3333%;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
   }
   .MuiGrid-grid-lg-11 {
-    max-width: 91.6667%;
-    flex-basis: 91.6667%;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
   }
   .MuiGrid-grid-lg-12 {
     max-width: 100%;
@@ -322,48 +322,48 @@ exports[`snapshot: className css 1`] = `
     flex-basis: 0;
   }
   .MuiGrid-grid-xl-1 {
-    max-width: 8.3333%;
-    flex-basis: 8.3333%;
+    max-width: 8.33333%;
+    flex-basis: 8.33333%;
   }
   .MuiGrid-grid-xl-2 {
-    max-width: 16.6667%;
-    flex-basis: 16.6667%;
+    max-width: 16.66667%;
+    flex-basis: 16.66667%;
   }
   .MuiGrid-grid-xl-3 {
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-xl-4 {
-    max-width: 33.3333%;
-    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
   }
   .MuiGrid-grid-xl-5 {
-    max-width: 41.6667%;
-    flex-basis: 41.6667%;
+    max-width: 41.66667%;
+    flex-basis: 41.66667%;
   }
   .MuiGrid-grid-xl-6 {
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-xl-7 {
-    max-width: 58.3333%;
-    flex-basis: 58.3333%;
+    max-width: 58.33333%;
+    flex-basis: 58.33333%;
   }
   .MuiGrid-grid-xl-8 {
-    max-width: 66.6667%;
-    flex-basis: 66.6667%;
+    max-width: 66.66667%;
+    flex-basis: 66.66667%;
   }
   .MuiGrid-grid-xl-9 {
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-xl-10 {
-    max-width: 83.3333%;
-    flex-basis: 83.3333%;
+    max-width: 83.33333%;
+    flex-basis: 83.33333%;
   }
   .MuiGrid-grid-xl-11 {
-    max-width: 91.6667%;
-    flex-basis: 91.6667%;
+    max-width: 91.66667%;
+    flex-basis: 91.66667%;
   }
   .MuiGrid-grid-xl-12 {
     max-width: 100%;

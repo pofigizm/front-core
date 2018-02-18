@@ -87,7 +87,6 @@ exports[`snapshot: className css 1`] = `
   display: inline-flex;
   position: relative;
   font-size: 1rem;
-  align-items: baseline;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
 }
 label + .MuiInput-formControl {
@@ -184,7 +183,7 @@ label + .MuiInput-formControl {
   box-shadow: none;
 }
 .MuiInput-input::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
 }
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
   opacity: 0;
@@ -216,7 +215,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiInput-inputDisabled {
   opacity: 1;
 }
-.MuiInput-inputSingleline {
+.MuiInput-inputType {
   height: 1.1875em;
 }
 .MuiInput-inputMultiline {
@@ -224,7 +223,8 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   padding: 0;
 }
 .MuiInput-inputSearch {
-  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
 }
 .MuiFormControl-root {
   margin: 0;
@@ -261,6 +261,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .fcAutocomplete-suggestionsContainerOpen {
   left: 0;
   right: 0;
+  z-index: 1500;
   position: absolute;
   overflow: auto;
   margin-top: 8px;
@@ -299,7 +300,6 @@ exports[`snapshot: className html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <div
         aria-activedescendant={null}
@@ -318,7 +318,7 @@ exports[`snapshot: className html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}
@@ -398,7 +398,6 @@ exports[`snapshot: only label html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -424,7 +423,7 @@ exports[`snapshot: only label html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}
@@ -465,7 +464,6 @@ exports[`snapshot: read only html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -491,7 +489,7 @@ exports[`snapshot: read only html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputDisabled MuiInput-inputSingleline"
+          className="MuiInput-input MuiInput-inputDisabled"
           defaultValue={undefined}
           disabled={true}
           id={undefined}
@@ -532,7 +530,6 @@ exports[`snapshot: should be under previous html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -558,7 +555,7 @@ exports[`snapshot: should be under previous html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}
@@ -663,19 +660,21 @@ exports[`snapshot: with handlers css 2`] = `
 .MuiButtonBase-root {
   color: inherit;
   cursor: pointer;
+  margin: 0;
   border: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
   outline: none;
   position: relative;
-  appearance: none;
-  align-items: center;
   user-select: none;
+  align-items: center;
   border-radius: 0;
   vertical-align: middle;
   justify-content: center;
+  -moz-appearance: none;
   text-decoration: none;
   background-color: transparent;
+  -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
@@ -686,8 +685,11 @@ exports[`snapshot: with handlers css 2`] = `
   pointer-events: none;
 }
 .MuiListItem-root {
+  width: 100%;
   display: flex;
   position: relative;
+  box-sizing: border-box;
+  text-align: left;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
@@ -696,7 +698,7 @@ exports[`snapshot: with handlers css 2`] = `
   position: relative;
 }
 .MuiListItem-keyboardFocused {
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 .MuiListItem-default {
   padding-top: 12px;
@@ -711,6 +713,7 @@ exports[`snapshot: with handlers css 2`] = `
 }
 .MuiListItem-divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-clip: padding-box;
 }
 .MuiListItem-gutters {
   padding-left: 16px;
@@ -721,35 +724,30 @@ exports[`snapshot: with handlers css 2`] = `
 }
 .MuiListItem-button:hover {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 @media (hover: none) {
   .MuiListItem-button:hover {
     background-color: transparent;
   }
 }
-.MuiListItem-button:hover.MuiListItem-disabled {
-  background-color: transparent;
-}
 .MuiListItem-secondaryAction {
   padding-right: 32px;
 }
 .MuiMenuItem-root {
+  width: auto;
   color: rgba(0, 0, 0, 0.87);
   height: 24px;
   overflow: hidden;
   font-size: 1rem;
   box-sizing: content-box;
   font-weight: 400;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.5em;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .MuiMenuItem-root.MuiMenuItem-selected {
-  background-color: rgba(0, 0, 0, 0.08);
-}
-.MuiMenuItem-root:hover {
   background-color: rgba(0, 0, 0, 0.14);
 }"
 `;
@@ -767,7 +765,6 @@ exports[`snapshot: with handlers html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -793,7 +790,7 @@ exports[`snapshot: with handlers html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}
@@ -832,7 +829,6 @@ exports[`snapshot: with handlers html 2`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -858,7 +854,7 @@ exports[`snapshot: with handlers html 2`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}
@@ -896,8 +892,7 @@ exports[`snapshot: with handlers html 2`] = `
           role="option"
         >
           <div
-            className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
-            disabled={false}
+            className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
             onBlur={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -951,8 +946,7 @@ exports[`snapshot: with handlers html 2`] = `
           role="option"
         >
           <div
-            className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
-            disabled={false}
+            className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
             onBlur={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -1006,8 +1000,7 @@ exports[`snapshot: with handlers html 2`] = `
           role="option"
         >
           <div
-            className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiListItem-default MuiMenuItem-root"
-            disabled={false}
+            className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
             onBlur={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -1069,7 +1062,6 @@ exports[`snapshot: with text html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -1095,7 +1087,7 @@ exports[`snapshot: with text html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}
@@ -1136,7 +1128,6 @@ exports[`snapshot: without props html 1`] = `
       className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
       onBlur={[Function]}
       onFocus={[Function]}
-      required={false}
     >
       <div
         aria-activedescendant={null}
@@ -1155,7 +1146,7 @@ exports[`snapshot: without props html 1`] = `
           aria-required={false}
           autoComplete="off"
           autoFocus={undefined}
-          className="MuiInput-input MuiInput-inputSingleline"
+          className="MuiInput-input"
           defaultValue={undefined}
           disabled={false}
           id={undefined}

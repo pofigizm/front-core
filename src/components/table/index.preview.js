@@ -6,7 +6,7 @@ const columns = [
 const rows = [
   { id: 0, key: 'key-0', title: 'one' },
   { id: 1, key: 'key-1', title: 'two' },
-  { id: 2, key: 'key-2', title: 'three' },
+  { id: 2, key: 'key-2', title: 'three', highlight: true },
 ]
 
 export default [

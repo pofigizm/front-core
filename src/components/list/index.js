@@ -76,12 +76,12 @@ const styles = theme => ({
     },
   },
   addIcon: {
-    color: theme.palette.primary.A200,
+    color: theme.palette.primary.light,
   },
   deleteIcon: {
     width: theme.spacing.unit * 2,
     height: theme.spacing.unit * 2,
-    color: theme.palette.secondary.A200,
+    color: theme.palette.secondary.light,
   },
   empty: {
     paddingLeft: theme.spacing.unit * 2,

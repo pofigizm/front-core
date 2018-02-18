@@ -98,7 +98,7 @@ class FloatingAction extends PureComponent {
               onClick={this.handleClick(action.onClick)}
             >
               <Tooltip title={action.label} open={showTooltips} placement="left" >
-                <Button fab color={action.color || 'primary'} className={cn(classes.smallButton)} >
+                <Button variant="fab" color={action.color || 'primary'} className={cn(classes.smallButton)} >
                   <action.Icon className={cn(classes.smallIcon, classes.opened)} />
                 </Button>
               </Tooltip>
@@ -110,7 +110,7 @@ class FloatingAction extends PureComponent {
           onClick={this.handleClick(onClick)}
         >
           <Tooltip title={label} open={showTooltips} placement="left">
-            <Button fab color="secondary" className={cn(classes.button)} >
+            <Button variant="fab" color="secondary" className={cn(classes.button)} >
               <Add className={cn(classes.icon, classes.plusIcon)} />
               <Icon className={cn(classes.icon, classes.opened)} />
             </Button>

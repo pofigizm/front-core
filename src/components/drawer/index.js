@@ -53,7 +53,7 @@ class Drawer extends PureComponent {
 
     return (
       <OriginDrawer
-        type="permanent"
+        variant="permanent"
         classes={{
           paper: cn(classes.drawerPaper, !open && classes.drawerPaperClose),
         }}

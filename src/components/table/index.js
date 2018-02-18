@@ -6,6 +6,7 @@ import OriginTable, { TableBody, TableRow, TableCell } from 'material-ui/Table'
 import Paper from 'src/components/paper'
 import Typography from 'src/components/typography'
 import TableHead from './table-head'
+import indigo from 'material-ui/colors/indigo'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 
@@ -13,10 +14,10 @@ const styles = theme => ({
   root: {
     '& a': {
       textDecoration: 'none',
-      color: theme.palette.secondary.A700,
+      color: theme.palette.secondary.light,
     },
     '& a:visited': {
-      color: theme.palette.secondary.A700,
+      color: theme.palette.secondary.light,
     },
   },
   nothing: {
@@ -28,7 +29,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit,
   },
   highlight: {
-    backgroundColor: theme.palette.primary[50],
+    backgroundColor: indigo[50],
   },
   pointer: {
     cursor: 'pointer',

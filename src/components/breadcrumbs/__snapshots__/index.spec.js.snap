@@ -127,7 +127,11 @@ exports[`snapshot: className css 1`] = `
 }
 
 .fcBreadcrumbs-root > a {
+  color: #ff4081;
   text-decoration: none;
+}
+.fcBreadcrumbs-root > a:visited {
+  color: #ff4081;
 }
 .fcBreadcrumbs-opacity {
   opacity: 0.5;
@@ -143,6 +147,7 @@ exports[`snapshot: className css 1`] = `
 exports[`snapshot: className html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 test-class fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+  type="body1"
 />
 `;
 
@@ -151,6 +156,7 @@ exports[`snapshot: default links and text css 1`] = `""`;
 exports[`snapshot: default links and text html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+  type="body1"
 >
   <a
     href="/first"
@@ -173,6 +179,7 @@ exports[`snapshot: extended links css 1`] = `""`;
 exports[`snapshot: extended links html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+  type="body1"
 >
   <b>
     First
@@ -193,6 +200,7 @@ exports[`snapshot: one text element css 1`] = `""`;
 exports[`snapshot: one text element html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
+  type="body1"
 >
   <span>
     First
@@ -205,6 +213,7 @@ exports[`snapshot: solid css 1`] = `""`;
 exports[`snapshot: solid html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcTypography-root"
+  type="body1"
 >
   <a
     href="/first"

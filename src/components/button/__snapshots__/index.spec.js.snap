@@ -77,19 +77,21 @@ exports[`snapshot: className css 1`] = `
 .MuiButtonBase-root {
   color: inherit;
   cursor: pointer;
+  margin: 0;
   border: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
   outline: none;
   position: relative;
-  appearance: none;
-  align-items: center;
   user-select: none;
+  align-items: center;
   border-radius: 0;
   vertical-align: middle;
   justify-content: center;
+  -moz-appearance: none;
   text-decoration: none;
   background-color: transparent;
+  -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
@@ -124,12 +126,6 @@ exports[`snapshot: className css 1`] = `
 }
 .MuiButton-root:hover.MuiButton-disabled {
   background-color: transparent;
-}
-.MuiButton-dense {
-  padding: 7px 8px;
-  min-width: 64px;
-  font-size: 0.8125rem;
-  min-height: 32px;
 }
 .MuiButton-label {
   width: 100%;
@@ -189,7 +185,7 @@ exports[`snapshot: className css 1`] = `
   background-color: rgba(0, 0, 0, 0.12);
 }
 .MuiButton-raisedPrimary {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   background-color: #3f51b5;
 }
 .MuiButton-raisedPrimary:hover {
@@ -201,7 +197,7 @@ exports[`snapshot: className css 1`] = `
   }
 }
 .MuiButton-raisedSecondary {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   background-color: #f50057;
 }
 .MuiButton-raisedSecondary:hover {
@@ -220,6 +216,7 @@ exports[`snapshot: className css 1`] = `
   height: 56px;
   padding: 0;
   min-width: 0;
+  font-size: 24px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
   border-radius: 50%;
 }
@@ -229,6 +226,18 @@ exports[`snapshot: className css 1`] = `
 .MuiButton-mini {
   width: 40px;
   height: 40px;
+}
+.MuiButton-sizeSmall {
+  padding: 7px 8px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+  min-height: 32px;
+}
+.MuiButton-sizeLarge {
+  padding: 8px 24px;
+  min-width: 112px;
+  font-size: 0.9375rem;
+  min-height: 40px;
 }
 .MuiButton-fullWidth {
   width: 100%;
@@ -252,7 +261,6 @@ exports[`snapshot: className html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={0}
   type="button"
 >
@@ -271,7 +279,7 @@ exports[`snapshot: label and raised css 1`] = `""`;
 
 exports[`snapshot: label and raised html 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-flatPrimary fcButton-root"
+  className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary fcButton-root"
   disabled={false}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -283,7 +291,7 @@ exports[`snapshot: label and raised html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
+  raised={false}
   tabIndex={0}
   type="button"
 >
@@ -314,7 +322,6 @@ exports[`snapshot: only label html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={0}
   type="button"
 >
@@ -346,7 +353,6 @@ exports[`snapshot: read only html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={-1}
   type="button"
 >
@@ -375,7 +381,6 @@ exports[`snapshot: with handlers html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={0}
   type="button"
 >
@@ -406,7 +411,6 @@ exports[`snapshot: with long text html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={0}
   type="button"
 >
@@ -437,7 +441,6 @@ exports[`snapshot: with text html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={0}
   type="button"
 >
@@ -468,7 +471,6 @@ exports[`snapshot: without props html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  role={undefined}
   tabIndex={0}
   type="button"
 >

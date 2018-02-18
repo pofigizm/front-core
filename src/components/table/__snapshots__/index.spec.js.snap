@@ -127,7 +127,11 @@ exports[`snapshot: className css 1`] = `
 }
 
 .fcTable-root a {
+  color: #ff4081;
   text-decoration: none;
+}
+.fcTable-root a:visited {
+  color: #ff4081;
 }
 .fcTable-nothing {
   margin-top: 48px;
@@ -137,17 +141,21 @@ exports[`snapshot: className css 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.fcTable-highlight {
+  background-color: #e8eaf6;
+}
 .fcTable-pointer {
   cursor: pointer;
 }"
 `;
 
 exports[`snapshot: className html 1`] = `
-<h3
-  className="MuiTypography-root MuiTypography-subheading MuiTypography-alignCenter test-class fcTable-nothing fcTypography-root"
+<p
+  className="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter test-class fcTable-nothing fcTypography-root"
+  type="subheading"
 >
   No entries to display
-</h3>
+</p>
 `;
 
 exports[`snapshot: with text and type css 1`] = `
@@ -278,19 +286,21 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiButtonBase-root {
   color: inherit;
   cursor: pointer;
+  margin: 0;
   border: 0;
-  padding: 0;
   display: inline-flex;
+  padding: 0;
   outline: none;
   position: relative;
-  appearance: none;
-  align-items: center;
   user-select: none;
+  align-items: center;
   border-radius: 0;
   vertical-align: middle;
   justify-content: center;
+  -moz-appearance: none;
   text-decoration: none;
   background-color: transparent;
+  -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
 .MuiButtonBase-root::-moz-focus-inner {
@@ -323,6 +333,10 @@ exports[`snapshot: with text and type css 1`] = `
 }
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-fontSize {
+  width: 1em;
+  height: 1em;
 }
 .MuiTableRow-root {
   color: inherit;
@@ -403,10 +417,10 @@ exports[`snapshot: with text and type html 1`] = `
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          scope="col"
         >
           <span
             className="MuiButtonBase-root MuiTableSortLabel-root"
-            disabled={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -438,10 +452,10 @@ exports[`snapshot: with text and type html 1`] = `
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          scope="col"
         >
           <span
             className="MuiButtonBase-root MuiTableSortLabel-root"
-            disabled={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -481,12 +495,14 @@ exports[`snapshot: with text and type html 1`] = `
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           key-0
         </td>
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           one
         </td>
@@ -499,30 +515,34 @@ exports[`snapshot: with text and type html 1`] = `
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           key-1
         </td>
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           two
         </td>
       </tr>
       <tr
-        className="MuiTableRow-root MuiTableRow-hover"
+        className="MuiTableRow-root MuiTableRow-hover fcTable-highlight"
         onClick={[Function]}
         tabIndex={-1}
       >
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           key-2
         </td>
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           three
         </td>
@@ -548,10 +568,10 @@ exports[`snapshot: with text and type html 2`] = `
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          scope="col"
         >
           <span
             className="MuiButtonBase-root MuiTableSortLabel-root"
-            disabled={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -583,10 +603,10 @@ exports[`snapshot: with text and type html 2`] = `
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          scope="col"
         >
           <span
             className="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
-            disabled={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -626,12 +646,14 @@ exports[`snapshot: with text and type html 2`] = `
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           key-0
         </td>
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           one
         </td>
@@ -644,30 +666,34 @@ exports[`snapshot: with text and type html 2`] = `
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           key-1
         </td>
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           two
         </td>
       </tr>
       <tr
-        className="MuiTableRow-root MuiTableRow-hover"
+        className="MuiTableRow-root MuiTableRow-hover fcTable-highlight"
         onClick={[Function]}
         tabIndex={-1}
       >
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           key-2
         </td>
         <td
           aria-sort={null}
           className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          scope={undefined}
         >
           three
         </td>
@@ -680,9 +706,10 @@ exports[`snapshot: with text and type html 2`] = `
 exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
-<h3
-  className="MuiTypography-root MuiTypography-subheading MuiTypography-alignCenter fcTable-nothing fcTypography-root"
+<p
+  className="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter fcTable-nothing fcTypography-root"
+  type="subheading"
 >
   No entries to display
-</h3>
+</p>
 `;

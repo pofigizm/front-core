@@ -19,7 +19,7 @@ class Button extends PureComponent {
       className,
       label = '',
       readOnly,
-      raised = true,
+      variant = 'raised',
       color = 'primary',
       ...props
     } = this.props
@@ -27,7 +27,7 @@ class Button extends PureComponent {
 
     return (
       <OriginButton
-        raised={raised}
+        variant={variant}
         color={color}
         className={cn(classes.root, className)}
         disabled={readOnly}

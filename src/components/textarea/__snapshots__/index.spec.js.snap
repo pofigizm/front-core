@@ -31,7 +31,6 @@ exports[`snapshot: className css 1`] = `
   display: inline-flex;
   position: relative;
   font-size: 1rem;
-  align-items: baseline;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
 }
 label + .MuiInput-formControl {
@@ -128,7 +127,7 @@ label + .MuiInput-formControl {
   box-shadow: none;
 }
 .MuiInput-input::-webkit-search-decoration {
-  appearance: none;
+  -webkit-appearance: none;
 }
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
   opacity: 0;
@@ -160,7 +159,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiInput-inputDisabled {
   opacity: 1;
 }
-.MuiInput-inputSingleline {
+.MuiInput-inputType {
   height: 1.1875em;
 }
 .MuiInput-inputMultiline {
@@ -168,7 +167,8 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   padding: 0;
 }
 .MuiInput-inputSearch {
-  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
 }
 .MuiFormControl-root {
   margin: 0;
@@ -201,7 +201,6 @@ exports[`snapshot: className html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <div
     className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
@@ -212,7 +211,7 @@ exports[`snapshot: className html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >
@@ -305,7 +304,6 @@ exports[`snapshot: only label html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -323,7 +321,7 @@ exports[`snapshot: only label html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >
@@ -377,7 +375,6 @@ exports[`snapshot: read only html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -395,7 +392,7 @@ exports[`snapshot: read only html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >
@@ -449,7 +446,6 @@ exports[`snapshot: with handlers html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -467,7 +463,7 @@ exports[`snapshot: with handlers html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >
@@ -521,7 +517,6 @@ exports[`snapshot: with long text and rows html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -567,7 +562,6 @@ exports[`snapshot: with long text html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -585,7 +579,7 @@ exports[`snapshot: with long text html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >
@@ -639,7 +633,6 @@ exports[`snapshot: with text html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -657,7 +650,7 @@ exports[`snapshot: with text html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >
@@ -711,7 +704,6 @@ exports[`snapshot: without props html 1`] = `
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
   onBlur={[Function]}
   onFocus={[Function]}
-  required={false}
 >
   <div
     className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
@@ -722,7 +714,7 @@ exports[`snapshot: without props html 1`] = `
       className="MuiTextarea-root"
       style={
         Object {
-          "height": 24,
+          "height": 19,
         }
       }
     >

@@ -18,6 +18,7 @@ class Checkbox extends PureComponent {
       classes,
       className,
       label = '',
+      color = 'primary',
       value,
       readOnly,
     } = this.props
@@ -32,6 +33,7 @@ class Checkbox extends PureComponent {
           control={
             <OriginCheckbox
               checked={Boolean(value)}
+              color={color}
               disabled={readOnly}
               indeterminate={indeterminate}
               onChange={this.handleChange}
