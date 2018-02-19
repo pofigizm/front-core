@@ -47,13 +47,17 @@ const styles = theme => ({
 class Drawer extends PureComponent {
   render() {
     const {
-      classes, open, children, onClickDrawerButton,
+      classes,
+      open,
+      variant = 'permanent',
+      children,
+      onClickDrawerButton,
     } = this.props
     debug('render', this.props)
 
     return (
       <OriginDrawer
-        variant="permanent"
+        variant={variant}
         classes={{
           paper: cn(classes.drawerPaper, !open && classes.drawerPaperClose),
         }}

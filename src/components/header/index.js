@@ -34,7 +34,7 @@ class Header extends PureComponent {
       <div className={cn(className, classes.root)}>
         <div className={cn(classes.main)}>
           <Breadcrumbs list={breadcrumbs} Link={Link} />
-          <Typography type="title" className={cn(classes.title)}>
+          <Typography variant="title" className={cn(classes.title)}>
             { title }
           </Typography>
         </div>

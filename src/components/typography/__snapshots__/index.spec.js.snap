@@ -131,7 +131,6 @@ exports[`snapshot: className css 1`] = `
 exports[`snapshot: className html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 test-class fcTypography-root"
-  type="body1"
 />
 `;
 
@@ -140,7 +139,6 @@ exports[`snapshot: with conponent css 1`] = `""`;
 exports[`snapshot: with conponent html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 fcTypography-root"
-  type="body1"
 >
   <span
     style={
@@ -172,7 +170,6 @@ exports[`snapshot: with text css 1`] = `""`;
 exports[`snapshot: with text html 1`] = `
 <p
   className="MuiTypography-root MuiTypography-body1 fcTypography-root"
-  type="body1"
 >
   Lorem ipsum
 </p>

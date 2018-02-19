@@ -13,14 +13,18 @@ const styles = () => ({
 class Typography extends PureComponent {
   render() {
     const {
-      className, classes, children, type = 'body1', ...props
+      className,
+      classes,
+      variant = 'body1',
+      children,
+      ...props
     } = this.props
     debug('render', this.props)
 
     return (
       <OriginTypography
         className={cn(className, classes.root)}
-        type={type}
+        variant={variant}
         {...props}
       >
         { children }

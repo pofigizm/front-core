@@ -73,7 +73,7 @@ class AppBar extends PureComponent {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={cn(classes.main)} type="title" color="inherit" noWrap>
+          <Typography className={cn(classes.main)} variant="title" color="inherit" noWrap>
             { Logo }
           </Typography>
           <Typography className={cn(classes.userName)} color="inherit" noWrap>

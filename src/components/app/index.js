@@ -78,7 +78,6 @@ class Index extends PureComponent {
             onClickLoginButton={loginRequest}
           />
           <Drawer
-            type="persistent"
             open={mainMenuOpen}
             onClickDrawerButton={toggleMenu}
           >

@@ -55,7 +55,7 @@ class Table extends PureComponent {
       return (
         <Typography
           className={cn(className, classes.nothing)}
-          type="subheading"
+          variant="subheading"
           align="center"
         >
           No entries to display

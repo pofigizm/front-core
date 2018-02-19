@@ -46,14 +46,13 @@ exports[`snapshot: basic usage html 1`] = `
         className="MuiTouchRipple-root"
       />
     </button>
-    <p
-      className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
-      type="title"
+    <h2
+      className="MuiTypography-root MuiTypography-title MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
     >
       <span>
         Logo
       </span>
-    </p>
+    </h2>
     <p
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     >
@@ -732,12 +731,11 @@ exports[`snapshot: className html 1`] = `
         className="MuiTouchRipple-root"
       />
     </button>
-    <p
-      className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
-      type="title"
+    <h2
+      className="MuiTypography-root MuiTypography-title MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-main"
     >
       <span />
-    </p>
+    </h2>
     <p
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     />

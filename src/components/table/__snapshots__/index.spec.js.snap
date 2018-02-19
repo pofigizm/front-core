@@ -150,12 +150,11 @@ exports[`snapshot: className css 1`] = `
 `;
 
 exports[`snapshot: className html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter test-class fcTable-nothing fcTypography-root"
-  type="subheading"
+<h3
+  className="MuiTypography-root MuiTypography-subheading MuiTypography-alignCenter test-class fcTable-nothing fcTypography-root"
 >
   No entries to display
-</p>
+</h3>
 `;
 
 exports[`snapshot: with text and type css 1`] = `
@@ -706,10 +705,9 @@ exports[`snapshot: with text and type html 2`] = `
 exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter fcTable-nothing fcTypography-root"
-  type="subheading"
+<h3
+  className="MuiTypography-root MuiTypography-subheading MuiTypography-alignCenter fcTable-nothing fcTypography-root"
 >
   No entries to display
-</p>
+</h3>
 `;

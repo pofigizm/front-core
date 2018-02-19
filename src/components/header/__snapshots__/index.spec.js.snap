@@ -11,7 +11,6 @@ exports[`snapshot: basic usage html 1`] = `
   >
     <p
       className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
-      type="body1"
     >
       <span />
       <span
@@ -21,12 +20,11 @@ exports[`snapshot: basic usage html 1`] = `
       </span>
       <span />
     </p>
-    <p
-      className="MuiTypography-root MuiTypography-body1 fcHeader-title fcTypography-root"
-      type="title"
+    <h2
+      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
     >
       Lorem ipsum
-    </p>
+    </h2>
   </div>
   <div
     style={
@@ -207,11 +205,9 @@ exports[`snapshot: className html 1`] = `
   >
     <p
       className="MuiTypography-root MuiTypography-body1 fcBreadcrumbs-root fcBreadcrumbs-opacity fcTypography-root"
-      type="body1"
     />
-    <p
-      className="MuiTypography-root MuiTypography-body1 fcHeader-title fcTypography-root"
-      type="title"
+    <h2
+      className="MuiTypography-root MuiTypography-title fcHeader-title fcTypography-root"
     />
   </div>
 </div>
