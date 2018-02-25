@@ -55,6 +55,7 @@ class Autocomplete extends PureComponent {
       classes,
       autoFocus,
       label,
+      title,
       list = [],
       value = '',
       readOnly,
@@ -83,6 +84,7 @@ class Autocomplete extends PureComponent {
           inputProps={{
             autoFocus,
             label,
+            title,
             classes,
             value,
             readOnly,

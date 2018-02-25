@@ -18,6 +18,7 @@ class Checkbox extends PureComponent {
       classes,
       className,
       label = '',
+      title,
       color = 'primary',
       value,
       readOnly,
@@ -30,6 +31,7 @@ class Checkbox extends PureComponent {
       <FormControl className={cn(className, classes.root)} fullWidth >
         <FormControlLabel
           label={label}
+          title={title}
           control={
             <OriginCheckbox
               checked={Boolean(value)}

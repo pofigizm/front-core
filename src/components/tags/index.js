@@ -44,6 +44,7 @@ class Tags extends PureComponent {
       classes,
       className,
       label,
+      title,
       list = [],
       readOnly,
       selected = [],
@@ -79,6 +80,7 @@ class Tags extends PureComponent {
           )) }
           <Autocomplete
             className={cn(classes.input)}
+            title={title}
             id={this.hash}
             value={readOnly ? '' : value}
             list={list}
