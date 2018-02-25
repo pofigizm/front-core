@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import mapObj from 'map-obj'
 import camelcase from 'camelcase'
 import decamelize from 'decamelize'
@@ -5,9 +6,8 @@ import QuickLru from 'quick-lru'
 
 const base = { deep: true }
 const has = (arr, key) => arr.some(x => (typeof x === 'string' ? x === key : x.test(key)))
-const cache = new QuickLru({ maxSize: 100000 })
 
-const walker = method => (input, loc) => {
+const walker = (method, cache) => (input, loc) => {
   const opts = Object.assign({}, base, loc)
 
   return mapObj(input, (key, val) => {
@@ -29,5 +29,5 @@ const walker = method => (input, loc) => {
   }, { deep: opts.deep })
 }
 
-export const toCamelcase = walker(camelcase)
-export const toSnakecase = walker(decamelize)
+export const toCamelcase = walker(camelcase, new QuickLru({ maxSize: 50000 }))
+export const toSnakecase = walker(decamelize, new QuickLru({ maxSize: 50000 }))

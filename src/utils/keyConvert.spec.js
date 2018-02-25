@@ -12,3 +12,8 @@ test('toSnakecase', () => {
 
   expect(toSnakecase({ fooBar: true, obj: { oneTwo: false, arr: [{ threeFour: true }] } })).toEqual({ foo_bar: true, obj: { one_two: false, arr: [{ three_four: true }] } })
 })
+
+test('independed caches', () => {
+  toCamelcase({ fooBar: true })
+  expect(toSnakecase({ fooBar: true })).toEqual({ foo_bar: true })
+})
