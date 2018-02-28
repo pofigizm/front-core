@@ -2,7 +2,6 @@
 
 exports[`snapshot: className css 1`] = `
 ".MuiList-root {
-  flex: 1 1 auto;
   margin: 0;
   padding: 0;
   position: relative;
@@ -386,7 +385,7 @@ exports[`snapshot: without props html 1`] = `
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       role="button"
-      tabIndex={0}
+      tabIndex="0"
     >
       <svg
         aria-hidden="true"
@@ -427,7 +426,7 @@ exports[`snapshot: without props html 1`] = `
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       role="button"
-      tabIndex={0}
+      tabIndex="0"
     >
       <svg
         aria-hidden="true"

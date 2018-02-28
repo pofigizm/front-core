@@ -261,7 +261,7 @@ exports[`snapshot: className html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span
@@ -292,7 +292,7 @@ exports[`snapshot: label and raised html 1`] = `
   onTouchMove={[Function]}
   onTouchStart={[Function]}
   raised={false}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span
@@ -322,7 +322,7 @@ exports[`snapshot: only label html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span
@@ -353,7 +353,7 @@ exports[`snapshot: read only html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={-1}
+  tabIndex="-1"
   type="button"
 >
   <span
@@ -381,7 +381,7 @@ exports[`snapshot: with handlers html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span
@@ -411,7 +411,7 @@ exports[`snapshot: with long text html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span
@@ -441,7 +441,7 @@ exports[`snapshot: with text html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span
@@ -471,7 +471,7 @@ exports[`snapshot: without props html 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={0}
+  tabIndex="0"
   type="button"
 >
   <span

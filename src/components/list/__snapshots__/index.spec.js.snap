@@ -32,6 +32,7 @@ exports[`snapshot: basic usage css 1`] = `
   position: relative;
   font-size: 1rem;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.1875em;
 }
 label + .MuiInput-formControl {
   margin-top: 16px;
@@ -230,7 +231,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -292,7 +293,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -468,7 +469,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -644,7 +645,7 @@ exports[`snapshot: basic usage html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -1247,7 +1248,7 @@ exports[`snapshot: className html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -1314,7 +1315,7 @@ exports[`snapshot: empty html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -1577,6 +1578,7 @@ exports[`snapshot: read only html 1`] = `
           >
             <label
               className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+              title={undefined}
             >
               <span
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -1591,7 +1593,7 @@ exports[`snapshot: read only html 1`] = `
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 role={undefined}
-                tabIndex={-1}
+                tabIndex="-1"
               >
                 <span
                   className="MuiIconButton-label"
@@ -1779,6 +1781,7 @@ exports[`snapshot: read only html 1`] = `
           >
             <label
               className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+              title={undefined}
             >
               <span
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -1793,7 +1796,7 @@ exports[`snapshot: read only html 1`] = `
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 role={undefined}
-                tabIndex={-1}
+                tabIndex="-1"
               >
                 <span
                   className="MuiIconButton-label"
@@ -1981,6 +1984,7 @@ exports[`snapshot: read only html 1`] = `
           >
             <label
               className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+              title={undefined}
             >
               <span
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -1995,7 +1999,7 @@ exports[`snapshot: read only html 1`] = `
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 role={undefined}
-                tabIndex={-1}
+                tabIndex="-1"
               >
                 <span
                   className="MuiIconButton-label"
@@ -2075,7 +2079,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -2137,7 +2141,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -2313,7 +2317,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -2489,7 +2493,7 @@ exports[`snapshot: with border & top html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -2685,7 +2689,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -2747,7 +2751,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -2923,7 +2927,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -3099,7 +3103,7 @@ exports[`snapshot: with border html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -3338,7 +3342,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -3407,7 +3411,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -3572,6 +3576,7 @@ exports[`snapshot: with component html 1`] = `
           >
             <label
               className="MuiFormControlLabel-root"
+              title={undefined}
             >
               <span
                 className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary"
@@ -3649,7 +3654,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -3814,6 +3819,7 @@ exports[`snapshot: with component html 1`] = `
           >
             <label
               className="MuiFormControlLabel-root"
+              title={undefined}
             >
               <span
                 className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary"
@@ -3891,7 +3897,7 @@ exports[`snapshot: with component html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -4056,6 +4062,7 @@ exports[`snapshot: with component html 1`] = `
           >
             <label
               className="MuiFormControlLabel-root"
+              title={undefined}
             >
               <span
                 className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary"
@@ -4153,7 +4160,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -4220,7 +4227,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -4407,7 +4414,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span
@@ -4594,7 +4601,7 @@ exports[`snapshot: with numbers html 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
-            tabIndex={0}
+            tabIndex="0"
             type="button"
           >
             <span

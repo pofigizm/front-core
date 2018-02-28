@@ -432,7 +432,7 @@ exports[`snapshot: with text and type html 1`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Key
             <svg
@@ -467,7 +467,7 @@ exports[`snapshot: with text and type html 1`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Title
             <svg
@@ -583,7 +583,7 @@ exports[`snapshot: with text and type html 2`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Key
             <svg
@@ -618,7 +618,7 @@ exports[`snapshot: with text and type html 2`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Title
             <svg

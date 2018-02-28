@@ -1,6 +1,6 @@
 {
   "name": "front-core",
-  "version": "0.8.3",
+  "version": "0.9.1-next",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
@@ -82,7 +82,7 @@
     "tslint-react": "3.5.1",
     "typescript": "2.7.2",
     "url-loader": "0.6.2",
-    "webpack": "3.11.0",
+    "webpack": "4.0.1",
     "webpack-dev-middleware": "2.0.6",
     "webpack-hot-middleware": "2.21.2",
     "webpack-sources": "1.1.0"

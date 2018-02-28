@@ -24,7 +24,7 @@ exports[`snapshot: basic usage html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      tabIndex={0}
+      tabIndex="0"
       type="button"
     >
       <span
@@ -72,7 +72,7 @@ exports[`snapshot: basic usage html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      tabIndex={0}
+      tabIndex="0"
       type="button"
     >
       <span
@@ -709,7 +709,7 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      tabIndex={0}
+      tabIndex="0"
       type="button"
     >
       <span
@@ -753,7 +753,7 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      tabIndex={0}
+      tabIndex="0"
       type="button"
     >
       <span

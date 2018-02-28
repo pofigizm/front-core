@@ -354,6 +354,7 @@ exports[`snapshot: className html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
@@ -419,6 +420,7 @@ exports[`snapshot: false html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
@@ -484,6 +486,7 @@ exports[`snapshot: only label html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
@@ -549,6 +552,7 @@ exports[`snapshot: read only false html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -563,7 +567,7 @@ exports[`snapshot: read only false html 1`] = `
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       role={undefined}
-      tabIndex={-1}
+      tabIndex="-1"
     >
       <span
         className="MuiIconButton-label"
@@ -611,6 +615,7 @@ exports[`snapshot: read only indeterminate html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -625,7 +630,7 @@ exports[`snapshot: read only indeterminate html 1`] = `
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       role={undefined}
-      tabIndex={-1}
+      tabIndex="-1"
     >
       <span
         className="MuiIconButton-label"
@@ -673,6 +678,7 @@ exports[`snapshot: read only true html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -687,7 +693,7 @@ exports[`snapshot: read only true html 1`] = `
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       role={undefined}
-      tabIndex={-1}
+      tabIndex="-1"
     >
       <span
         className="MuiIconButton-label"
@@ -735,6 +741,7 @@ exports[`snapshot: true html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary"
@@ -800,6 +807,7 @@ exports[`snapshot: very long label html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
@@ -865,6 +873,7 @@ exports[`snapshot: with handlers html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
@@ -930,6 +939,7 @@ exports[`snapshot: without props html 1`] = `
 >
   <label
     className="MuiFormControlLabel-root"
+    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"

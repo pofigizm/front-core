@@ -23,6 +23,7 @@ exports[`snapshot: className css 1`] = `
   position: relative;
   font-size: 1rem;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1.1875em;
 }
 label + .MuiInput-formControl {
   margin-top: 16px;
@@ -381,6 +382,7 @@ exports[`snapshot: className html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -457,6 +459,7 @@ exports[`snapshot: only label html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -793,6 +796,7 @@ exports[`snapshot: very mach tags html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -950,6 +954,7 @@ exports[`snapshot: with handlers html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -1050,6 +1055,7 @@ exports[`snapshot: with handlers html 2`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -1214,6 +1220,7 @@ exports[`snapshot: with list and text html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -1290,6 +1297,7 @@ exports[`snapshot: with text html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}
@@ -1364,6 +1372,7 @@ exports[`snapshot: without props html 1`] = `
             onFocus={[Function]}
             role="combobox"
             style={Object {}}
+            title={undefined}
           >
             <input
               aria-invalid={false}

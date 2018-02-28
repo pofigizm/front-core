@@ -689,7 +689,6 @@ exports[`snapshot: className css 1`] = `
   }
 }
 .MuiList-root {
-  flex: 1 1 auto;
   margin: 0;
   padding: 0;
   position: relative;
@@ -905,7 +904,7 @@ exports[`snapshot: className html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          tabIndex={0}
+          tabIndex="0"
           type="button"
         >
           <span
@@ -949,7 +948,7 @@ exports[`snapshot: className html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          tabIndex={0}
+          tabIndex="0"
           type="button"
         >
           <span
@@ -989,7 +988,7 @@ exports[`snapshot: className html 1`] = `
               onTouchEnd={[Function]}
               onTouchMove={[Function]}
               onTouchStart={[Function]}
-              tabIndex={0}
+              tabIndex="0"
               type="button"
             >
               <span
@@ -1055,7 +1054,7 @@ exports[`snapshot: empty html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          tabIndex={0}
+          tabIndex="0"
           type="button"
         >
           <span
@@ -1099,7 +1098,7 @@ exports[`snapshot: empty html 1`] = `
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          tabIndex={0}
+          tabIndex="0"
           type="button"
         >
           <span
@@ -1139,7 +1138,7 @@ exports[`snapshot: empty html 1`] = `
               onTouchEnd={[Function]}
               onTouchMove={[Function]}
               onTouchStart={[Function]}
-              tabIndex={0}
+              tabIndex="0"
               type="button"
             >
               <span
