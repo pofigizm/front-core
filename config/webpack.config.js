@@ -15,7 +15,7 @@ const env = {
 }
 
 const generate = (buildFolder, publicPath = '/') => ({
-  // mode: env.prod ? 'production' : 'development',
+  mode: env.prod ? 'production' : 'development',
   devtool: !env.prod ? 'eval' : false,
   entry: {
     core: !env.loc ?
