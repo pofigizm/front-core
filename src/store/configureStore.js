@@ -12,7 +12,6 @@ const reducers = { core: coreReducer }
 
 const configureStore = (routes, apiRequests, history, preLoadedState) => {
   const { reducer, middleware, enhancer } = connectRoutes(
-    history,
     routes,
     options,
   )
