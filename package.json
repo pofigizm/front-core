@@ -1,6 +1,6 @@
 {
   "name": "front-core",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
@@ -77,7 +77,7 @@
     "remote-save": "0.1.2",
     "reselect": "3.0.1",
     "source-map-loader": "0.2.3",
-    "ts-loader": "4.0.0",
+    "ts-loader": "3.5.0",
     "tslint": "5.9.1",
     "tslint-react": "3.5.1",
     "typescript": "2.7.2",
