@@ -89,6 +89,7 @@ class Autocomplete extends PureComponent {
             value,
             readOnly,
             onChange: this.handleChange,
+            onBlur: this.handleBlur,
           }}
         />
       </form>
@@ -152,6 +153,11 @@ class Autocomplete extends PureComponent {
   handleChange = (event, { newValue }) => {
     if (!this.props.onChange) return
     this.props.onChange(newValue)
+  }
+
+  handleBlur = () => {
+    if (!this.props.onBlur) return
+    this.props.onBlur()
   }
 
   handleSubmit = (event) => {
