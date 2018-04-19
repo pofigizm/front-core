@@ -51,6 +51,7 @@ class Tags extends PureComponent {
       value = '',
 
       onChange,
+      onBlur,
       onSubmit,
       onListClear,
       onListFetch,
@@ -86,6 +87,7 @@ class Tags extends PureComponent {
             list={list}
             readOnly={readOnly}
             onChange={onChange}
+            onBlur={onBlur}
             onSubmit={onSubmit}
             onListClear={onListClear}
             onListFetch={onListFetch}
