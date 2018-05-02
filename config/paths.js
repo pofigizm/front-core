@@ -20,4 +20,6 @@ module.exports = {
   ownSrc: resolveOwn('src'),
   ownComponents: resolveOwn('src/components'),
   ownPreview: resolveOwn('preview'),
+
+  jestConfig: resolveOwn('./jest.config.js'),
 }
