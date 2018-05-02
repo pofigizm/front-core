@@ -11,7 +11,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 300;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.14286em;
-  margin-left: -.06em;
+  margin-left: -.04em;
   letter-spacing: -.04em;
 }
 .MuiTypography-display3 {
@@ -20,7 +20,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.30357em;
-  margin-left: -.04em;
+  margin-left: -.02em;
   letter-spacing: -.02em;
 }
 .MuiTypography-display2 {
@@ -29,7 +29,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.06667em;
-  margin-left: -.04em;
+  margin-left: -.02em;
 }
 .MuiTypography-display1 {
   color: rgba(0, 0, 0, 0.54);
@@ -37,7 +37,6 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.20588em;
-  margin-left: -.04em;
 }
 .MuiTypography-headline {
   color: rgba(0, 0, 0, 0.87);

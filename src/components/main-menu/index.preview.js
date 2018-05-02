@@ -1,5 +1,5 @@
-import StorageIcon from 'material-ui-icons/Storage'
-import Phone from 'material-ui-icons/Phone'
+import StorageIcon from '@material-ui/icons/Storage'
+import Phone from '@material-ui/icons/Phone'
 
 const menu = [
   {

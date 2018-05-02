@@ -4,7 +4,7 @@ import cn from 'classnames'
 import { withStyles } from 'material-ui/styles'
 import OriginSnackbar, { SnackbarContent } from 'material-ui/Snackbar'
 import IconButton from 'material-ui/IconButton'
-import CloseIcon from 'material-ui-icons/Close'
+import CloseIcon from '@material-ui/icons/Close'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

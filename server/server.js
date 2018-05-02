@@ -12,7 +12,7 @@ import { render } from './render'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 
-const html = render(paths.appRoutesJs)
+const html = render(paths.appSettings)
 const handler = (req, res) => {
   res.send(html)
 }

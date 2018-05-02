@@ -32,7 +32,7 @@ const styles = theme => ({
     textDecoration: 'none',
   },
   content: {
-    width: 'calc(100% - 60px)',
+    width: '100%',
     boxSizing: 'border-box',
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
@@ -57,6 +57,8 @@ class Index extends PureComponent {
       messageList,
       title,
       menu,
+      hideMenu,
+      TopComponent = Def,
       authRequired,
 
       NavLink = Def,
@@ -76,9 +78,12 @@ class Index extends PureComponent {
             userName={user.name}
             onClickDrawerButton={toggleMenu}
             onClickLoginButton={loginRequest}
-          />
+          >
+            <TopComponent />
+          </AppBar>
           <Drawer
             open={mainMenuOpen}
+            hidden={hideMenu}
             onClickDrawerButton={toggleMenu}
           >
             <MainMenu list={menu} Link={NavLink} />

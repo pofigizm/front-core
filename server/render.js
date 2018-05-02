@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import { AppContainer } from 'react-hot-loader'
 import { JssProvider, SheetsRegistry } from 'react-jss'
 import { MuiThemeProvider, createGenerateClassName } from 'material-ui/styles'
-import Reboot from 'material-ui/Reboot'
+import CssBaseline from 'material-ui/CssBaseline'
 import createHistory from 'history/createMemoryHistory'
 import csso from 'csso'
 
@@ -16,8 +16,9 @@ import tmpl from './template'
 const history = createHistory({ initialEntries: ['/'] })
 const generateClassName = createGenerateClassName()
 
-export const render = (routesJs) => {
-  const { title, routes, menu } = require(routesJs)
+export const render = (settings) => {
+  // TODO render layout wrapper
+  const { title, routes, menu, layout = {} } = require(settings)
   const { store } = configureStore(routes, {}, history)
 
   const sheets = new SheetsRegistry()
@@ -26,11 +27,11 @@ export const render = (routesJs) => {
       <Provider store={store}>
         <JssProvider registry={sheets} generateClassName={generateClassName}>
           <MuiThemeProvider sheetsManager={new Map()}>
-            <Reboot>
-              <App title={title} menu={menu} >
+            <CssBaseline>
+              <App title={title} menu={menu} {...layout} >
                 <Loading />
               </App>
-            </Reboot>
+            </CssBaseline>
           </MuiThemeProvider>
         </JssProvider>
       </Provider>

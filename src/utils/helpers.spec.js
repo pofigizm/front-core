@@ -183,8 +183,10 @@ test('mergeSkipUndef', () => {
     c: 'propC.innerProp',
   }
   expect(mergeSkipUndef(true, { a: 1 }, { b: 1 }, converter)).toEqual({ a: 1, propB: 1 })
-  expect(mergeSkipUndef(true, { a: 1, b: 2 }, { b: 1 }, converter)).toEqual({ a: 1, b: 2, propB: 1 })
-  expect(mergeSkipUndef(true, { a: 1 }, { c: 1 }, converter)).toEqual({ a: 1, propC: { innerProp: 1 } })
+  expect(mergeSkipUndef(true, { a: 1, b: 2 }, { b: 1 }, converter))
+    .toEqual({ a: 1, b: 2, propB: 1 })
+  expect(mergeSkipUndef(true, { a: 1 }, { c: 1 }, converter))
+    .toEqual({ a: 1, propC: { innerProp: 1 } })
 
   const prev = { a: 1, propC: { innerProp: 99, otherProp: 2 } }
   const next = { a: 1, propC: { innerProp: 1, otherProp: 2 } }

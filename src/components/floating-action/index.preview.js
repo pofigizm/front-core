@@ -1,7 +1,7 @@
-import Create from 'material-ui-icons/Create'
-import Delete from 'material-ui-icons/Delete'
-import Done from 'material-ui-icons/Done'
-import Refresh from 'material-ui-icons/Refresh'
+import Create from '@material-ui/icons/Create'
+import Delete from '@material-ui/icons/Delete'
+import Done from '@material-ui/icons/Done'
+import Refresh from '@material-ui/icons/Refresh'
 
 export default [
   ({ action }) => ({

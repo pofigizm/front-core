@@ -98,10 +98,10 @@ export class State extends PureComponent {
     )
   }
 
-  handleChange = (rows) => {
-    this.props.action('onChange')(rows)
+  handleChange = (rowEls) => {
+    this.props.action('onChange')(rowEls)
     this.setState({
-      rows,
+      rows: rowEls,
     })
   }
 }

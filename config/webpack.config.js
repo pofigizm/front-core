@@ -15,19 +15,19 @@ const env = {
 }
 
 const generate = (buildFolder, publicPath = '/') => ({
-  // mode: env.prod ? 'production' : 'development',
+  mode: env.prod ? 'production' : 'development',
   devtool: !env.prod ? 'eval' : false,
   entry: {
     core: !env.loc ?
       [
         require.resolve('babel-polyfill'),
-        paths.appIndexJs,
+        paths.appIndex,
       ] :
       [
         require.resolve('babel-polyfill'),
         require.resolve('webpack-hot-middleware/client'),
         require.resolve('react-hot-loader/patch'),
-        paths.appIndexJs,
+        paths.appIndex,
       ],
   },
   output: {
@@ -109,6 +109,8 @@ const generate = (buildFolder, publicPath = '/') => ({
       __LOC__: str(env.loc),
       __PROJECT__: str(project),
       __TEST__: 'false',
+      __appComponents__: str(paths.appComponents),
+      __ownComponents__: str(paths.ownComponents),
     }),
     env.ts && new ForkTsCheckerWebpackPlugin({
       async: false,

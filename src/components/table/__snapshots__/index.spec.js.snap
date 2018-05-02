@@ -11,7 +11,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 300;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.14286em;
-  margin-left: -.06em;
+  margin-left: -.04em;
   letter-spacing: -.04em;
 }
 .MuiTypography-display3 {
@@ -20,7 +20,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.30357em;
-  margin-left: -.04em;
+  margin-left: -.02em;
   letter-spacing: -.02em;
 }
 .MuiTypography-display2 {
@@ -29,7 +29,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.06667em;
-  margin-left: -.04em;
+  margin-left: -.02em;
 }
 .MuiTypography-display1 {
   color: rgba(0, 0, 0, 0.54);
@@ -37,7 +37,6 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.20588em;
-  margin-left: -.04em;
 }
 .MuiTypography-headline {
   color: rgba(0, 0, 0, 0.87);
@@ -160,40 +159,42 @@ exports[`snapshot: className html 1`] = `
 exports[`snapshot: with text and type css 1`] = `
 ".MuiTable-root {
   width: 100%;
-  overflow: hidden;
+  display: table;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   border-spacing: 0;
   border-collapse: collapse;
 }
+.MuiTableBody-root {
+  display: table-row-group;
+}
 .MuiTableCell-root {
+  display: table-cell;
+  padding: 4px 56px 4px 24px;
   text-align: left;
   border-bottom: 1px solid
     rgba(224, 224, 224, 1);
+  vertical-align: inherit;
 }
-.MuiTableCell-numeric {
-  text-align: right;
-  flex-direction: row-reverse;
+.MuiTableCell-root:last-child {
+  padding-right: 24px;
 }
-.MuiTableCell-typeHead {
+.MuiTableCell-head {
   color: rgba(0, 0, 0, 0.54);
-  position: relative;
   font-size: 0.75rem;
   font-weight: 500;
 }
-.MuiTableCell-typeBody {
+.MuiTableCell-body {
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8125rem;
 }
-.MuiTableCell-typeFooter {
+.MuiTableCell-footer {
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.75rem;
   border-bottom: 0;
 }
-.MuiTableCell-paddingDefault {
-  padding: 4px 56px 4px 24px;
-}
-.MuiTableCell-paddingDefault:last-child {
-  padding-right: 24px;
+.MuiTableCell-numeric {
+  text-align: right;
+  flex-direction: row-reverse;
 }
 .MuiTableCell-paddingDense {
   padding-right: 24px;
@@ -201,85 +202,94 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiTableCell-paddingCheckbox {
   padding: 0 12px;
 }
+.MuiTableCell-paddingNone {
+  padding: 0;
+}
+.MuiTableCell-paddingNone:last-child {
+  padding: 0;
+}
+.MuiTableHead-root {
+  display: table-header-group;
+}
 .MuiPaper-root {
   background-color: #fff;
 }
 .MuiPaper-rounded {
   border-radius: 2px;
 }
-.MuiPaper-shadow0 {
+.MuiPaper-elevation0 {
   box-shadow: none;
 }
-.MuiPaper-shadow1 {
+.MuiPaper-elevation1 {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow2 {
+.MuiPaper-elevation2 {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow3 {
+.MuiPaper-elevation3 {
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2),0px 3px 4px 0px rgba(0, 0, 0, 0.14),0px 3px 3px -2px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow4 {
+.MuiPaper-elevation4 {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow5 {
+.MuiPaper-elevation5 {
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 5px 8px 0px rgba(0, 0, 0, 0.14),0px 1px 14px 0px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow6 {
+.MuiPaper-elevation6 {
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow7 {
+.MuiPaper-elevation7 {
   box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),0px 7px 10px 1px rgba(0, 0, 0, 0.14),0px 2px 16px 1px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow8 {
+.MuiPaper-elevation8 {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow9 {
+.MuiPaper-elevation9 {
   box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),0px 9px 12px 1px rgba(0, 0, 0, 0.14),0px 3px 16px 2px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow10 {
+.MuiPaper-elevation10 {
   box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),0px 10px 14px 1px rgba(0, 0, 0, 0.14),0px 4px 18px 3px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow11 {
+.MuiPaper-elevation11 {
   box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),0px 11px 15px 1px rgba(0, 0, 0, 0.14),0px 4px 20px 3px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow12 {
+.MuiPaper-elevation12 {
   box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow13 {
+.MuiPaper-elevation13 {
   box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 13px 19px 2px rgba(0, 0, 0, 0.14),0px 5px 24px 4px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow14 {
+.MuiPaper-elevation14 {
   box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2),0px 14px 21px 2px rgba(0, 0, 0, 0.14),0px 5px 26px 4px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow15 {
+.MuiPaper-elevation15 {
   box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2),0px 15px 22px 2px rgba(0, 0, 0, 0.14),0px 6px 28px 5px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow16 {
+.MuiPaper-elevation16 {
   box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),0px 16px 24px 2px rgba(0, 0, 0, 0.14),0px 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow17 {
+.MuiPaper-elevation17 {
   box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2),0px 17px 26px 2px rgba(0, 0, 0, 0.14),0px 6px 32px 5px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow18 {
+.MuiPaper-elevation18 {
   box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2),0px 18px 28px 2px rgba(0, 0, 0, 0.14),0px 7px 34px 6px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow19 {
+.MuiPaper-elevation19 {
   box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2),0px 19px 29px 2px rgba(0, 0, 0, 0.14),0px 7px 36px 6px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow20 {
+.MuiPaper-elevation20 {
   box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 20px 31px 3px rgba(0, 0, 0, 0.14),0px 8px 38px 7px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow21 {
+.MuiPaper-elevation21 {
   box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 21px 33px 3px rgba(0, 0, 0, 0.14),0px 8px 40px 7px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow22 {
+.MuiPaper-elevation22 {
   box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2),0px 22px 35px 3px rgba(0, 0, 0, 0.14),0px 8px 42px 7px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow23 {
+.MuiPaper-elevation23 {
   box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2),0px 23px 36px 3px rgba(0, 0, 0, 0.14),0px 9px 44px 8px rgba(0, 0, 0, 0.12);
 }
-.MuiPaper-shadow24 {
+.MuiPaper-elevation24 {
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 .MuiButtonBase-root {
@@ -305,15 +315,16 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
 }
-.MuiButtonBase-disabled {
+.MuiButtonBase-root.MuiButtonBase-disabled {
   cursor: default;
   pointer-events: none;
 }
 .MuiSvgIcon-root {
   fill: currentColor;
-  width: 24px;
-  height: 24px;
+  width: 1em;
+  height: 1em;
   display: inline-block;
+  font-size: 24px;
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   user-select: none;
   flex-shrink: 0;
@@ -333,10 +344,6 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiSvgIcon-colorError {
   color: #f44336;
 }
-.MuiSvgIcon-fontSize {
-  width: 1em;
-  height: 1em;
-}
 .MuiTableRow-root {
   color: inherit;
   height: 48px;
@@ -346,17 +353,17 @@ exports[`snapshot: with text and type css 1`] = `
 .MuiTableRow-root:focus {
   outline: none;
 }
-.MuiTableRow-typeHead {
-  height: 56px;
-}
-.MuiTableRow-typeFooter {
-  height: 56px;
-}
-.MuiTableRow-selected {
+.MuiTableRow-root.MuiTableRow-selected {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.MuiTableRow-hover:hover {
+.MuiTableRow-root.MuiTableRow-hover:hover {
   background-color: rgba(0, 0, 0, 0.07);
+}
+.MuiTableRow-head {
+  height: 56px;
+}
+.MuiTableRow-footer {
+  height: 56px;
 }
 .MuiTableSortLabel-root {
   cursor: pointer;
@@ -386,10 +393,10 @@ exports[`snapshot: with text and type css 1`] = `
   user-select: none;
   margin-right: 4px;
 }
-.MuiTableSortLabel-desc {
+.MuiTableSortLabel-iconDirectionDesc {
   transform: rotate(0deg);
 }
-.MuiTableSortLabel-asc {
+.MuiTableSortLabel-iconDirectionAsc {
   transform: rotate(180deg);
 }
 
@@ -402,20 +409,20 @@ exports[`snapshot: with text and type css 2`] = `""`;
 
 exports[`snapshot: with text and type html 1`] = `
 <div
-  className="MuiPaper-root MuiPaper-shadow4 MuiPaper-rounded fcTable-root fcPaper-root"
+  className="MuiPaper-root MuiPaper-elevation4 MuiPaper-rounded fcTable-root fcPaper-root"
 >
   <table
     className="MuiTable-root"
   >
     <thead
-      className="fcTableHead-root"
+      className="MuiTableHead-root fcTableHead-root"
     >
       <tr
-        className="MuiTableRow-root MuiTableRow-typeHead"
+        className="MuiTableRow-root MuiTableRow-head"
       >
         <th
           aria-sort={null}
-          className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          className="MuiTableCell-root MuiTableCell-head"
           scope="col"
         >
           <span
@@ -432,12 +439,12 @@ exports[`snapshot: with text and type html 1`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Key
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-desc"
+              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -450,7 +457,7 @@ exports[`snapshot: with text and type html 1`] = `
         </th>
         <th
           aria-sort={null}
-          className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          className="MuiTableCell-root MuiTableCell-head"
           scope="col"
         >
           <span
@@ -467,12 +474,12 @@ exports[`snapshot: with text and type html 1`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Title
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-desc"
+              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -485,7 +492,9 @@ exports[`snapshot: with text and type html 1`] = `
         </th>
       </tr>
     </thead>
-    <tbody>
+    <tbody
+      className="MuiTableBody-root"
+    >
       <tr
         className="MuiTableRow-root MuiTableRow-hover"
         onClick={[Function]}
@@ -493,14 +502,14 @@ exports[`snapshot: with text and type html 1`] = `
       >
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           key-0
         </td>
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           one
@@ -513,14 +522,14 @@ exports[`snapshot: with text and type html 1`] = `
       >
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           key-1
         </td>
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           two
@@ -533,14 +542,14 @@ exports[`snapshot: with text and type html 1`] = `
       >
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           key-2
         </td>
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           three
@@ -553,20 +562,20 @@ exports[`snapshot: with text and type html 1`] = `
 
 exports[`snapshot: with text and type html 2`] = `
 <div
-  className="MuiPaper-root MuiPaper-shadow4 MuiPaper-rounded fcTable-root fcPaper-root"
+  className="MuiPaper-root MuiPaper-elevation4 MuiPaper-rounded fcTable-root fcPaper-root"
 >
   <table
     className="MuiTable-root"
   >
     <thead
-      className="fcTableHead-root"
+      className="MuiTableHead-root fcTableHead-root"
     >
       <tr
-        className="MuiTableRow-root MuiTableRow-typeHead"
+        className="MuiTableRow-root MuiTableRow-head"
       >
         <th
           aria-sort={null}
-          className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          className="MuiTableCell-root MuiTableCell-head"
           scope="col"
         >
           <span
@@ -583,12 +592,12 @@ exports[`snapshot: with text and type html 2`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Key
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-desc"
+              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -601,7 +610,7 @@ exports[`snapshot: with text and type html 2`] = `
         </th>
         <th
           aria-sort={null}
-          className="MuiTableCell-root MuiTableCell-paddingDefault MuiTableCell-typeHead"
+          className="MuiTableCell-root MuiTableCell-head"
           scope="col"
         >
           <span
@@ -618,12 +627,12 @@ exports[`snapshot: with text and type html 2`] = `
             onTouchMove={[Function]}
             onTouchStart={[Function]}
             role="button"
-            tabIndex={0}
+            tabIndex="0"
           >
             Title
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-desc"
+              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
               color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
@@ -636,7 +645,9 @@ exports[`snapshot: with text and type html 2`] = `
         </th>
       </tr>
     </thead>
-    <tbody>
+    <tbody
+      className="MuiTableBody-root"
+    >
       <tr
         className="MuiTableRow-root MuiTableRow-hover"
         onClick={[Function]}
@@ -644,14 +655,14 @@ exports[`snapshot: with text and type html 2`] = `
       >
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           key-0
         </td>
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           one
@@ -664,14 +675,14 @@ exports[`snapshot: with text and type html 2`] = `
       >
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           key-1
         </td>
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           two
@@ -684,14 +695,14 @@ exports[`snapshot: with text and type html 2`] = `
       >
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           key-2
         </td>
         <td
           aria-sort={null}
-          className="MuiTableCell-root fcTable-cell MuiTableCell-paddingDefault MuiTableCell-typeBody"
+          className="MuiTableCell-root fcTable-cell MuiTableCell-body"
           scope={undefined}
         >
           three

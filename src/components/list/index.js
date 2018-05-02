@@ -7,8 +7,8 @@ import { withStyles } from 'material-ui/styles'
 import Textarea from 'src/components/textarea'
 import IconButton from 'material-ui/IconButton'
 import Typography from 'material-ui/Typography'
-import AddCircle from 'material-ui-icons/AddCircle'
-import DeleteIcon from 'material-ui-icons/Delete'
+import AddCircle from '@material-ui/icons/AddCircle'
+import DeleteIcon from '@material-ui/icons/Delete'
 import Table, {
   TableHead,
   TableBody,
@@ -160,7 +160,13 @@ class List extends PureComponent {
                 className={cn(classes.row)}
               >
                 <TableCell
-                  className={cn(classes.cell, top && classes.cellTop, !border && classes.removeBorder)}
+                  className={
+                    cn(
+                      classes.cell,
+                      top && classes.cellTop,
+                      !border && classes.removeBorder
+                    )
+                  }
                   padding="none"
                 >
                   { !readOnly && (
@@ -176,7 +182,13 @@ class List extends PureComponent {
                 </TableCell>
                 { numbers && (
                   <TableCell
-                    className={cn(classes.cell, top && classes.cellTop, !border && classes.removeBorder)}
+                    className={
+                      cn(
+                        classes.cell,
+                        top && classes.cellTop,
+                        !border && classes.removeBorder
+                      )
+                    }
                     padding="none"
                   >
                     <div className={cn(classes.number)} >
@@ -189,7 +201,13 @@ class List extends PureComponent {
                   .map((column, cix) => (
                     <TableCell
                       key={String(ix) + String(cix)}
-                      className={cn(classes.cell, top && classes.cellTop, !border && classes.removeBorder)}
+                      className={
+                        cn(
+                          classes.cell,
+                          top && classes.cellTop,
+                          !border && classes.removeBorder
+                        )
+                      }
                       padding="none"
                     >
                       { !column.component && (

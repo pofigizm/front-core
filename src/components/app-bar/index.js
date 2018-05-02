@@ -7,7 +7,7 @@ import Toolbar from 'material-ui/Toolbar'
 import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button'
 import IconButton from 'material-ui/IconButton'
-import MenuIcon from 'material-ui-icons/Menu'
+import MenuIcon from '@material-ui/icons/Menu'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 
@@ -33,6 +33,9 @@ const styles = theme => ({
   main: {
     flex: 1,
   },
+  extended: {
+    marginRight: theme.spacing.unit * 2,
+  },
   userName: {
     marginRight: theme.spacing.unit * 2,
   },
@@ -56,6 +59,7 @@ class AppBar extends PureComponent {
       open = false,
       userName,
       Logo = <span />,
+      children,
       onClickDrawerButton,
       onClickLoginButton,
     } = this.props
@@ -76,6 +80,9 @@ class AppBar extends PureComponent {
           <Typography className={cn(classes.main)} variant="title" color="inherit" noWrap>
             { Logo }
           </Typography>
+          <div className={cn(classes.extended)}>
+            { children }
+          </div>
           <Typography className={cn(classes.userName)} color="inherit" noWrap>
             { userName }
           </Typography>

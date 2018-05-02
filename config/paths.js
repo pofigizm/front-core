@@ -8,14 +8,18 @@ const resolveOwn = relativePath => path.resolve(__dirname, '..', relativePath)
 module.exports = {
   appRoot: resolveApp('.'),
   appBuild: resolveApp('build'),
-  appIndexJs: resolveApp('src/'), // index.js or index.ts
-  appRoutesJs: resolveApp('src/routes'), // routes.js or routes.ts
   appSrc: resolveApp('src'),
+  appIndex: resolveApp('src/'), // index.js or index.ts
+  appSettings: resolveApp('src/settings'),
+  appComponents: resolveApp('src/components'),
   appCache: resolveApp('.cache'),
   appTsConfig: resolveApp('tsconfig.json'),
   appTsLint: resolveApp('tslint.json'),
 
   ownRoot: resolveOwn('.'),
   ownSrc: resolveOwn('src'),
+  ownComponents: resolveOwn('src/components'),
   ownPreview: resolveOwn('preview'),
+
+  jestConfig: resolveOwn('./jest.config.js'),
 }

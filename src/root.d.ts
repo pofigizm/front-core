@@ -22,10 +22,16 @@ export interface Routes {
   [Key: string]: Route
 }
 
+export interface Layout {
+  hideMenu?: boolean
+  wrapper?: Function
+}
+
 export interface Root {
   title?: string
   routes?: Routes
   menu?: Menu
+  layout?: Layout
   apiRequests?: {
     [key: string]: ApiRequest
   }

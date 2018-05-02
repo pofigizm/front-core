@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot: className css 1`] = `
-".MuiGrid-typeContainer {
+".MuiGrid-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-.MuiGrid-typeItem {
+.MuiGrid-item {
   flex: 0 0 auto;
   margin: 0;
   box-sizing: border-box;
@@ -73,28 +73,28 @@ exports[`snapshot: className css 1`] = `
   width: calc(100% + 8px);
   margin: -4px;
 }
-.MuiGrid-spacing-xs-8 > .MuiGrid-typeItem {
+.MuiGrid-spacing-xs-8 > .MuiGrid-item {
   padding: 4px;
 }
 .MuiGrid-spacing-xs-16 {
   width: calc(100% + 16px);
   margin: -8px;
 }
-.MuiGrid-spacing-xs-16 > .MuiGrid-typeItem {
+.MuiGrid-spacing-xs-16 > .MuiGrid-item {
   padding: 8px;
 }
 .MuiGrid-spacing-xs-24 {
   width: calc(100% + 24px);
   margin: -12px;
 }
-.MuiGrid-spacing-xs-24 > .MuiGrid-typeItem {
+.MuiGrid-spacing-xs-24 > .MuiGrid-item {
   padding: 12px;
 }
 .MuiGrid-spacing-xs-40 {
   width: calc(100% + 40px);
   margin: -20px;
 }
-.MuiGrid-spacing-xs-40 > .MuiGrid-typeItem {
+.MuiGrid-spacing-xs-40 > .MuiGrid-item {
   padding: 20px;
 }
 .MuiGrid-grid-xs {

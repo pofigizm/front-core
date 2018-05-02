@@ -1,0 +1,11 @@
+{
+  "flags": {
+    "features": {
+      "feature-page": false
+    }
+  },
+  "auth": "?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImp0aSI6ImI5NDM5ZDVkLWExMmQtNDQ3Yy05NDg3LTU2OWE1ODU4NTE3ZCIsImlhdCI6MTUxMTE2OTgwMywiZXhwIjoxNTExMTczNDAzfQ.YT70-lIld7dKZj45Pvl1OOiSRcik9s_6yptzuzGxIMw",
+  "hosts": {
+    "api": "/api-mock"
+  }
+}
