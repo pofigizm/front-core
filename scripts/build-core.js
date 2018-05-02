@@ -24,7 +24,7 @@ const envPublicPath = process.env.APP_PUBLIC_PATH
 const buildFolder = envFolder ? path.resolve(envFolder) : paths.appBuild
 fs.emptyDirSync(buildFolder)
 
-fs.outputFileSync(path.join(buildFolder, 'index.html'), render(paths.appRoutesJs))
+fs.outputFileSync(path.join(buildFolder, 'index.html'), render(paths.appRoutes))
 fs.copySync(path.join(paths.appRoot, 'config.json'), path.join(buildFolder, 'config.json'))
 
 let webpackConfig = config.generate(buildFolder, envPublicPath)

@@ -6,7 +6,7 @@ const sync = require('child_process').spawnSync
 const args = process.argv.slice(2)
 
 const scriptIndex = args.findIndex(
-  x => x === 'build' || x === 'build-dev' || x === 'start' || x === 'test'
+  x => ['build', 'build-dev', 'start', 'test', 'preview'].includes(x)
 )
 
 if (scriptIndex === -1) {

@@ -1,18 +1,15 @@
 {
   "name": "front-core",
-  "version": "0.9.4-next",
+  "version": "0.9.5-next",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
   },
   "license": "MIT",
   "scripts": {
-    "preview": "start-storybook -p 9000 -c preview",
-    "start": "DEBUG=front-core:* ./bin/front-core start",
+    "preview": "bin/front-core preview",
     "precommit": "git diff --cached --name-only | grep -e '\\.js$' | xargs eslint",
-    "clean": "rm -rf dist && mkdir dist",
     "lint": "eslint --fix -- src server",
-    "format": "prettier --single-quote --semi=false --write",
     "test": "BABEL_DISABLE_CACHE=1 jest",
     "test:watch": "npm run test -- --watch",
     "test:coverage": "npm run test -- --coverage"

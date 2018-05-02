@@ -1,6 +1,8 @@
 /* eslint-disable prefer-template */
 /* eslint-disable jsx-quotes */
 /* eslint-disable no-underscore-dangle */
+/* global __appComponents__, __ownComponents__ */
+
 import React from 'react'
 import { configure, storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
@@ -25,28 +27,28 @@ const Render = ({ children }) => (
 )
 
 const components = require.context(
-  '../src/components',
+  __appComponents__,
   true,
   /(.*)\/index\.(?:js|ts|tsx)$/
 )
 
 const componentsPreview = require.context(
-  '../src/components',
+  __appComponents__,
   true,
   /(.*)\/index\.preview\.(?:js|ts|tsx)$/
 )
 
-// const coreComponents = require.context(
-//   '../node_modules/front-core/src/components',
-//   true,
-//   /(.*)\/index\.(?:js|ts|tsx)$/
-// )
+const coreComponents = require.context(
+  __ownComponents__,
+  true,
+  /(.*)\/index\.(?:js|ts|tsx)$/
+)
 
-// const coreComponentsPreview = require.context(
-//   '../node_modules/front-core/src/components',
-//   true,
-//   /(.*)\/index\.preview\.(?:js|ts|tsx)$/
-// )
+const coreComponentsPreview = require.context(
+  __ownComponents__,
+  true,
+  /(.*)\/index\.preview\.(?:js|ts|tsx)$/
+)
 
 const getData = (prefix, comps, pres) => {
   const list = comps.keys()
@@ -67,8 +69,8 @@ const getData = (prefix, comps, pres) => {
 }
 
 const datas = []
-//  .concat(getData('core/', coreComponents, coreComponentsPreview))
   .concat(getData('app/', components, componentsPreview))
+  .concat(getData('core/', coreComponents, coreComponentsPreview))
 
 const loadStories = () => {
   datas
