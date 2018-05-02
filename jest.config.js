@@ -12,10 +12,5 @@ module.exports = {
   modulePaths: [
     '<rootDir>',
   ],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '/example/',
-    '/sctipts/',
-  ],
   notify: false,
 }

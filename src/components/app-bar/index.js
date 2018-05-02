@@ -33,6 +33,9 @@ const styles = theme => ({
   main: {
     flex: 1,
   },
+  extended: {
+    marginRight: theme.spacing.unit * 2,
+  },
   userName: {
     marginRight: theme.spacing.unit * 2,
   },
@@ -56,6 +59,7 @@ class AppBar extends PureComponent {
       open = false,
       userName,
       Logo = <span />,
+      children,
       onClickDrawerButton,
       onClickLoginButton,
     } = this.props
@@ -76,6 +80,9 @@ class AppBar extends PureComponent {
           <Typography className={cn(classes.main)} variant="title" color="inherit" noWrap>
             { Logo }
           </Typography>
+          <div className={cn(classes.extended)}>
+            { children }
+          </div>
           <Typography className={cn(classes.userName)} color="inherit" noWrap>
             { userName }
           </Typography>

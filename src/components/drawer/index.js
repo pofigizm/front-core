@@ -21,7 +21,15 @@ const styles = theme => ({
     }),
   },
   drawerPaperClose: {
-    width: 60,
+    width: 70,
+    overflowX: 'hidden',
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
+  drawerPaperCloseHidden: {
+    width: 0,
     overflowX: 'hidden',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
@@ -49,7 +57,7 @@ class Drawer extends PureComponent {
     const {
       classes,
       open,
-      variant = 'permanent',
+      hidden,
       children,
       onClickDrawerButton,
     } = this.props
@@ -57,9 +65,12 @@ class Drawer extends PureComponent {
 
     return (
       <OriginDrawer
-        variant={variant}
+        variant="permanent"
         classes={{
-          paper: cn(classes.drawerPaper, !open && classes.drawerPaperClose),
+          paper: cn(
+            classes.drawerPaper,
+            !open && (hidden ? classes.drawerPaperCloseHidden : classes.drawerPaperClose),
+          ),
         }}
         open={open}
       >

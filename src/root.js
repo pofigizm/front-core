@@ -8,7 +8,7 @@ import JssProvider from 'react-jss/lib/JssProvider'
 import { createGenerateClassName } from 'material-ui/styles'
 import CssBaseline from 'material-ui/CssBaseline'
 
-import App from './container'
+import App, { createContainer } from './container'
 import getPage from './pages'
 import { init } from './actions'
 import getStore from './store'
@@ -17,7 +17,7 @@ import ownRoutes from './pages/routes'
 const generateClassName = createGenerateClassName()
 const jss = create(preset())
 
-const render = (Wrapper, Page, store, title, menu) => {
+const render = (Wrapper, Page, store) => {
   const root = document.getElementById('app')
   const sCss = document.getElementById('server-side-styles')
   const sJs = document.getElementById('server-side-state')
@@ -27,7 +27,7 @@ const render = (Wrapper, Page, store, title, menu) => {
       <Provider store={store}>
         <JssProvider jss={jss} generateClassName={generateClassName}>
           <CssBaseline>
-            <Wrapper title={title} menu={menu} >
+            <Wrapper>
               <Page />
             </Wrapper>
           </CssBaseline>
@@ -42,18 +42,31 @@ const render = (Wrapper, Page, store, title, menu) => {
   )
 }
 
-export const root = ({ title, routes, menu, apiRequests, config }) => {
+export const root = ({ title, routes, menu, layout = {}, apiRequests, config }) => {
   const { store, reducers } = getStore({ ...ownRoutes, ...routes }, apiRequests)
   store.dispatch(init(config))
 
+  const { wrapper, ...layoutProps } = layout
+  const Comp = wrapper ? createContainer(layout.wrapper) : App
+  const WrapComp = ({ children }) => (
+    <Comp
+      {...{
+        title,
+        menu,
+        ...layoutProps,
+        children,
+      }}
+    />
+  )
+
   const Page = getPage({ store, reducers })
-  render(App, Page, store, title, menu)
+  render(WrapComp, Page, store)
 
   if (__LOC__ && module.hot) {
     module.hot.accept('./pages', () => {
       const getNextPage = require('./pages').default
       const NextPage = getNextPage({ store, reducers })
-      render(App, NextPage, store, title, menu)
+      render(WrapComp, NextPage, store)
     })
   }
 }

@@ -16,8 +16,9 @@ import tmpl from './template'
 const history = createHistory({ initialEntries: ['/'] })
 const generateClassName = createGenerateClassName()
 
-export const render = (routesJs) => {
-  const { title, routes, menu } = require(routesJs)
+export const render = (settings) => {
+  // TODO render layout wrapper
+  const { title, routes, menu, layout = {} } = require(settings)
   const { store } = configureStore(routes, {}, history)
 
   const sheets = new SheetsRegistry()
@@ -27,7 +28,7 @@ export const render = (routesJs) => {
         <JssProvider registry={sheets} generateClassName={generateClassName}>
           <MuiThemeProvider sheetsManager={new Map()}>
             <CssBaseline>
-              <App title={title} menu={menu} >
+              <App title={title} menu={menu} {...layout} >
                 <Loading />
               </App>
             </CssBaseline>

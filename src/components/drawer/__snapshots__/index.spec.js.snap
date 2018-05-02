@@ -325,7 +325,12 @@ exports[`snapshot: className css 1`] = `
   transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
 }
 .fcDrawer-drawerPaperClose {
-  width: 60px;
+  width: 70px;
+  overflow-x: hidden;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+.fcDrawer-drawerPaperCloseHidden {
+  width: 0;
   overflow-x: hidden;
   transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
 }

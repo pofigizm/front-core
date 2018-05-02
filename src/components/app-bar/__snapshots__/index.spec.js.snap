@@ -55,6 +55,9 @@ exports[`snapshot: basic usage html 1`] = `
         Logo
       </span>
     </h2>
+    <div
+      className="fcAppBar-extended"
+    />
     <p
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     >
@@ -700,6 +703,9 @@ exports[`snapshot: className css 1`] = `
 .fcAppBar-main {
   flex: 1;
 }
+.fcAppBar-extended {
+  margin-right: 16px;
+}
 .fcAppBar-userName {
   margin-right: 16px;
 }
@@ -766,6 +772,9 @@ exports[`snapshot: className html 1`] = `
     >
       <span />
     </h2>
+    <div
+      className="fcAppBar-extended"
+    />
     <p
       className="MuiTypography-root MuiTypography-body1 MuiTypography-colorInherit MuiTypography-noWrap fcAppBar-userName"
     />

@@ -10,7 +10,7 @@
     "preview": "bin/front-core preview",
     "precommit": "git diff --cached --name-only | grep -e '\\.js$' | xargs eslint",
     "lint": "eslint --fix -- src server config preview scripts",
-    "test": "bin/front-core test -- src",
+    "test": "bin/front-core test src",
     "test11": "BABEL_DISABLE_CACHE=1 jest",
     "test:watch": "npm run test -- --watch",
     "test:coverage": "npm run test -- --coverage"
