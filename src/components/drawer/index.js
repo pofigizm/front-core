@@ -4,7 +4,7 @@ import { withStyles } from 'material-ui/styles'
 import cn from 'classnames'
 import OriginDrawer from 'material-ui/Drawer'
 import IconButton from 'material-ui/IconButton'
-import ChevronLeftIcon from 'material-ui-icons/ChevronLeft'
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

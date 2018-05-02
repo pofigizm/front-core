@@ -9,7 +9,7 @@ import { create } from 'jss'
 import preset from 'jss-preset-default'
 import JssProvider from 'react-jss/lib/JssProvider'
 import { createGenerateClassName } from 'material-ui/styles'
-import Reboot from 'material-ui/Reboot'
+import CssBaseline from 'material-ui/CssBaseline'
 
 const generateClassName = createGenerateClassName()
 const jss = create(preset())
@@ -17,9 +17,9 @@ const jss = create(preset())
 const Render = ({ children }) => (
   <div>
     <JssProvider jss={jss} generateClassName={generateClassName}>
-      <Reboot>
+      <CssBaseline>
         { children }
-      </Reboot>
+      </CssBaseline>
     </JssProvider>
   </div>
 )
@@ -27,25 +27,25 @@ const Render = ({ children }) => (
 const components = require.context(
   '../src/components',
   true,
-  /(.*)\/index\.js$/
+  /(.*)\/index\.(?:js|ts|tsx)$/
 )
 
 const componentsPreview = require.context(
   '../src/components',
   true,
-  /(.*)\/index\.preview\.js$/
+  /(.*)\/index\.preview\.(?:js|ts|tsx)$/
 )
 
 // const coreComponents = require.context(
 //   '../node_modules/front-core/src/components',
 //   true,
-//   /(.*)\/index\.js$/
+//   /(.*)\/index\.(?:js|ts|tsx)$/
 // )
 
 // const coreComponentsPreview = require.context(
 //   '../node_modules/front-core/src/components',
 //   true,
-//   /(.*)\/index\.preview\.js$/
+//   /(.*)\/index\.preview\.(?:js|ts|tsx)$/
 // )
 
 const getData = (prefix, comps, pres) => {

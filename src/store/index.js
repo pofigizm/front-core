@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import createHistory from 'history/createBrowserHistory'
 import configureStore from './configureStore'
 

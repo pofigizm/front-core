@@ -6,7 +6,7 @@ import { create } from 'jss'
 import preset from 'jss-preset-default'
 import JssProvider from 'react-jss/lib/JssProvider'
 import { createGenerateClassName } from 'material-ui/styles'
-import Reboot from 'material-ui/Reboot'
+import CssBaseline from 'material-ui/CssBaseline'
 
 import App from './container'
 import getPage from './pages'
@@ -26,11 +26,11 @@ const render = (Wrapper, Page, store, title, menu) => {
     <AppContainer>
       <Provider store={store}>
         <JssProvider jss={jss} generateClassName={generateClassName}>
-          <Reboot>
+          <CssBaseline>
             <Wrapper title={title} menu={menu} >
               <Page />
             </Wrapper>
-          </Reboot>
+          </CssBaseline>
         </JssProvider>
       </Provider>
     </AppContainer>,
