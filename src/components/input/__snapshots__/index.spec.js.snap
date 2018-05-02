@@ -9,10 +9,13 @@ exports[`snapshot: className css 1`] = `
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.1875em;
 }
+.MuiInput-root.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
 label + .MuiInput-formControl {
   margin-top: 16px;
 }
-.MuiInput-inkbar:after {
+.MuiInput-underline:after {
   left: 0;
   right: 0;
   bottom: 0;
@@ -24,15 +27,12 @@ label + .MuiInput-formControl {
   pointer-events: none;
   background-color: #303f9f;
 }
-.MuiInput-inkbar.MuiInput-focused:after {
+.MuiInput-underline.MuiInput-focused:after {
   transform: scaleX(1);
 }
-.MuiInput-error:after {
+.MuiInput-underline.MuiInput-error:after {
   transform: scaleX(1);
   background-color: #f44336;
-}
-.MuiInput-disabled {
-  color: rgba(0, 0, 0, 0.38);
 }
 .MuiInput-underline:before {
   left: 0;
@@ -64,13 +64,13 @@ label + .MuiInput-formControl {
 }
 .MuiInput-input {
   font: inherit;
-  width: 100%;
   color: currentColor;
   border: 0;
   margin: 0;
   padding: 6px 0 7px;
   display: block;
   min-width: 0;
+  flex-grow: 1;
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
@@ -105,6 +105,9 @@ label + .MuiInput-formControl {
 .MuiInput-input::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+.MuiInput-input.MuiInput-disabled {
+  opacity: 1;
+}
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
   opacity: 0;
 }
@@ -129,20 +132,17 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus:-ms-input
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-input-placeholder {
   opacity: 0.42;
 }
-.MuiInput-inputDense {
+.MuiInput-inputMarginDense {
   padding-top: 3px;
-}
-.MuiInput-inputDisabled {
-  opacity: 1;
-}
-.MuiInput-inputType {
-  height: 1.1875em;
 }
 .MuiInput-inputMultiline {
   resize: none;
   padding: 0;
 }
-.MuiInput-inputSearch {
+.MuiInput-inputType {
+  height: 1.1875em;
+}
+.MuiInput-inputTypeSearch {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
 }
@@ -184,9 +184,7 @@ exports[`snapshot: className html 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input"
   >
     <input
       aria-invalid={false}
@@ -198,7 +196,9 @@ exports[`snapshot: className html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -220,14 +220,17 @@ exports[`snapshot: only label css 1`] = `
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1;
 }
-.MuiFormLabel-focused {
+.MuiFormLabel-root.MuiFormLabel-focused {
   color: #303f9f;
 }
-.MuiFormLabel-error {
+.MuiFormLabel-root.MuiFormLabel-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.MuiFormLabel-error {
   color: #f44336;
 }
-.MuiFormLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
+.MuiFormLabel-asterisk.MuiFormLabel-error {
+  color: #f44336;
 }
 .MuiInputLabel-root {
   transform-origin: top left;
@@ -238,7 +241,7 @@ exports[`snapshot: only label css 1`] = `
   position: absolute;
   transform: translate(0, 24px) scale(1);
 }
-.MuiInputLabel-labelDense {
+.MuiInputLabel-marginDense {
   transform: translate(0, 21px) scale(1);
 }
 .MuiInputLabel-shrink {
@@ -247,9 +250,6 @@ exports[`snapshot: only label css 1`] = `
 }
 .MuiInputLabel-animated {
   transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-}
-.MuiInputLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
 }"
 `;
 
@@ -268,9 +268,7 @@ exports[`snapshot: only label html 1`] = `
     input
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input"
   >
     <input
       aria-invalid={false}
@@ -282,7 +280,9 @@ exports[`snapshot: only label html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -313,21 +313,21 @@ exports[`snapshot: read only html 1`] = `
     input
   </label>
   <div
-    className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input fcInput-readOnly"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input fcInput-readOnly"
   >
     <input
       aria-invalid={false}
       aria-required={false}
       autoComplete={undefined}
       autoFocus={undefined}
-      className="MuiInput-input MuiInput-inputDisabled"
+      className="MuiInput-input MuiInput-disabled"
       defaultValue={undefined}
       disabled={true}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -358,9 +358,7 @@ exports[`snapshot: with handlers html 1`] = `
     input
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input"
   >
     <input
       aria-invalid={false}
@@ -372,7 +370,9 @@ exports[`snapshot: with handlers html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -403,9 +403,7 @@ exports[`snapshot: with long text html 1`] = `
     input
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input"
   >
     <input
       aria-invalid={false}
@@ -417,7 +415,9 @@ exports[`snapshot: with long text html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -448,9 +448,7 @@ exports[`snapshot: with text html 1`] = `
     input
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input"
   >
     <input
       aria-invalid={false}
@@ -462,7 +460,9 @@ exports[`snapshot: with text html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -486,9 +486,7 @@ exports[`snapshot: without props html 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-underline fcInput-input"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline fcInput-input"
   >
     <input
       aria-invalid={false}
@@ -500,7 +498,9 @@ exports[`snapshot: without props html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}

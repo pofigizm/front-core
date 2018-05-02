@@ -31,7 +31,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 300;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.14286em;
-  margin-left: -.06em;
+  margin-left: -.04em;
   letter-spacing: -.04em;
 }
 .MuiTypography-display3 {
@@ -40,7 +40,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.30357em;
-  margin-left: -.04em;
+  margin-left: -.02em;
   letter-spacing: -.02em;
 }
 .MuiTypography-display2 {
@@ -49,7 +49,7 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.06667em;
-  margin-left: -.04em;
+  margin-left: -.02em;
 }
 .MuiTypography-display1 {
   color: rgba(0, 0, 0, 0.54);
@@ -57,7 +57,6 @@ exports[`snapshot: className css 1`] = `
   font-weight: 400;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.20588em;
-  margin-left: -.04em;
 }
 .MuiTypography-headline {
   color: rgba(0, 0, 0, 0.87);
@@ -154,37 +153,11 @@ exports[`snapshot: className css 1`] = `
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
 }
-.MuiFormControlLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
+.MuiFormControlLabel-root.MuiFormControlLabel-disabled {
   cursor: default;
 }
-.MuiSvgIcon-root {
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  user-select: none;
-  flex-shrink: 0;
-}
-.MuiSvgIcon-colorPrimary {
-  color: #3f51b5;
-}
-.MuiSvgIcon-colorSecondary {
-  color: #f50057;
-}
-.MuiSvgIcon-colorAction {
-  color: rgba(0, 0, 0, 0.54);
-}
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
-.MuiSvgIcon-colorError {
-  color: #f44336;
-}
-.MuiSvgIcon-fontSize {
-  width: 1em;
-  height: 1em;
+.MuiFormControlLabel-label.MuiFormControlLabel-disabled {
+  color: rgba(0, 0, 0, 0.38);
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -198,27 +171,47 @@ exports[`snapshot: className css 1`] = `
   border-radius: inherit;
   pointer-events: none;
 }
-.MuiTouchRipple-wrapper {
-  opacity: 1;
+.MuiTouchRipple-ripple {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
 }
-.MuiTouchRipple-wrapperLeaving {
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
   opacity: 0;
   animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.MuiTouchRipple-wrapperPulsating {
+.MuiTouchRipple-childPulsate {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
   position: absolute;
   animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
 }
 @keyframes mui-ripple-enter {
   0% {
+    opacity: 0.1;
     transform: scale(0);
   }
   100% {
+    opacity: 0.3;
     transform: scale(1);
   }
 }
@@ -240,24 +233,6 @@ exports[`snapshot: className css 1`] = `
   100% {
     transform: scale(1);
   }
-}
-.MuiTouchRipple-ripple {
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  position: absolute;
-  background: currentColor;
-  border-radius: 50%;
-}
-.MuiTouchRipple-rippleVisible {
-  opacity: 0.3;
-  transform: scale(1);
-  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.MuiTouchRipple-rippleFast {
-  animation-duration: 200ms;
 }
 .MuiButtonBase-root {
   color: inherit;
@@ -282,7 +257,7 @@ exports[`snapshot: className css 1`] = `
 .MuiButtonBase-root::-moz-focus-inner {
   border-style: none;
 }
-.MuiButtonBase-disabled {
+.MuiButtonBase-root.MuiButtonBase-disabled {
   cursor: default;
   pointer-events: none;
 }
@@ -297,17 +272,44 @@ exports[`snapshot: className css 1`] = `
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 50%;
 }
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiIconButton-root.MuiIconButton-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-root:hover.MuiIconButton-disabled {
+  background-color: transparent;
+}
 .MuiIconButton-colorInherit {
   color: inherit;
 }
 .MuiIconButton-colorPrimary {
   color: #3f51b5;
 }
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.08);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
 .MuiIconButton-colorSecondary {
   color: #f50057;
 }
-.MuiIconButton-disabled {
-  color: rgba(0, 0, 0, 0.26);
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.08);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
 }
 .MuiIconButton-label {
   width: 100%;
@@ -320,6 +322,9 @@ exports[`snapshot: className css 1`] = `
   transition: none;
   align-items: center;
 }
+.MuiSwitchBase-root:hover {
+  background-color: transparent;
+}
 .MuiSwitchBase-input {
   top: 0;
   left: 0;
@@ -331,16 +336,44 @@ exports[`snapshot: className css 1`] = `
   padding: 0;
   position: absolute;
 }
-.MuiCheckbox-default {
-  color: rgba(0, 0, 0, 0.54);
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
 }
-.MuiCheckbox-checkedPrimary {
+.MuiSvgIcon-colorPrimary {
   color: #3f51b5;
 }
-.MuiCheckbox-checkedSecondary {
+.MuiSvgIcon-colorSecondary {
   color: #f50057;
 }
-.MuiCheckbox-disabled {
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiCheckbox-root {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiCheckbox-colorPrimary.MuiCheckbox-checked {
+  color: #3f51b5;
+}
+.MuiCheckbox-colorPrimary.MuiCheckbox-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiCheckbox-colorSecondary.MuiCheckbox-checked {
+  color: #f50057;
+}
+.MuiCheckbox-colorSecondary.MuiCheckbox-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 "
@@ -357,7 +390,7 @@ exports[`snapshot: className html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -376,7 +409,7 @@ exports[`snapshot: className html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -423,7 +456,7 @@ exports[`snapshot: false html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -442,7 +475,7 @@ exports[`snapshot: false html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -489,7 +522,7 @@ exports[`snapshot: only label html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -508,7 +541,7 @@ exports[`snapshot: only label html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -555,7 +588,7 @@ exports[`snapshot: read only false html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-disabled MuiCheckbox-disabled"
+      className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -574,7 +607,7 @@ exports[`snapshot: read only false html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -597,7 +630,7 @@ exports[`snapshot: read only false html 1`] = `
       </span>
     </span>
     <span
-      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label MuiFormControlLabel-disabled"
     >
       checkbox
     </span>
@@ -618,7 +651,7 @@ exports[`snapshot: read only indeterminate html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-disabled MuiCheckbox-disabled"
+      className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -637,7 +670,7 @@ exports[`snapshot: read only indeterminate html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -660,7 +693,7 @@ exports[`snapshot: read only indeterminate html 1`] = `
       </span>
     </span>
     <span
-      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label MuiFormControlLabel-disabled"
     >
       checkbox
     </span>
@@ -681,7 +714,7 @@ exports[`snapshot: read only true html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
+      className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiSwitchBase-disabled MuiCheckbox-disabled"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -700,7 +733,7 @@ exports[`snapshot: read only true html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -723,7 +756,7 @@ exports[`snapshot: read only true html 1`] = `
       </span>
     </span>
     <span
-      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label MuiFormControlLabel-disabled"
     >
       checkbox
     </span>
@@ -744,7 +777,7 @@ exports[`snapshot: true html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-checkedPrimary"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -763,7 +796,7 @@ exports[`snapshot: true html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -810,7 +843,7 @@ exports[`snapshot: very long label html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -829,7 +862,7 @@ exports[`snapshot: very long label html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -876,7 +909,7 @@ exports[`snapshot: with handlers html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -895,7 +928,7 @@ exports[`snapshot: with handlers html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
@@ -942,7 +975,7 @@ exports[`snapshot: without props html 1`] = `
     title={undefined}
   >
     <span
-      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitchBase-default MuiCheckbox-default"
+      className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -961,7 +994,7 @@ exports[`snapshot: without props html 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root MuiSvgIcon-fontSize"
+          className="MuiSvgIcon-root"
           color={undefined}
           focusable="false"
           viewBox="0 0 24 24"

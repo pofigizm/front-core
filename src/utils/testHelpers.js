@@ -33,6 +33,10 @@ const action = () => Function.prototype
 const previewRunner = (dir, fn) => {
   jest.mock('react-dom')
 
+  // https://github.com/facebook/react/issues/11565
+  const ReactDOM = require('react-dom')
+  ReactDOM.createPortal = node => node
+
   let previewDataLoaded
   try {
     previewDataLoaded = require(`${dir}/index.preview.js`).default

@@ -10,5 +10,9 @@ module.exports = {
   modulePaths: [
     '<rootDir>',
   ],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/example/',
+  ],
   notify: false,
 }

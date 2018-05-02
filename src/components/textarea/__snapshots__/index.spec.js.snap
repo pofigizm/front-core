@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot: className css 1`] = `
-".MuiTextarea-root {
+".m-root {
   width: 100%;
   position: relative;
 }
-.MuiTextarea-textarea {
+.m-textarea {
   font: inherit;
   width: 100%;
   resize: none;
@@ -18,7 +18,7 @@ exports[`snapshot: className css 1`] = `
   background: transparent;
   line-height: inherit;
 }
-.MuiTextarea-shadow {
+.m-shadow {
   resize: none;
   height: auto;
   overflow: hidden;
@@ -34,10 +34,13 @@ exports[`snapshot: className css 1`] = `
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.1875em;
 }
+.MuiInput-root.MuiInput-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
 label + .MuiInput-formControl {
   margin-top: 16px;
 }
-.MuiInput-inkbar:after {
+.MuiInput-underline:after {
   left: 0;
   right: 0;
   bottom: 0;
@@ -49,15 +52,12 @@ label + .MuiInput-formControl {
   pointer-events: none;
   background-color: #303f9f;
 }
-.MuiInput-inkbar.MuiInput-focused:after {
+.MuiInput-underline.MuiInput-focused:after {
   transform: scaleX(1);
 }
-.MuiInput-error:after {
+.MuiInput-underline.MuiInput-error:after {
   transform: scaleX(1);
   background-color: #f44336;
-}
-.MuiInput-disabled {
-  color: rgba(0, 0, 0, 0.38);
 }
 .MuiInput-underline:before {
   left: 0;
@@ -89,13 +89,13 @@ label + .MuiInput-formControl {
 }
 .MuiInput-input {
   font: inherit;
-  width: 100%;
   color: currentColor;
   border: 0;
   margin: 0;
   padding: 6px 0 7px;
   display: block;
   min-width: 0;
+  flex-grow: 1;
   box-sizing: content-box;
   background: none;
   vertical-align: middle;
@@ -130,6 +130,9 @@ label + .MuiInput-formControl {
 .MuiInput-input::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+.MuiInput-input.MuiInput-disabled {
+  opacity: 1;
+}
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input::-webkit-input-placeholder {
   opacity: 0;
 }
@@ -154,20 +157,17 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus:-ms-input
 label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-input-placeholder {
   opacity: 0.42;
 }
-.MuiInput-inputDense {
+.MuiInput-inputMarginDense {
   padding-top: 3px;
-}
-.MuiInput-inputDisabled {
-  opacity: 1;
-}
-.MuiInput-inputType {
-  height: 1.1875em;
 }
 .MuiInput-inputMultiline {
   resize: none;
   padding: 0;
 }
-.MuiInput-inputSearch {
+.MuiInput-inputType {
+  height: 1.1875em;
+}
+.MuiInput-inputTypeSearch {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
 }
@@ -204,12 +204,10 @@ exports[`snapshot: className html 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -218,7 +216,7 @@ exports[`snapshot: className html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -226,7 +224,7 @@ exports[`snapshot: className html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -238,12 +236,14 @@ exports[`snapshot: className html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={false}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}
@@ -266,14 +266,17 @@ exports[`snapshot: only label css 1`] = `
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1;
 }
-.MuiFormLabel-focused {
+.MuiFormLabel-root.MuiFormLabel-focused {
   color: #303f9f;
 }
-.MuiFormLabel-error {
+.MuiFormLabel-root.MuiFormLabel-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.MuiFormLabel-error {
   color: #f44336;
 }
-.MuiFormLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
+.MuiFormLabel-asterisk.MuiFormLabel-error {
+  color: #f44336;
 }
 .MuiInputLabel-root {
   transform-origin: top left;
@@ -284,7 +287,7 @@ exports[`snapshot: only label css 1`] = `
   position: absolute;
   transform: translate(0, 24px) scale(1);
 }
-.MuiInputLabel-labelDense {
+.MuiInputLabel-marginDense {
   transform: translate(0, 21px) scale(1);
 }
 .MuiInputLabel-shrink {
@@ -293,9 +296,6 @@ exports[`snapshot: only label css 1`] = `
 }
 .MuiInputLabel-animated {
   transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-}
-.MuiInputLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
 }"
 `;
 
@@ -314,12 +314,10 @@ exports[`snapshot: only label html 1`] = `
     textarea
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -328,7 +326,7 @@ exports[`snapshot: only label html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -336,7 +334,7 @@ exports[`snapshot: only label html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -348,12 +346,14 @@ exports[`snapshot: only label html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={false}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}
@@ -385,12 +385,10 @@ exports[`snapshot: read only html 1`] = `
     textarea
   </label>
   <div
-    className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline fcTextArea-readOnly"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -399,7 +397,7 @@ exports[`snapshot: read only html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -407,7 +405,7 @@ exports[`snapshot: read only html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -419,12 +417,14 @@ exports[`snapshot: read only html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputDisabled MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-disabled MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={true}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}
@@ -456,12 +456,10 @@ exports[`snapshot: with handlers html 1`] = `
     textarea
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -470,7 +468,7 @@ exports[`snapshot: with handlers html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -478,7 +476,7 @@ exports[`snapshot: with handlers html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -490,12 +488,14 @@ exports[`snapshot: with handlers html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={false}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}
@@ -527,9 +527,7 @@ exports[`snapshot: with long text and rows html 1`] = `
     textarea
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <textarea
       aria-invalid={false}
@@ -541,7 +539,9 @@ exports[`snapshot: with long text and rows html 1`] = `
       disabled={false}
       id={undefined}
       name={undefined}
+      onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       onKeyDown={undefined}
       onKeyUp={undefined}
       placeholder={undefined}
@@ -572,12 +572,10 @@ exports[`snapshot: with long text html 1`] = `
     textarea
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -586,7 +584,7 @@ exports[`snapshot: with long text html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -594,7 +592,7 @@ exports[`snapshot: with long text html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -606,12 +604,14 @@ exports[`snapshot: with long text html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={false}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}
@@ -643,12 +643,10 @@ exports[`snapshot: with text html 1`] = `
     textarea
   </label>
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -657,7 +655,7 @@ exports[`snapshot: with text html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -665,7 +663,7 @@ exports[`snapshot: with text html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -677,12 +675,14 @@ exports[`snapshot: with text html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={false}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}
@@ -707,12 +707,10 @@ exports[`snapshot: without props html 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-inkbar MuiInput-multiline MuiInput-underline"
-    onBlur={[Function]}
-    onFocus={[Function]}
+    className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
   >
     <div
-      className="MuiTextarea-root"
+      className="m-root"
       style={
         Object {
           "height": 19,
@@ -721,7 +719,7 @@ exports[`snapshot: without props html 1`] = `
     >
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         readOnly={true}
         rows="1"
         tabIndex={-1}
@@ -729,7 +727,7 @@ exports[`snapshot: without props html 1`] = `
       />
       <textarea
         aria-hidden="true"
-        className="MuiTextarea-shadow MuiTextarea-textarea"
+        className="m-shadow m-textarea"
         defaultValue={undefined}
         readOnly={true}
         rows={1}
@@ -741,12 +739,14 @@ exports[`snapshot: without props html 1`] = `
         aria-required={false}
         autoComplete={undefined}
         autoFocus={undefined}
-        className="MuiTextarea-textarea MuiInput-input MuiInput-inputMultiline"
+        className="m-textarea MuiInput-input MuiInput-inputMultiline"
         defaultValue={undefined}
         disabled={false}
         id={undefined}
         name={undefined}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         onKeyDown={undefined}
         onKeyUp={undefined}
         placeholder={undefined}

@@ -10,65 +10,65 @@ exports[`snapshot: className css 1`] = `
   align-items: center;
   justify-content: center;
 }
-.MuiSnackbar-anchorTopCenter {
+.MuiSnackbar-anchorOriginTopCenter {
   top: 0;
 }
 @media (min-width:960px) {
-  .MuiSnackbar-anchorTopCenter {
+  .MuiSnackbar-anchorOriginTopCenter {
     left: 50%;
     right: auto;
     transform: translateX(-50%);
   }
 }
-.MuiSnackbar-anchorBottomCenter {
+.MuiSnackbar-anchorOriginBottomCenter {
   bottom: 0;
 }
 @media (min-width:960px) {
-  .MuiSnackbar-anchorBottomCenter {
+  .MuiSnackbar-anchorOriginBottomCenter {
     left: 50%;
     right: auto;
     transform: translateX(-50%);
   }
 }
-.MuiSnackbar-anchorTopRight {
+.MuiSnackbar-anchorOriginTopRight {
   top: 0;
   justify-content: flex-end;
 }
 @media (min-width:960px) {
-  .MuiSnackbar-anchorTopRight {
+  .MuiSnackbar-anchorOriginTopRight {
     top: 24px;
     left: auto;
     right: 24px;
   }
 }
-.MuiSnackbar-anchorBottomRight {
+.MuiSnackbar-anchorOriginBottomRight {
   bottom: 0;
   justify-content: flex-end;
 }
 @media (min-width:960px) {
-  .MuiSnackbar-anchorBottomRight {
+  .MuiSnackbar-anchorOriginBottomRight {
     left: auto;
     right: 24px;
     bottom: 24px;
   }
 }
-.MuiSnackbar-anchorTopLeft {
+.MuiSnackbar-anchorOriginTopLeft {
   top: 0;
   justify-content: flex-start;
 }
 @media (min-width:960px) {
-  .MuiSnackbar-anchorTopLeft {
+  .MuiSnackbar-anchorOriginTopLeft {
     top: 24px;
     left: 24px;
     right: auto;
   }
 }
-.MuiSnackbar-anchorBottomLeft {
+.MuiSnackbar-anchorOriginBottomLeft {
   bottom: 0;
   justify-content: flex-start;
 }
 @media (min-width:960px) {
-  .MuiSnackbar-anchorBottomLeft {
+  .MuiSnackbar-anchorOriginBottomLeft {
     left: 24px;
     right: auto;
     bottom: 24px;
