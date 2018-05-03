@@ -1,6 +1,6 @@
-import React from 'react'
+import ExtendedTop from './extended-top'
 
 export const layout = {
   hideMenu: true,
-  TopComponent: () => <div>EXTENDED TOP</div>,
+  TopComponent: ExtendedTop,
 }
