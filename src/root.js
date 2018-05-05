@@ -46,8 +46,8 @@ export const root = ({ title, routes, menu, layout = {}, apiRequests, config }) 
   const { store, reducers } = getStore({ ...ownRoutes, ...routes }, apiRequests)
   store.dispatch(init(config))
 
-  const { wrapper, ...layoutProps } = layout
-  const Comp = wrapper ? createContainer(layout.wrapper) : App
+  const { Wrapper, ...layoutProps } = layout
+  const Comp = Wrapper ? createContainer(Wrapper) : App
   const WrapComp = ({ children }) => (
     <Comp
       {...{
