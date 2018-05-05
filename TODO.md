@@ -2,4 +2,4 @@
 - move into ts configs
 - possible run tslint
 - awesome-ts-loader ??
-
+- https://github.com/reactjs/redux/issues/2943
