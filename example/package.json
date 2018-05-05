@@ -7,10 +7,11 @@
     "lint": "eslint --fix src server",
     "preview": "BUILD_TS=1 front-core preview",
     "start": "DEBUG=front-core:* BUILD_TS=1 front-core start",
+    "start-ssr": "DEBUG=front-core:* BUILD_TS=1 SSR=1 front-core start",
     "test": "DEBUG=front-core:* BUILD_TS=1 front-core test src"
   },
   "dependencies": {
-    "front-core": "0.9.5",
+    "front-core": "0.9.6",
     "react": "16.3.2",
     "react-dom": "16.3.2"
   },

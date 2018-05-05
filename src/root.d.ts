@@ -24,7 +24,8 @@ export interface Routes {
 
 export interface Layout {
   hideMenu?: boolean
-  wrapper?: Function
+  TopComponent: Function
+  Wrapper?: Function
 }
 
 export interface Root {

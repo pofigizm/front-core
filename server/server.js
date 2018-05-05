@@ -9,10 +9,11 @@ import remoteSave from 'remote-save/lib/server'
 import paths from '../config/paths'
 import webpackConfig from '../config/webpack.config'
 import { render } from './render'
+import tmpl from './template'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 
-const html = render(paths.appSettings)
+const html = process.env.SSR ? render(paths.appSettings) : tmpl()
 const handler = (req, res) => {
   res.send(html)
 }
