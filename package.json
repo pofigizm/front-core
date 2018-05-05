@@ -1,6 +1,6 @@
 {
   "name": "front-core",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "main": "src/index.js",
   "bin": {
     "front-core": "./bin/front-core"
@@ -66,7 +66,7 @@
     "react-redux": "5.0.7",
     "react-test-renderer": "16.3.2",
     "react-universal-component": "2.9.0",
-    "redux": "4.0.0",
+    "redux": "3.7.2",
     "redux-dynamic-middlewares": "0.3.0",
     "redux-extend-reducer": "0.2.1",
     "redux-first-router": "0.0.8-rudy",
