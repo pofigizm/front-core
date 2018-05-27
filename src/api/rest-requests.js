@@ -29,9 +29,22 @@ const getOriginWorker = (config, url = '') => ({ method, params, id }) => {
     headers,
     body,
   })
-    .then(res => res.json())
+    .then((res) => {
+      if (res.status !== 200) {
+        return res.text()
+          .then(err => Promise.reject(err))
+      }
+      return res.json()
+    })
     .then(result => ({
       result,
+      jsonrpc: '2.0',
+      id,
+    }))
+    .catch(err => ({
+      error: {
+        data: err,
+      },
       jsonrpc: '2.0',
       id,
     }))
