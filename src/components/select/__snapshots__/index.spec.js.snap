@@ -1,26 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot: className css 1`] = `
-".MuiFormLabel-root {
-  color: rgba(0, 0, 0, 0.54);
-  padding: 0;
-  font-size: 1rem;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1;
-}
-.MuiFormLabel-root.MuiFormLabel-focused {
-  color: #303f9f;
-}
-.MuiFormLabel-root.MuiFormLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-.MuiFormLabel-root.MuiFormLabel-error {
-  color: #f44336;
-}
-.MuiFormLabel-asterisk.MuiFormLabel-error {
-  color: #f44336;
-}
-.MuiInput-root {
+".MuiInput-root {
   color: rgba(0, 0, 0, 0.87);
   display: inline-flex;
   position: relative;
@@ -38,42 +19,35 @@ label + .MuiInput-formControl {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 2px;
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
   transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #303f9f;
   pointer-events: none;
-  background-color: #303f9f;
 }
 .MuiInput-underline.MuiInput-focused:after {
   transform: scaleX(1);
 }
 .MuiInput-underline.MuiInput-error:after {
   transform: scaleX(1);
-  background-color: #f44336;
+  border-bottom-color: #f44336;
 }
 .MuiInput-underline:before {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1px;
-  content: \\"\\";
+  content: \\"\\\\00a0\\";
   position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.42);
 }
-.MuiInput-underline:hover:not(.MuiInput-disabled):before {
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.87);
+.MuiInput-underline:hover:not(.MuiInput-disabled):not(.MuiInput-focused):not(.MuiInput-error):before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
 }
 .MuiInput-underline.MuiInput-disabled:before {
-  background: transparent;
-  background-size: 5px 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-  background-repeat: repeat-x;
-  background-position: left top;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.42);
 }
 .MuiInput-multiline {
   padding: 6px 0 7px;
@@ -185,33 +159,24 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiFormControl-fullWidth {
   width: 100%;
 }
-.MuiModal-root {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  z-index: 1300;
-  position: fixed;
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1;
 }
-.MuiModal-hidden {
-  visibility: hidden;
+.MuiFormLabel-root.MuiFormLabel-focused {
+  color: #303f9f;
 }
-.MuiPopover-paper {
-  position: absolute;
-  min-width: 16px;
-  max-width: calc(100vw - 32px);
-  overflow-y: auto;
-  overflow-x: hidden;
-  min-height: 16px;
-  max-height: calc(100vh - 32px);
+.MuiFormLabel-root.MuiFormLabel-disabled {
+  color: rgba(0, 0, 0, 0.38);
 }
-.MuiPopover-paper:focus {
-  outline: none;
+.MuiFormLabel-root.MuiFormLabel-error {
+  color: #f44336;
 }
-.MuiMenu-paper {
-  max-height: calc(100vh - 96px);
-  -webkit-overflow-scrolling: touch;
+.MuiFormLabel-asterisk.MuiFormLabel-error {
+  color: #f44336;
 }
 .MuiInputLabel-root {
   transform-origin: top left;
@@ -232,6 +197,31 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiInputLabel-animated {
   transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
 }
+.MuiModal-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1300;
+  position: fixed;
+}
+.MuiModal-hidden {
+  visibility: hidden;
+}
+.MuiPopover-paper {
+  outline: none;
+  position: absolute;
+  min-width: 16px;
+  max-width: calc(100% - 32px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 16px;
+  max-height: calc(100% - 32px);
+}
+.MuiMenu-paper {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
 .MuiSvgIcon-root {
   fill: currentColor;
   width: 1em;
@@ -251,11 +241,11 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
 }
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
 }
 .MuiSelect-root {
   width: 100%;
@@ -306,8 +296,6 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 exports[`snapshot: className html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -335,7 +323,7 @@ exports[`snapshot: className html 1`] = `
         <span
           dangerouslySetInnerHTML={
             Object {
-              "__html": "&#8203",
+              "__html": "&#8203;",
             }
           }
         />
@@ -343,24 +331,13 @@ exports[`snapshot: className html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value=""
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -378,8 +355,6 @@ exports[`snapshot: only label css 1`] = `""`;
 exports[`snapshot: only label html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -409,7 +384,7 @@ exports[`snapshot: only label html 1`] = `
         <span
           dangerouslySetInnerHTML={
             Object {
-              "__html": "&#8203",
+              "__html": "&#8203;",
             }
           }
         />
@@ -417,24 +392,13 @@ exports[`snapshot: only label html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value=""
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -452,8 +416,6 @@ exports[`snapshot: read only css 1`] = `""`;
 exports[`snapshot: read only html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -485,24 +447,13 @@ exports[`snapshot: read only html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value={0}
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -520,8 +471,6 @@ exports[`snapshot: with handlers css 1`] = `""`;
 exports[`snapshot: with handlers html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -553,24 +502,13 @@ exports[`snapshot: with handlers html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value={0}
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -588,8 +526,6 @@ exports[`snapshot: with options css 1`] = `""`;
 exports[`snapshot: with options html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -619,7 +555,7 @@ exports[`snapshot: with options html 1`] = `
         <span
           dangerouslySetInnerHTML={
             Object {
-              "__html": "&#8203",
+              "__html": "&#8203;",
             }
           }
         />
@@ -627,24 +563,13 @@ exports[`snapshot: with options html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value=""
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -662,8 +587,6 @@ exports[`snapshot: with value css 1`] = `""`;
 exports[`snapshot: with value html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -695,24 +618,13 @@ exports[`snapshot: with value html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value={0}
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -730,8 +642,6 @@ exports[`snapshot: without props css 1`] = `""`;
 exports[`snapshot: without props html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcSelect-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -759,7 +669,7 @@ exports[`snapshot: without props html 1`] = `
         <span
           dangerouslySetInnerHTML={
             Object {
-              "__html": "&#8203",
+              "__html": "&#8203;",
             }
           }
         />
@@ -767,24 +677,13 @@ exports[`snapshot: without props html 1`] = `
       <input
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
-        defaultValue={undefined}
         id="_lllllm"
-        name={undefined}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
-        rows={undefined}
         type="hidden"
         value=""
       />
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiSelect-icon"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >

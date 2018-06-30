@@ -5,7 +5,7 @@ exports[`snapshot: className css 1`] = `
   background-color: #fff;
 }
 .MuiPaper-rounded {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .MuiPaper-elevation0 {
   box-shadow: none;
@@ -91,13 +91,11 @@ exports[`snapshot: className css 1`] = `
   height: 100vh;
   display: flex;
   z-index: 1200;
+  outline: none;
   position: fixed;
   overflow-y: auto;
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
-}
-.MuiDrawer-paper:focus {
-  outline: none;
 }
 .MuiDrawer-paperAnchorLeft {
   left: 0;
@@ -312,11 +310,11 @@ exports[`snapshot: className css 1`] = `
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
 }
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
 }
 .fcDrawer-drawerPaper {
   width: 240px;
@@ -368,7 +366,6 @@ exports[`snapshot: className html 1`] = `
           className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -387,7 +384,6 @@ exports[`snapshot: className html 1`] = `
             <svg
               aria-hidden="true"
               className="MuiSvgIcon-root"
-              color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -427,7 +423,6 @@ exports[`snapshot: empty html 1`] = `
           className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
-          onClick={undefined}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -446,7 +441,6 @@ exports[`snapshot: empty html 1`] = `
             <svg
               aria-hidden="true"
               className="MuiSvgIcon-root"
-              color={undefined}
               focusable="false"
               viewBox="0 0 24 24"
             >

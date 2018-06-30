@@ -101,6 +101,7 @@ exports[`snapshot: className css 1`] = `
   line-height: 1.375em;
 }
 .MuiTypography-button {
+  color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
   font-weight: 500;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
@@ -355,11 +356,11 @@ exports[`snapshot: className css 1`] = `
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
 }
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
 }
 .MuiCheckbox-root {
   color: rgba(0, 0, 0, 0.54);
@@ -382,12 +383,9 @@ exports[`snapshot: className css 1`] = `
 exports[`snapshot: className html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
@@ -401,7 +399,6 @@ exports[`snapshot: className html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -410,7 +407,6 @@ exports[`snapshot: className html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -422,12 +418,8 @@ exports[`snapshot: className html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span
@@ -448,12 +440,9 @@ exports[`snapshot: false css 1`] = `""`;
 exports[`snapshot: false html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
@@ -467,7 +456,6 @@ exports[`snapshot: false html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -476,7 +464,6 @@ exports[`snapshot: false html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -488,12 +475,8 @@ exports[`snapshot: false html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span
@@ -514,12 +497,9 @@ exports[`snapshot: only label css 1`] = `""`;
 exports[`snapshot: only label html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
@@ -533,7 +513,6 @@ exports[`snapshot: only label html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -542,7 +521,6 @@ exports[`snapshot: only label html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -554,12 +532,8 @@ exports[`snapshot: only label html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span
@@ -580,12 +554,9 @@ exports[`snapshot: read only false css 1`] = `""`;
 exports[`snapshot: read only false html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -599,7 +570,6 @@ exports[`snapshot: read only false html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex="-1"
     >
       <span
@@ -608,7 +578,6 @@ exports[`snapshot: read only false html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -620,12 +589,8 @@ exports[`snapshot: read only false html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={true}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
     </span>
@@ -643,12 +608,9 @@ exports[`snapshot: read only indeterminate css 1`] = `""`;
 exports[`snapshot: read only indeterminate html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -662,7 +624,6 @@ exports[`snapshot: read only indeterminate html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex="-1"
     >
       <span
@@ -671,7 +632,6 @@ exports[`snapshot: read only indeterminate html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -683,12 +643,8 @@ exports[`snapshot: read only indeterminate html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={true}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
     </span>
@@ -706,12 +662,9 @@ exports[`snapshot: read only true css 1`] = `""`;
 exports[`snapshot: read only true html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root MuiFormControlLabel-disabled"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiSwitchBase-disabled MuiCheckbox-disabled"
@@ -725,7 +678,6 @@ exports[`snapshot: read only true html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex="-1"
     >
       <span
@@ -734,7 +686,6 @@ exports[`snapshot: read only true html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -746,12 +697,8 @@ exports[`snapshot: read only true html 1`] = `
           checked={true}
           className="MuiSwitchBase-input"
           disabled={true}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
     </span>
@@ -769,12 +716,9 @@ exports[`snapshot: true css 1`] = `""`;
 exports[`snapshot: true html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked"
@@ -788,7 +732,6 @@ exports[`snapshot: true html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -797,7 +740,6 @@ exports[`snapshot: true html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -809,12 +751,8 @@ exports[`snapshot: true html 1`] = `
           checked={true}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span
@@ -835,12 +773,9 @@ exports[`snapshot: very long label css 1`] = `""`;
 exports[`snapshot: very long label html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
@@ -854,7 +789,6 @@ exports[`snapshot: very long label html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -863,7 +797,6 @@ exports[`snapshot: very long label html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -875,12 +808,8 @@ exports[`snapshot: very long label html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span
@@ -901,12 +830,9 @@ exports[`snapshot: with handlers css 1`] = `""`;
 exports[`snapshot: with handlers html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
@@ -920,7 +846,6 @@ exports[`snapshot: with handlers html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -929,7 +854,6 @@ exports[`snapshot: with handlers html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -941,12 +865,8 @@ exports[`snapshot: with handlers html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span
@@ -967,12 +887,9 @@ exports[`snapshot: without props css 1`] = `""`;
 exports[`snapshot: without props html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcCheckbox-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormControlLabel-root"
-    title={undefined}
   >
     <span
       className="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
@@ -986,7 +903,6 @@ exports[`snapshot: without props html 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      role={undefined}
       tabIndex={null}
     >
       <span
@@ -995,7 +911,6 @@ exports[`snapshot: without props html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -1007,12 +922,8 @@ exports[`snapshot: without props html 1`] = `
           checked={false}
           className="MuiSwitchBase-input"
           disabled={false}
-          id={undefined}
-          name={undefined}
           onChange={[Function]}
-          tabIndex={undefined}
           type="checkbox"
-          value={undefined}
         />
       </span>
       <span

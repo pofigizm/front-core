@@ -13,8 +13,7 @@ exports[`snapshot: basic usage html 1`] = `
     onClick={[Function]}
   >
     <button
-      aria-describedby={undefined}
-      className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-button"
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary fcFloatingAction-button"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -36,7 +35,6 @@ exports[`snapshot: basic usage html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-plusIcon"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -49,7 +47,6 @@ exports[`snapshot: basic usage html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-opened"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -66,8 +63,6 @@ exports[`snapshot: basic usage html 1`] = `
     </button>
     <div
       className="MuiTooltip-popper"
-      data-placement={undefined}
-      data-x-out-of-boundaries={undefined}
       style={
         Object {
           "left": 0,
@@ -81,7 +76,6 @@ exports[`snapshot: basic usage html 1`] = `
       <div
         aria-hidden={true}
         className="MuiTooltip-tooltip MuiTooltip-tooltipPlacementLeft"
-        id={undefined}
         role="tooltip"
       >
         Add
@@ -111,11 +105,11 @@ exports[`snapshot: className css 1`] = `
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
 }
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -222,15 +216,15 @@ exports[`snapshot: className css 1`] = `
 .MuiButton-root {
   color: rgba(0, 0, 0, 0.87);
   padding: 8px 16px;
-  min-width: 88px;
   font-size: 0.875rem;
-  box-sizing: border-box;
-  min-height: 36px;
+  min-width: 88px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  min-height: 36px;
+  box-sizing: border-box;
   line-height: 1.4em;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   font-weight: 500;
-  border-radius: 2px;
+  border-radius: 4px;
   text-transform: uppercase;
 }
 .MuiButton-root:hover {
@@ -249,84 +243,83 @@ exports[`snapshot: className css 1`] = `
   background-color: transparent;
 }
 .MuiButton-label {
-  width: 100%;
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
 }
-.MuiButton-flatPrimary {
+.MuiButton-textPrimary {
   color: #3f51b5;
 }
-.MuiButton-flatPrimary:hover {
+.MuiButton-textPrimary:hover {
   background-color: rgba(63, 81, 181, 0.08);
 }
 @media (hover: none) {
-  .MuiButton-flatPrimary:hover {
+  .MuiButton-textPrimary:hover {
     background-color: transparent;
   }
 }
-.MuiButton-flatSecondary {
+.MuiButton-textSecondary {
   color: #f50057;
 }
-.MuiButton-flatSecondary:hover {
+.MuiButton-textSecondary:hover {
   background-color: rgba(245, 0, 87, 0.08);
 }
 @media (hover: none) {
-  .MuiButton-flatSecondary:hover {
+  .MuiButton-textSecondary:hover {
     background-color: transparent;
   }
 }
-.MuiButton-colorInherit {
-  color: inherit;
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
 }
-.MuiButton-raised {
+.MuiButton-contained {
   color: rgba(0, 0, 0, 0.87);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
   background-color: #e0e0e0;
 }
-.MuiButton-raised.MuiButton-focusVisible {
+.MuiButton-contained.MuiButton-focusVisible {
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
-.MuiButton-raised:active {
+.MuiButton-contained:active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
-.MuiButton-raised.MuiButton-disabled {
+.MuiButton-contained.MuiButton-disabled {
   color: rgba(0, 0, 0, 0.26);
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.12);
 }
-.MuiButton-raised:hover {
+.MuiButton-contained:hover {
   background-color: #d5d5d5;
 }
 @media (hover: none) {
-  .MuiButton-raised:hover {
+  .MuiButton-contained:hover {
     background-color: #e0e0e0;
   }
 }
-.MuiButton-raised:hover.MuiButton-disabled {
+.MuiButton-contained:hover.MuiButton-disabled {
   background-color: rgba(0, 0, 0, 0.12);
 }
-.MuiButton-raisedPrimary {
+.MuiButton-containedPrimary {
   color: #fff;
   background-color: #3f51b5;
 }
-.MuiButton-raisedPrimary:hover {
+.MuiButton-containedPrimary:hover {
   background-color: #303f9f;
 }
 @media (hover: none) {
-  .MuiButton-raisedPrimary:hover {
+  .MuiButton-containedPrimary:hover {
     background-color: #3f51b5;
   }
 }
-.MuiButton-raisedSecondary {
+.MuiButton-containedSecondary {
   color: #fff;
   background-color: #f50057;
 }
-.MuiButton-raisedSecondary:hover {
+.MuiButton-containedSecondary:hover {
   background-color: #c51162;
 }
 @media (hover: none) {
-  .MuiButton-raisedSecondary:hover {
+  .MuiButton-containedSecondary:hover {
     background-color: #f50057;
   }
 }
@@ -335,12 +328,21 @@ exports[`snapshot: className css 1`] = `
   height: 56px;
   padding: 0;
   min-width: 0;
-  font-size: 24px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
   border-radius: 50%;
 }
 .MuiButton-fab:active {
   box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.MuiButton-extendedFab {
+  width: initial;
+  height: 48px;
+  padding: 0 16px;
+  min-width: 48px;
+  border-radius: 24px;
+}
+.MuiButton-colorInherit {
+  color: inherit;
 }
 .MuiButton-mini {
   width: 40px;
@@ -361,10 +363,6 @@ exports[`snapshot: className css 1`] = `
 .MuiButton-fullWidth {
   width: 100%;
 }
-.MuiTooltip-root {
-  display: inline-block;
-  flex-direction: inherit;
-}
 .MuiTooltip-popper {
   z-index: 1500;
   pointer-events: none;
@@ -382,7 +380,7 @@ exports[`snapshot: className css 1`] = `
   min-height: 0;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   line-height: 1.4em;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #616161;
 }
 .MuiTooltip-tooltip.MuiTooltip-open {
@@ -494,8 +492,7 @@ exports[`snapshot: className html 1`] = `
     onClick={[Function]}
   >
     <button
-      aria-describedby={undefined}
-      className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-button"
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary fcFloatingAction-button"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -517,7 +514,6 @@ exports[`snapshot: className html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-plusIcon"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -530,7 +526,6 @@ exports[`snapshot: className html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-opened"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -547,8 +542,6 @@ exports[`snapshot: className html 1`] = `
     </button>
     <div
       className="MuiTooltip-popper"
-      data-placement={undefined}
-      data-x-out-of-boundaries={undefined}
       style={
         Object {
           "left": 0,
@@ -562,7 +555,6 @@ exports[`snapshot: className html 1`] = `
       <div
         aria-hidden={true}
         className="MuiTooltip-tooltip MuiTooltip-tooltipPlacementLeft"
-        id={undefined}
         role="tooltip"
       >
         
@@ -585,8 +577,7 @@ exports[`snapshot: opened html 1`] = `
     onClick={[Function]}
   >
     <button
-      aria-describedby={undefined}
-      className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedPrimary fcFloatingAction-smallButton"
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary fcFloatingAction-smallButton"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -608,7 +599,6 @@ exports[`snapshot: opened html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-smallIcon fcFloatingAction-opened"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -625,8 +615,6 @@ exports[`snapshot: opened html 1`] = `
     </button>
     <div
       className="MuiTooltip-popper MuiTooltip-open"
-      data-placement={undefined}
-      data-x-out-of-boundaries={undefined}
       style={
         Object {
           "left": 0,
@@ -640,7 +628,6 @@ exports[`snapshot: opened html 1`] = `
       <div
         aria-hidden={false}
         className="MuiTooltip-tooltip MuiTooltip-open MuiTooltip-tooltipPlacementLeft"
-        id={undefined}
         role="tooltip"
       >
         refresh
@@ -652,8 +639,7 @@ exports[`snapshot: opened html 1`] = `
     onClick={[Function]}
   >
     <button
-      aria-describedby={undefined}
-      className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-smallButton"
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary fcFloatingAction-smallButton"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -675,7 +661,6 @@ exports[`snapshot: opened html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-smallIcon fcFloatingAction-opened"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -692,8 +677,6 @@ exports[`snapshot: opened html 1`] = `
     </button>
     <div
       className="MuiTooltip-popper MuiTooltip-open"
-      data-placement={undefined}
-      data-x-out-of-boundaries={undefined}
       style={
         Object {
           "left": 0,
@@ -707,7 +690,6 @@ exports[`snapshot: opened html 1`] = `
       <div
         aria-hidden={false}
         className="MuiTooltip-tooltip MuiTooltip-open MuiTooltip-tooltipPlacementLeft"
-        id={undefined}
         role="tooltip"
       >
         done
@@ -719,8 +701,7 @@ exports[`snapshot: opened html 1`] = `
     onClick={[Function]}
   >
     <button
-      aria-describedby={undefined}
-      className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedPrimary fcFloatingAction-smallButton"
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary fcFloatingAction-smallButton"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -742,7 +723,6 @@ exports[`snapshot: opened html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-smallIcon fcFloatingAction-opened"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -759,8 +739,6 @@ exports[`snapshot: opened html 1`] = `
     </button>
     <div
       className="MuiTooltip-popper MuiTooltip-open"
-      data-placement={undefined}
-      data-x-out-of-boundaries={undefined}
       style={
         Object {
           "left": 0,
@@ -774,7 +752,6 @@ exports[`snapshot: opened html 1`] = `
       <div
         aria-hidden={false}
         className="MuiTooltip-tooltip MuiTooltip-open MuiTooltip-tooltipPlacementLeft"
-        id={undefined}
         role="tooltip"
       >
         delete
@@ -786,8 +763,7 @@ exports[`snapshot: opened html 1`] = `
     onClick={[Function]}
   >
     <button
-      aria-describedby={undefined}
-      className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-fab MuiButton-raisedSecondary fcFloatingAction-button"
+      className="MuiButtonBase-root MuiButton-root MuiButton-fab MuiButton-contained MuiButton-containedSecondary MuiButton-raised MuiButton-raisedSecondary fcFloatingAction-button"
       disabled={false}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -809,7 +785,6 @@ exports[`snapshot: opened html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-plusIcon"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -822,7 +797,6 @@ exports[`snapshot: opened html 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root fcFloatingAction-icon fcFloatingAction-opened"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -839,8 +813,6 @@ exports[`snapshot: opened html 1`] = `
     </button>
     <div
       className="MuiTooltip-popper MuiTooltip-open"
-      data-placement={undefined}
-      data-x-out-of-boundaries={undefined}
       style={
         Object {
           "left": 0,
@@ -854,7 +826,6 @@ exports[`snapshot: opened html 1`] = `
       <div
         aria-hidden={false}
         className="MuiTooltip-tooltip MuiTooltip-open MuiTooltip-tooltipPlacementLeft"
-        id={undefined}
         role="tooltip"
       >
         too many words

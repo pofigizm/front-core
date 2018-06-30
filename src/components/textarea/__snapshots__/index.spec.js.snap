@@ -44,42 +44,35 @@ label + .MuiInput-formControl {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 2px;
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
   transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #303f9f;
   pointer-events: none;
-  background-color: #303f9f;
 }
 .MuiInput-underline.MuiInput-focused:after {
   transform: scaleX(1);
 }
 .MuiInput-underline.MuiInput-error:after {
   transform: scaleX(1);
-  background-color: #f44336;
+  border-bottom-color: #f44336;
 }
 .MuiInput-underline:before {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1px;
-  content: \\"\\";
+  content: \\"\\\\00a0\\";
   position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.42);
 }
-.MuiInput-underline:hover:not(.MuiInput-disabled):before {
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.87);
+.MuiInput-underline:hover:not(.MuiInput-disabled):not(.MuiInput-focused):not(.MuiInput-error):before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
 }
 .MuiInput-underline.MuiInput-disabled:before {
-  background: transparent;
-  background-size: 5px 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-  background-repeat: repeat-x;
-  background-position: left top;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.42);
 }
 .MuiInput-multiline {
   padding: 6px 0 7px;
@@ -198,10 +191,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 
 exports[`snapshot: className html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <div
     className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
@@ -225,7 +215,6 @@ exports[`snapshot: className html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -234,21 +223,11 @@ exports[`snapshot: className html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={false}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value=""
@@ -301,15 +280,11 @@ exports[`snapshot: only label css 1`] = `
 
 exports[`snapshot: only label html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
     data-shrink={false}
-    htmlFor={undefined}
   >
     textarea
   </label>
@@ -335,7 +310,6 @@ exports[`snapshot: only label html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -344,21 +318,11 @@ exports[`snapshot: only label html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={false}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value=""
@@ -372,15 +336,11 @@ exports[`snapshot: read only css 1`] = `""`;
 
 exports[`snapshot: read only html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
     data-shrink={true}
-    htmlFor={undefined}
   >
     textarea
   </label>
@@ -406,7 +366,6 @@ exports[`snapshot: read only html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -415,21 +374,11 @@ exports[`snapshot: read only html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-disabled MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={true}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value="Lorem ipsum"
@@ -443,15 +392,11 @@ exports[`snapshot: with handlers css 1`] = `""`;
 
 exports[`snapshot: with handlers html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
     data-shrink={true}
-    htmlFor={undefined}
   >
     textarea
   </label>
@@ -477,7 +422,6 @@ exports[`snapshot: with handlers html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -486,21 +430,11 @@ exports[`snapshot: with handlers html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={false}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value="Lorem ipsum"
@@ -514,15 +448,11 @@ exports[`snapshot: with long text and rows css 1`] = `""`;
 
 exports[`snapshot: with long text and rows html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
     data-shrink={true}
-    htmlFor={undefined}
   >
     textarea
   </label>
@@ -532,21 +462,11 @@ exports[`snapshot: with long text and rows html 1`] = `
     <textarea
       aria-invalid={false}
       aria-required={false}
-      autoComplete={undefined}
-      autoFocus={undefined}
       className="MuiInput-input MuiInput-inputMultiline"
-      defaultValue={undefined}
       disabled={false}
-      id={undefined}
-      name={undefined}
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      onKeyDown={undefined}
-      onKeyUp={undefined}
-      placeholder={undefined}
-      readOnly={undefined}
-      required={undefined}
       rows={2}
       type="text"
       value="\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\""
@@ -559,15 +479,11 @@ exports[`snapshot: with long text css 1`] = `""`;
 
 exports[`snapshot: with long text html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
     data-shrink={true}
-    htmlFor={undefined}
   >
     textarea
   </label>
@@ -593,7 +509,6 @@ exports[`snapshot: with long text html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -602,21 +517,11 @@ exports[`snapshot: with long text html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={false}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value="\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\""
@@ -630,15 +535,11 @@ exports[`snapshot: with text css 1`] = `""`;
 
 exports[`snapshot: with text html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
     data-shrink={true}
-    htmlFor={undefined}
   >
     textarea
   </label>
@@ -664,7 +565,6 @@ exports[`snapshot: with text html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -673,21 +573,11 @@ exports[`snapshot: with text html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={false}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value="Lorem ipsum"
@@ -701,10 +591,7 @@ exports[`snapshot: without props css 1`] = `""`;
 
 exports[`snapshot: without props html 1`] = `
 <div
-  aria-describedby={undefined}
   className="MuiFormControl-root MuiFormControl-fullWidth fcTextArea-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <div
     className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-multiline MuiInput-underline"
@@ -728,7 +615,6 @@ exports[`snapshot: without props html 1`] = `
       <textarea
         aria-hidden="true"
         className="m-shadow m-textarea"
-        defaultValue={undefined}
         readOnly={true}
         rows={1}
         tabIndex={-1}
@@ -737,21 +623,11 @@ exports[`snapshot: without props html 1`] = `
       <textarea
         aria-invalid={false}
         aria-required={false}
-        autoComplete={undefined}
-        autoFocus={undefined}
         className="m-textarea MuiInput-input MuiInput-inputMultiline"
-        defaultValue={undefined}
         disabled={false}
-        id={undefined}
-        name={undefined}
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        onKeyDown={undefined}
-        onKeyUp={undefined}
-        placeholder={undefined}
-        readOnly={undefined}
-        required={undefined}
         rows={1}
         type="text"
         value=""

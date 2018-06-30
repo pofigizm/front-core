@@ -8,7 +8,6 @@ exports[`snapshot: className css 1`] = `
   box-sizing: border-box;
 }
 .MuiGrid-item {
-  flex: 0 0 auto;
   margin: 0;
   box-sizing: border-box;
 }
@@ -90,6 +89,13 @@ exports[`snapshot: className css 1`] = `
 .MuiGrid-spacing-xs-24 > .MuiGrid-item {
   padding: 12px;
 }
+.MuiGrid-spacing-xs-32 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.MuiGrid-spacing-xs-32 > .MuiGrid-item {
+  padding: 16px;
+}
 .MuiGrid-spacing-xs-40 {
   width: calc(100% + 40px);
   margin: -20px;
@@ -97,275 +103,360 @@ exports[`snapshot: className css 1`] = `
 .MuiGrid-spacing-xs-40 > .MuiGrid-item {
   padding: 20px;
 }
-.MuiGrid-grid-xs {
+.MuiGrid-grid-xs-auto {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
+.MuiGrid-grid-xs-true {
   flex-grow: 1;
   max-width: 100%;
   flex-basis: 0;
 }
 .MuiGrid-grid-xs-1 {
+  flex-grow: 0;
   max-width: 8.33333%;
   flex-basis: 8.33333%;
 }
 .MuiGrid-grid-xs-2 {
+  flex-grow: 0;
   max-width: 16.66667%;
   flex-basis: 16.66667%;
 }
 .MuiGrid-grid-xs-3 {
+  flex-grow: 0;
   max-width: 25%;
   flex-basis: 25%;
 }
 .MuiGrid-grid-xs-4 {
+  flex-grow: 0;
   max-width: 33.33333%;
   flex-basis: 33.33333%;
 }
 .MuiGrid-grid-xs-5 {
+  flex-grow: 0;
   max-width: 41.66667%;
   flex-basis: 41.66667%;
 }
 .MuiGrid-grid-xs-6 {
+  flex-grow: 0;
   max-width: 50%;
   flex-basis: 50%;
 }
 .MuiGrid-grid-xs-7 {
+  flex-grow: 0;
   max-width: 58.33333%;
   flex-basis: 58.33333%;
 }
 .MuiGrid-grid-xs-8 {
+  flex-grow: 0;
   max-width: 66.66667%;
   flex-basis: 66.66667%;
 }
 .MuiGrid-grid-xs-9 {
+  flex-grow: 0;
   max-width: 75%;
   flex-basis: 75%;
 }
 .MuiGrid-grid-xs-10 {
+  flex-grow: 0;
   max-width: 83.33333%;
   flex-basis: 83.33333%;
 }
 .MuiGrid-grid-xs-11 {
+  flex-grow: 0;
   max-width: 91.66667%;
   flex-basis: 91.66667%;
 }
 .MuiGrid-grid-xs-12 {
+  flex-grow: 0;
   max-width: 100%;
   flex-basis: 100%;
 }
 @media (min-width:600px) {
-  .MuiGrid-grid-sm {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
     flex-grow: 1;
     max-width: 100%;
     flex-basis: 0;
   }
   .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
     max-width: 8.33333%;
     flex-basis: 8.33333%;
   }
   .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
     max-width: 16.66667%;
     flex-basis: 16.66667%;
   }
   .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
     max-width: 33.33333%;
     flex-basis: 33.33333%;
   }
   .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
     max-width: 41.66667%;
     flex-basis: 41.66667%;
   }
   .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
     max-width: 58.33333%;
     flex-basis: 58.33333%;
   }
   .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
     max-width: 66.66667%;
     flex-basis: 66.66667%;
   }
   .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
     max-width: 83.33333%;
     flex-basis: 83.33333%;
   }
   .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
     max-width: 91.66667%;
     flex-basis: 91.66667%;
   }
   .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
     max-width: 100%;
     flex-basis: 100%;
   }
 }
 @media (min-width:960px) {
-  .MuiGrid-grid-md {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
     flex-grow: 1;
     max-width: 100%;
     flex-basis: 0;
   }
   .MuiGrid-grid-md-1 {
+    flex-grow: 0;
     max-width: 8.33333%;
     flex-basis: 8.33333%;
   }
   .MuiGrid-grid-md-2 {
+    flex-grow: 0;
     max-width: 16.66667%;
     flex-basis: 16.66667%;
   }
   .MuiGrid-grid-md-3 {
+    flex-grow: 0;
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-md-4 {
+    flex-grow: 0;
     max-width: 33.33333%;
     flex-basis: 33.33333%;
   }
   .MuiGrid-grid-md-5 {
+    flex-grow: 0;
     max-width: 41.66667%;
     flex-basis: 41.66667%;
   }
   .MuiGrid-grid-md-6 {
+    flex-grow: 0;
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-md-7 {
+    flex-grow: 0;
     max-width: 58.33333%;
     flex-basis: 58.33333%;
   }
   .MuiGrid-grid-md-8 {
+    flex-grow: 0;
     max-width: 66.66667%;
     flex-basis: 66.66667%;
   }
   .MuiGrid-grid-md-9 {
+    flex-grow: 0;
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-md-10 {
+    flex-grow: 0;
     max-width: 83.33333%;
     flex-basis: 83.33333%;
   }
   .MuiGrid-grid-md-11 {
+    flex-grow: 0;
     max-width: 91.66667%;
     flex-basis: 91.66667%;
   }
   .MuiGrid-grid-md-12 {
+    flex-grow: 0;
     max-width: 100%;
     flex-basis: 100%;
   }
 }
 @media (min-width:1280px) {
-  .MuiGrid-grid-lg {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
     flex-grow: 1;
     max-width: 100%;
     flex-basis: 0;
   }
   .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
     max-width: 8.33333%;
     flex-basis: 8.33333%;
   }
   .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
     max-width: 16.66667%;
     flex-basis: 16.66667%;
   }
   .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
     max-width: 33.33333%;
     flex-basis: 33.33333%;
   }
   .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
     max-width: 41.66667%;
     flex-basis: 41.66667%;
   }
   .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
     max-width: 58.33333%;
     flex-basis: 58.33333%;
   }
   .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
     max-width: 66.66667%;
     flex-basis: 66.66667%;
   }
   .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
     max-width: 83.33333%;
     flex-basis: 83.33333%;
   }
   .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
     max-width: 91.66667%;
     flex-basis: 91.66667%;
   }
   .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
     max-width: 100%;
     flex-basis: 100%;
   }
 }
 @media (min-width:1920px) {
-  .MuiGrid-grid-xl {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
     flex-grow: 1;
     max-width: 100%;
     flex-basis: 0;
   }
   .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
     max-width: 8.33333%;
     flex-basis: 8.33333%;
   }
   .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
     max-width: 16.66667%;
     flex-basis: 16.66667%;
   }
   .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
     max-width: 25%;
     flex-basis: 25%;
   }
   .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
     max-width: 33.33333%;
     flex-basis: 33.33333%;
   }
   .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
     max-width: 41.66667%;
     flex-basis: 41.66667%;
   }
   .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
     max-width: 50%;
     flex-basis: 50%;
   }
   .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
     max-width: 58.33333%;
     flex-basis: 58.33333%;
   }
   .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
     max-width: 66.66667%;
     flex-basis: 66.66667%;
   }
   .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
     max-width: 75%;
     flex-basis: 75%;
   }
   .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
     max-width: 83.33333%;
     flex-basis: 83.33333%;
   }
   .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
     max-width: 91.66667%;
     flex-basis: 91.66667%;
   }
   .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
     max-width: 100%;
     flex-basis: 100%;
   }
