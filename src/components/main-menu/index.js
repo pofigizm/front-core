@@ -1,8 +1,11 @@
 /* eslint-disable react/no-array-index-key */
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List'
+import { withStyles } from '@material-ui/core/styles'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
 
 const styles = theme => ({
   root: {

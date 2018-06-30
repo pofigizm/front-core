@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import OriginButton from 'material-ui/Button'
+import { withStyles } from '@material-ui/core/styles'
+import OriginButton from '@material-ui/core/Button'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

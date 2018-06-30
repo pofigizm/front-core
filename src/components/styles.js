@@ -1,1 +1,1 @@
-export * from 'material-ui/styles'
+export * from '@material-ui/core/styles'

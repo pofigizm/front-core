@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Typography from 'src/components/typography'
 import Checkbox from 'src/components/checkbox'
 import Button from 'src/components/button'

@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import { FormControl } from 'material-ui/Form'
-import { InputLabel } from 'material-ui/Input'
-import Chip from 'material-ui/Chip'
+import { withStyles } from '@material-ui/core/styles'
+import FormControl from '@material-ui/core/FormControl'
+import InputLabel from '@material-ui/core/InputLabel'
+import Chip from '@material-ui/core/Chip'
 import Autocomplete from 'src/components/autocomplete'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)

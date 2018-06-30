@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import { FormControl, FormControlLabel } from 'material-ui/Form'
-import OriginCheckbox from 'material-ui/Checkbox'
+import { withStyles } from '@material-ui/core/styles'
+import FormControl from '@material-ui/core/FormControl'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import OriginCheckbox from '@material-ui/core/Checkbox'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

@@ -1,1 +1,1 @@
-export * from 'material-ui/index.es'
+export * from '@material-ui/core/index.es'

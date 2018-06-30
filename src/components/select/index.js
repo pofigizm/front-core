@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import { FormControl } from 'material-ui/Form'
-import { MenuItem } from 'material-ui/Menu'
-import Input, { InputLabel } from 'material-ui/Input'
-import OriginSelect from 'material-ui/Select'
+import { withStyles } from '@material-ui/core/styles'
+import FormControl from '@material-ui/core/FormControl'
+import MenuItem from '@material-ui/core/MenuItem'
+import Input from '@material-ui/core/Input'
+import InputLabel from '@material-ui/core/InputLabel'
+import OriginSelect from '@material-ui/core/Select'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

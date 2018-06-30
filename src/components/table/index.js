@@ -1,12 +1,15 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import cn from 'classnames'
-import OriginTable, { TableBody, TableRow, TableCell } from 'material-ui/Table'
+import OriginTable from '@material-ui/core/Table'
+import TableBody from '@material-ui/core/TableBody'
+import TableRow from '@material-ui/core/TableRow'
+import TableCell from '@material-ui/core/TableCell'
 import Paper from 'src/components/paper'
 import Typography from 'src/components/typography'
 import TableHead from './table-head'
-import indigo from 'material-ui/colors/indigo'
+import indigo from '@material-ui/core/colors/indigo'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

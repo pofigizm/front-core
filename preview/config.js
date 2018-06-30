@@ -10,8 +10,8 @@ import { action } from '@storybook/addon-actions'
 import { create } from 'jss'
 import preset from 'jss-preset-default'
 import JssProvider from 'react-jss/lib/JssProvider'
-import { createGenerateClassName } from 'material-ui/styles'
-import CssBaseline from 'material-ui/CssBaseline'
+import { createGenerateClassName } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
 
 const generateClassName = createGenerateClassName()
 const jss = create(preset())
