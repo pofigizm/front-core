@@ -9,13 +9,14 @@ const exec = (config) => {
   setFlags(config.flags)
   const getApiRequests = require('./api').default
   const apiRequests = getApiRequests(config.hosts)
-  const { title, routes, menu, layout } = require('./settings')
+  const { title, routes, menu, layout, theme } = require('./settings')
 
   root({
     title,
     routes,
     menu,
     layout,
+    theme,
     apiRequests,
     config,
   })

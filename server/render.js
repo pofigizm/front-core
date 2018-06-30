@@ -3,7 +3,7 @@ import { renderToString } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { AppContainer } from 'react-hot-loader'
 import { JssProvider, SheetsRegistry } from 'react-jss'
-import { MuiThemeProvider, createGenerateClassName } from '@material-ui/core/styles'
+import { MuiThemeProvider, createGenerateClassName, createMuiTheme } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import createHistory from 'history/createMemoryHistory'
 import csso from 'csso'
@@ -18,7 +18,7 @@ const generateClassName = createGenerateClassName()
 
 export const render = (settings) => {
   // TODO render layout wrapper
-  const { title, routes, menu, layout = {} } = require(settings)
+  const { title, routes, menu, layout = {}, theme } = require(settings)
   const { store } = configureStore(routes, {}, history)
 
   const sheets = new SheetsRegistry()
@@ -26,13 +26,13 @@ export const render = (settings) => {
     <AppContainer>
       <Provider store={store}>
         <JssProvider registry={sheets} generateClassName={generateClassName}>
-          <MuiThemeProvider sheetsManager={new Map()}>
-            <CssBaseline>
+          <CssBaseline>
+            <MuiThemeProvider theme={createMuiTheme(theme)} sheetsManager={new Map()}>
               <App title={title} menu={menu} {...layout} >
                 <Loading />
               </App>
-            </CssBaseline>
-          </MuiThemeProvider>
+            </MuiThemeProvider>
+          </CssBaseline>
         </JssProvider>
       </Provider>
     </AppContainer>
