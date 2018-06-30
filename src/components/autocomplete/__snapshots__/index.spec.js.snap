@@ -287,6 +287,10 @@ exports[`snapshot: className html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -295,10 +299,8 @@ exports[`snapshot: className html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -319,6 +321,7 @@ exports[`snapshot: className html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
@@ -372,6 +375,10 @@ exports[`snapshot: only label html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -386,10 +393,8 @@ exports[`snapshot: only label html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -410,6 +415,7 @@ exports[`snapshot: only label html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
@@ -424,6 +430,10 @@ exports[`snapshot: read only html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -438,10 +448,8 @@ exports[`snapshot: read only html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -462,6 +470,7 @@ exports[`snapshot: read only html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
@@ -476,6 +485,10 @@ exports[`snapshot: should be under previous html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -490,10 +503,8 @@ exports[`snapshot: should be under previous html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -514,6 +525,7 @@ exports[`snapshot: should be under previous html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
@@ -707,6 +719,10 @@ exports[`snapshot: with handlers html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -721,10 +737,8 @@ exports[`snapshot: with handlers html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -745,6 +759,7 @@ exports[`snapshot: with handlers html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
@@ -757,6 +772,10 @@ exports[`snapshot: with handlers html 2`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={true}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -771,10 +790,8 @@ exports[`snapshot: with handlers html 2`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={true}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -795,12 +812,14 @@ exports[`snapshot: with handlers html 2`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2 fcAutocomplete-suggestionsContainerOpen"
       id="react-autowhatever-1"
+      role="listbox"
     >
       <ul
         className="fcAutocomplete-suggestionsList"
         role="listbox"
       >
         <li
+          aria-selected={false}
           className="fcAutocomplete-suggestion"
           data-section-index={null}
           data-suggestion-index={0}
@@ -855,6 +874,7 @@ exports[`snapshot: with handlers html 2`] = `
           </div>
         </li>
         <li
+          aria-selected={false}
           className="fcAutocomplete-suggestion"
           data-section-index={null}
           data-suggestion-index={1}
@@ -909,6 +929,7 @@ exports[`snapshot: with handlers html 2`] = `
           </div>
         </li>
         <li
+          aria-selected={false}
           className="fcAutocomplete-suggestion"
           data-section-index={null}
           data-suggestion-index={2}
@@ -976,6 +997,10 @@ exports[`snapshot: with text html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -990,10 +1015,8 @@ exports[`snapshot: with text html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -1014,6 +1037,7 @@ exports[`snapshot: with text html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
@@ -1028,6 +1052,10 @@ exports[`snapshot: without props html 1`] = `
   onSubmit={[Function]}
 >
   <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    role="combobox"
     style={Object {}}
   >
     <div
@@ -1036,10 +1064,8 @@ exports[`snapshot: without props html 1`] = `
       <div
         aria-activedescendant={null}
         aria-autocomplete="list"
-        aria-expanded={false}
-        aria-owns="react-autowhatever-1"
+        aria-controls="react-autowhatever-1"
         className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-        role="combobox"
         style={Object {}}
       >
         <input
@@ -1060,6 +1086,7 @@ exports[`snapshot: without props html 1`] = `
     <div
       className="MuiPaper-root MuiPaper-elevation2"
       id="react-autowhatever-1"
+      role="listbox"
       style={Object {}}
     />
   </div>
