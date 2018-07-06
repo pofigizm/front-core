@@ -11,7 +11,7 @@
     "test": "DEBUG=front-core:* BUILD_TS=1 front-core test src"
   },
   "dependencies": {
-    "front-core": "0.10.0-beta.6",
+    "front-core": "0.10.0-beta.8",
     "react": "16.4.1",
     "react-dom": "16.4.1"
   },
