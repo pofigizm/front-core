@@ -2,19 +2,18 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 
 import Textarea from 'src/components/textarea'
-import IconButton from 'material-ui/IconButton'
-import Typography from 'material-ui/Typography'
+import IconButton from '@material-ui/core/IconButton'
+import Typography from '@material-ui/core/Typography'
 import AddCircle from '@material-ui/icons/AddCircle'
 import DeleteIcon from '@material-ui/icons/Delete'
-import Table, {
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-} from 'material-ui/Table'
+import Table from '@material-ui/core/Table'
+import TableHead from '@material-ui/core/TableHead'
+import TableBody from '@material-ui/core/TableBody'
+import TableRow from '@material-ui/core/TableRow'
+import TableCell from '@material-ui/core/TableCell'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

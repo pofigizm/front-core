@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import cn from 'classnames'
-import OriginDrawer from 'material-ui/Drawer'
-import IconButton from 'material-ui/IconButton'
+import OriginDrawer from '@material-ui/core/Drawer'
+import IconButton from '@material-ui/core/IconButton'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)

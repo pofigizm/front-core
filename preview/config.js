@@ -1,26 +1,31 @@
 /* eslint-disable prefer-template */
 /* eslint-disable jsx-quotes */
 /* eslint-disable no-underscore-dangle */
-/* global __appComponents__, __ownComponents__ */
+/* global __appComponents__, __appSettings__, __ownComponents__ */
 
 import React from 'react'
+import { createStore, combineReducers } from 'redux'
+import { Provider } from 'react-redux'
 import { configure, storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import { create } from 'jss'
 import preset from 'jss-preset-default'
 import JssProvider from 'react-jss/lib/JssProvider'
-import { createGenerateClassName } from 'material-ui/styles'
-import CssBaseline from 'material-ui/CssBaseline'
+import { createGenerateClassName, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
 
 const generateClassName = createGenerateClassName()
 const jss = create(preset())
+const { theme } = require(__appSettings__)
 
 const Render = ({ children }) => (
   <div>
     <JssProvider jss={jss} generateClassName={generateClassName}>
       <CssBaseline>
-        { children }
+        <MuiThemeProvider theme={createMuiTheme(theme)}>
+          { children }
+        </MuiThemeProvider>
       </CssBaseline>
     </JssProvider>
   </div>
@@ -68,9 +73,12 @@ const getData = (prefix, comps, pres) => {
     .filter(({ folder }) => folder)
 }
 
-const datas = []
+const appDatas = []
   .concat(getData('app/', components, componentsPreview))
-  .concat(getData('core/', coreComponents, coreComponentsPreview))
+
+const datas = __ownComponents__ === __appComponents__ ?
+  appDatas :
+  appDatas.concat(getData('core/', coreComponents, coreComponentsPreview))
 
 const loadStories = () => {
   datas
@@ -88,6 +96,11 @@ const loadStories = () => {
       }
 
       if (preview) {
+        if (preview.reducers) {
+          const store = createStore(combineReducers(preview.reducers), preview.preloadedState || {})
+          st.addDecorator(story => (<Provider store={store}>{story()}</Provider>))
+        }
+
         const data = preview.default
 
         if (preview.State) {

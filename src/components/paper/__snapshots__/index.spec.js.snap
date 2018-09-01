@@ -23,7 +23,7 @@ exports[`snapshot: className css 1`] = `
   background-color: #fff;
 }
 .MuiPaper-rounded {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .MuiPaper-elevation0 {
   box-shadow: none;

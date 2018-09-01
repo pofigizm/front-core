@@ -120,6 +120,7 @@ exports[`snapshot: className css 1`] = `
   line-height: 1.375em;
 }
 .MuiTypography-button {
+  color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
   font-weight: 500;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import cn from 'classnames'
 import Breadcrumbs from 'src/components/breadcrumbs'
 import Typography from 'src/components/typography'

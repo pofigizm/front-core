@@ -1,13 +1,11 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import cn from 'classnames'
-import {
-  TableHead as OriginTableHead,
-  TableRow,
-  TableCell,
-  TableSortLabel,
-} from 'material-ui/Table'
+import OriginTableHead from '@material-ui/core/TableHead'
+import TableRow from '@material-ui/core/TableRow'
+import TableCell from '@material-ui/core/TableCell'
+import TableSortLabel from '@material-ui/core/TableSortLabel'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import OriginTypography from 'material-ui/Typography'
+import { withStyles } from '@material-ui/core/styles'
+import OriginTypography from '@material-ui/core/Typography'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

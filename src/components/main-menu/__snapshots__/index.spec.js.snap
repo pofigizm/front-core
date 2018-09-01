@@ -55,11 +55,11 @@ exports[`snapshot: without props css 1`] = `
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
 }
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
 }
 .MuiTouchRipple-root {
   top: 0;
@@ -219,6 +219,11 @@ exports[`snapshot: without props css 1`] = `
 .MuiListItem-secondaryAction {
   padding-right: 32px;
 }
+.MuiListItemIcon-root {
+  color: rgba(0, 0, 0, 0.54);
+  flex-shrink: 0;
+  margin-right: 16px;
+}
 .MuiTypography-root {
   margin: 0;
   display: block;
@@ -299,6 +304,7 @@ exports[`snapshot: without props css 1`] = `
   line-height: 1.375em;
 }
 .MuiTypography-button {
+  color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
   font-weight: 500;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
@@ -361,13 +367,6 @@ exports[`snapshot: without props css 1`] = `
 }
 .MuiListItemText-secondary.MuiListItemText-textDense {
   font-size: inherit;
-}
-.MuiListItemIcon-root {
-  width: 24px;
-  color: rgba(0, 0, 0, 0.54);
-  height: 24px;
-  flex-shrink: 0;
-  margin-right: 16px;
 }"
 `;
 
@@ -394,7 +393,6 @@ exports[`snapshot: without props html 1`] = `
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiListItemIcon-root"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -407,11 +405,11 @@ exports[`snapshot: without props html 1`] = `
       <div
         className="MuiListItemText-root MuiListItemText-inset"
       >
-        <h3
+        <span
           className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
         >
           Storages
-        </h3>
+        </span>
       </div>
       <span
         className="MuiTouchRipple-root"
@@ -437,7 +435,6 @@ exports[`snapshot: without props html 1`] = `
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiListItemIcon-root"
-        color={undefined}
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -450,11 +447,11 @@ exports[`snapshot: without props html 1`] = `
       <div
         className="MuiListItemText-root MuiListItemText-inset"
       >
-        <h3
+        <span
           className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
         >
           Phones
-        </h3>
+        </span>
       </div>
       <span
         className="MuiTouchRipple-root"

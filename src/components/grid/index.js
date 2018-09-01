@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import OriginGrid from 'material-ui/Grid'
+import { withStyles } from '@material-ui/core/styles'
+import OriginGrid from '@material-ui/core/Grid'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

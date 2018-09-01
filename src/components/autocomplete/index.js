@@ -2,14 +2,14 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 
 import Autosuggest from 'react-autosuggest'
 import match from 'autosuggest-highlight/match'
 import parse from 'autosuggest-highlight/parse'
 
-import Paper from 'material-ui/Paper'
-import { MenuItem } from 'material-ui/Menu'
+import Paper from '@material-ui/core/Paper'
+import MenuItem from '@material-ui/core/MenuItem'
 import Input from 'src/components/input'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)

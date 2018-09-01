@@ -109,6 +109,7 @@ const generate = (buildFolder, publicPath = '/') => ({
       __LOC__: str(env.loc),
       __PROJECT__: str(project),
       __TEST__: 'false',
+      __appSettings__: str(paths.appSettings),
       __appComponents__: str(paths.appComponents),
       __ownComponents__: str(paths.ownComponents),
     }),

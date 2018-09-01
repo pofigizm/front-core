@@ -5,8 +5,8 @@ import { AppContainer } from 'react-hot-loader'
 import { create } from 'jss'
 import preset from 'jss-preset-default'
 import JssProvider from 'react-jss/lib/JssProvider'
-import { createGenerateClassName } from 'material-ui/styles'
-import CssBaseline from 'material-ui/CssBaseline'
+import { createGenerateClassName, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
 
 import App, { createContainer } from './container'
 import getPage from './pages'
@@ -17,7 +17,7 @@ import ownRoutes from './pages/routes'
 const generateClassName = createGenerateClassName()
 const jss = create(preset())
 
-const render = (Wrapper, Page, store) => {
+const render = (Wrapper, Page, store, theme) => {
   const root = document.getElementById('app')
   const sCss = document.getElementById('server-side-styles')
   const sJs = document.getElementById('server-side-state')
@@ -27,9 +27,11 @@ const render = (Wrapper, Page, store) => {
       <Provider store={store}>
         <JssProvider jss={jss} generateClassName={generateClassName}>
           <CssBaseline>
-            <Wrapper>
-              <Page />
-            </Wrapper>
+            <MuiThemeProvider theme={createMuiTheme(theme)}>
+              <Wrapper>
+                <Page />
+              </Wrapper>
+            </MuiThemeProvider>
           </CssBaseline>
         </JssProvider>
       </Provider>
@@ -42,7 +44,7 @@ const render = (Wrapper, Page, store) => {
   )
 }
 
-export const root = ({ title, routes, menu, layout = {}, apiRequests, config }) => {
+export const root = ({ title, routes, menu, layout = {}, apiRequests, config, theme }) => {
   const { store, reducers } = getStore({ ...ownRoutes, ...routes }, apiRequests)
   store.dispatch(init(config))
 
@@ -60,13 +62,13 @@ export const root = ({ title, routes, menu, layout = {}, apiRequests, config }) 
   )
 
   const Page = getPage({ store, reducers })
-  render(WrapComp, Page, store)
+  render(WrapComp, Page, store, theme)
 
   if (__LOC__ && module.hot) {
     module.hot.accept('./pages', () => {
       const getNextPage = require('./pages').default
       const NextPage = getNextPage({ store, reducers })
-      render(WrapComp, NextPage, store)
+      render(WrapComp, NextPage, store, theme)
     })
   }
 }

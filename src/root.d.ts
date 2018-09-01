@@ -33,6 +33,7 @@ export interface Root {
   routes?: Routes
   menu?: Menu
   layout?: Layout
+  theme?: Object
   apiRequests?: {
     [key: string]: ApiRequest
   }

@@ -1,26 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot: className css 1`] = `
-".MuiFormLabel-root {
-  color: rgba(0, 0, 0, 0.54);
-  padding: 0;
-  font-size: 1rem;
-  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
-  line-height: 1;
-}
-.MuiFormLabel-root.MuiFormLabel-focused {
-  color: #303f9f;
-}
-.MuiFormLabel-root.MuiFormLabel-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-.MuiFormLabel-root.MuiFormLabel-error {
-  color: #f44336;
-}
-.MuiFormLabel-asterisk.MuiFormLabel-error {
-  color: #f44336;
-}
-.MuiInput-root {
+".MuiInput-root {
   color: rgba(0, 0, 0, 0.87);
   display: inline-flex;
   position: relative;
@@ -38,42 +19,35 @@ label + .MuiInput-formControl {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 2px;
   content: \\"\\";
   position: absolute;
   transform: scaleX(0);
   transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #303f9f;
   pointer-events: none;
-  background-color: #303f9f;
 }
 .MuiInput-underline.MuiInput-focused:after {
   transform: scaleX(1);
 }
 .MuiInput-underline.MuiInput-error:after {
   transform: scaleX(1);
-  background-color: #f44336;
+  border-bottom-color: #f44336;
 }
 .MuiInput-underline:before {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1px;
-  content: \\"\\";
+  content: \\"\\\\00a0\\";
   position: absolute;
-  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.42);
 }
-.MuiInput-underline:hover:not(.MuiInput-disabled):before {
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.87);
+.MuiInput-underline:hover:not(.MuiInput-disabled):not(.MuiInput-focused):not(.MuiInput-error):before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
 }
 .MuiInput-underline.MuiInput-disabled:before {
-  background: transparent;
-  background-size: 5px 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-  background-repeat: repeat-x;
-  background-position: left top;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.42);
 }
 .MuiInput-multiline {
   padding: 6px 0 7px;
@@ -185,6 +159,25 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
 .MuiFormControl-fullWidth {
   width: 100%;
 }
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
+  line-height: 1;
+}
+.MuiFormLabel-root.MuiFormLabel-focused {
+  color: #303f9f;
+}
+.MuiFormLabel-root.MuiFormLabel-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.MuiFormLabel-error {
+  color: #f44336;
+}
+.MuiFormLabel-asterisk.MuiFormLabel-error {
+  color: #f44336;
+}
 .MuiInputLabel-root {
   transform-origin: top left;
 }
@@ -208,7 +201,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   background-color: #fff;
 }
 .MuiPaper-rounded {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .MuiPaper-elevation0 {
   box-shadow: none;
@@ -347,8 +340,6 @@ label + .fcTags-formControl {
 exports[`snapshot: className html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth test-class fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -363,43 +354,32 @@ exports[`snapshot: className html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value=""
             />
@@ -408,6 +388,7 @@ exports[`snapshot: className html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -421,8 +402,6 @@ exports[`snapshot: only label css 1`] = `""`;
 exports[`snapshot: only label html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -439,43 +418,32 @@ exports[`snapshot: only label html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value=""
             />
@@ -484,6 +452,7 @@ exports[`snapshot: only label html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -497,8 +466,6 @@ exports[`snapshot: very mach tags css 1`] = `""`;
 exports[`snapshot: very mach tags html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -512,7 +479,6 @@ exports[`snapshot: very mach tags html 1`] = `
   >
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -525,7 +491,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -538,7 +503,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -551,7 +515,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -564,7 +527,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -577,7 +539,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -590,7 +551,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -603,7 +563,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -616,7 +575,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -629,7 +587,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -642,7 +599,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -655,7 +611,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -668,7 +623,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -681,7 +635,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -694,7 +647,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -707,7 +659,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -720,7 +671,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -733,7 +683,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -746,7 +695,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -759,7 +707,6 @@ exports[`snapshot: very mach tags html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -775,43 +722,32 @@ exports[`snapshot: very mach tags html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value=""
             />
@@ -820,6 +756,7 @@ exports[`snapshot: very mach tags html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -848,11 +785,11 @@ exports[`snapshot: with handlers css 1`] = `
 .MuiSvgIcon-colorAction {
   color: rgba(0, 0, 0, 0.54);
 }
-.MuiSvgIcon-colorDisabled {
-  color: rgba(0, 0, 0, 0.26);
-}
 .MuiSvgIcon-colorError {
   color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
 }"
 `;
 
@@ -861,8 +798,6 @@ exports[`snapshot: with handlers css 2`] = `""`;
 exports[`snapshot: with handlers html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -876,7 +811,6 @@ exports[`snapshot: with handlers html 1`] = `
   >
     <div
       className="MuiChip-root MuiChip-deletable fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={0}
@@ -889,7 +823,6 @@ exports[`snapshot: with handlers html 1`] = `
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiChip-deleteIcon"
-        color={undefined}
         focusable="false"
         onClick={[Function]}
         viewBox="0 0 24 24"
@@ -901,7 +834,6 @@ exports[`snapshot: with handlers html 1`] = `
     </div>
     <div
       className="MuiChip-root MuiChip-deletable fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={0}
@@ -914,7 +846,6 @@ exports[`snapshot: with handlers html 1`] = `
       <svg
         aria-hidden="true"
         className="MuiSvgIcon-root MuiChip-deleteIcon"
-        color={undefined}
         focusable="false"
         onClick={[Function]}
         viewBox="0 0 24 24"
@@ -929,43 +860,32 @@ exports[`snapshot: with handlers html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value=""
             />
@@ -974,6 +894,7 @@ exports[`snapshot: with handlers html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -985,8 +906,6 @@ exports[`snapshot: with handlers html 1`] = `
 exports[`snapshot: with handlers html 2`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -1000,7 +919,6 @@ exports[`snapshot: with handlers html 2`] = `
   >
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -1013,7 +931,6 @@ exports[`snapshot: with handlers html 2`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -1029,43 +946,32 @@ exports[`snapshot: with handlers html 2`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-disabled MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input MuiInput-disabled"
-              defaultValue={undefined}
               disabled={true}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value=""
             />
@@ -1074,6 +980,7 @@ exports[`snapshot: with handlers html 2`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -1097,6 +1004,7 @@ exports[`snapshot: with list and text css 1`] = `
   align-items: center;
   font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif;
   border-radius: 16px;
+  text-decoration: none;
   justify-content: center;
   background-color: #e0e0e0;
 }
@@ -1149,8 +1057,6 @@ exports[`snapshot: with list and text css 1`] = `
 exports[`snapshot: with list and text html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -1164,7 +1070,6 @@ exports[`snapshot: with list and text html 1`] = `
   >
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -1177,7 +1082,6 @@ exports[`snapshot: with list and text html 1`] = `
     </div>
     <div
       className="MuiChip-root fcTags-chip"
-      onClick={undefined}
       onKeyDown={[Function]}
       role="button"
       tabIndex={-1}
@@ -1193,43 +1097,32 @@ exports[`snapshot: with list and text html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value="tag"
             />
@@ -1238,6 +1131,7 @@ exports[`snapshot: with list and text html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -1251,8 +1145,6 @@ exports[`snapshot: with text css 1`] = `""`;
 exports[`snapshot: with text html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -1269,43 +1161,32 @@ exports[`snapshot: with text html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value="tag"
             />
@@ -1314,6 +1195,7 @@ exports[`snapshot: with text html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>
@@ -1327,8 +1209,6 @@ exports[`snapshot: without props css 1`] = `""`;
 exports[`snapshot: without props html 1`] = `
 <div
   className="MuiFormControl-root MuiFormControl-fullWidth fcTags-root"
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -1343,43 +1223,32 @@ exports[`snapshot: without props html 1`] = `
       onSubmit={[Function]}
     >
       <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-owns="react-autowhatever-1"
+        role="combobox"
         style={Object {}}
       >
         <div
-          aria-describedby={undefined}
           className="MuiFormControl-root MuiFormControl-fullWidth fcAutocomplete-textField fcInput-root"
-          onBlur={[Function]}
-          onFocus={[Function]}
         >
           <div
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
-            aria-owns="react-autowhatever-1"
+            aria-controls="react-autowhatever-1"
             className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
-            role="combobox"
             style={Object {}}
-            title={undefined}
           >
             <input
               aria-invalid={false}
               aria-required={false}
               autoComplete="off"
-              autoFocus={undefined}
               className="MuiInput-input"
-              defaultValue={undefined}
               disabled={false}
-              id={undefined}
-              name={undefined}
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              onKeyUp={undefined}
-              placeholder={undefined}
-              readOnly={undefined}
-              required={undefined}
-              rows={undefined}
               type="text"
               value=""
             />
@@ -1388,6 +1257,7 @@ exports[`snapshot: without props html 1`] = `
         <div
           className="MuiPaper-root MuiPaper-elevation2"
           id="react-autowhatever-1"
+          role="listbox"
           style={Object {}}
         />
       </div>

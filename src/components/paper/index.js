@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import OriginPaper from 'material-ui/Paper'
+import { withStyles } from '@material-ui/core/styles'
+import OriginPaper from '@material-ui/core/Paper'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import cn from 'classnames'
 import { withStyles } from '../styles'
 
-import CircularProgress from 'material-ui/Progress/CircularProgress'
+import CircularProgress from '@material-ui/core/CircularProgress'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 

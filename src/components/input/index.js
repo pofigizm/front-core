@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import { withStyles } from 'material-ui/styles'
-import TextField from 'material-ui/TextField'
+import { withStyles } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField'
 
 const debug = require('debug')(`${__PROJECT__}:${__dirname}`)
 
