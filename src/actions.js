@@ -58,11 +58,10 @@ export const init = config => (dispatch) => {
   return dispatch(userData())
 }
 
-export const loginRequest = el => (dispatch, getState) => {
+export const loginRequest = () => (dispatch, getState) => {
   const { user, config } = getCore(getState())
 
-  const bug = el instanceof HTMLElement
-  if (!bug && user.name) {
+  if (user.name) {
     window.localStorage.setItem(tokenStorageKey, '')
     dispatch(userData(''))
     return true

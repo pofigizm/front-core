@@ -45,6 +45,7 @@ class Alert extends PureComponent {
       actionLabel,
 
       action,
+      onExit,
     } = this.props
     debug('render', this.props)
 
@@ -52,7 +53,7 @@ class Alert extends PureComponent {
       <Dialog
         className={cn(classes.root)}
         open={open}
-        onExit={action}
+        onExit={onExit}
       >
         <DialogTitle className={cn(classes.title)} >
           {title}
