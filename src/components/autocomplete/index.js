@@ -20,7 +20,7 @@ const styles = theme => ({
     position: 'relative',
   },
   suggestionsContainerOpen: {
-    position: 'absolute',
+    position: 'relative',
     marginTop: theme.spacing.unit,
     marginBottom: theme.spacing.unit * 3,
     left: 0,

@@ -294,7 +294,7 @@ label[data-shrink=false] + .MuiInput-formControl .MuiInput-input:focus::-ms-inpu
   left: 0;
   right: 0;
   z-index: 1500;
-  position: absolute;
+  position: relative;
   overflow: auto;
   margin-top: 8px;
   max-height: 240px;
