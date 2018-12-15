@@ -63,6 +63,10 @@ class Drawer extends PureComponent {
     } = this.props
     debug('render', this.props)
 
+    if (hidden) {
+      return false
+    }
+
     return (
       <OriginDrawer
         variant="permanent"

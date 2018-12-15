@@ -76,7 +76,7 @@ class Index extends PureComponent {
             Logo={this.renderLogo(classes, title)}
             open={mainMenuOpen}
             userName={user.name}
-            onClickDrawerButton={toggleMenu}
+            onClickDrawerButton={hideMenu ? undefined : toggleMenu}
             onClickLoginButton={loginRequest}
           >
             <TopComponent />
