@@ -70,7 +70,7 @@ export const loginRequest = () => (dispatch, getState) => {
   const { href } = window.location
   const redirect = encodeURIComponent(href)
   const loginUrl = `${config.auth}?redirect=${redirect}`
-  window.location.href = loginUrl
+  top.location.href = loginUrl
   return true
 }
 
